@@ -1,0 +1,5 @@
+.desktop-app[data-design="d"] .task-row.selected .board-card-meta,
+.desktop-app[data-design="d"] .task-row.selected .row-meta > span:last-child,
+.desktop-app[data-design="d"] .task-row.selected .row-agent {
+  color: #626e85;
+}

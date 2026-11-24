@@ -1,0 +1,79 @@
+schema_version: "0.2"
+goal: >-
+  Answer this product research survey consistently from the supplied Persona profile.
+  Use only profile-supported context and do not invent product usage or external facts.
+cohort:
+  source: PATH_TO_PERSONAS.json
+  size: 5
+  seed: 42
+environment:
+  mode: survey
+study:
+  min_personas: 5
+  # Add profile paths only when every selected Persona contains them.
+  # segment_fields: ["Core Identity.region", "Core Identity.industry"]
+  # Integer ranges use concise, ordered labels and appear in the main report.
+  # segments:
+  #   age_group:
+  #     source: Core Identity.age
+  #     buckets: ["<30", "30-39", "40-49", "50+"]
+  objectives:
+    - id: adoption
+      description: Understand likely adoption and usage context in this synthetic Persona cohort
+    - id: needs
+      description: Understand priorities, concerns and requested improvements
+methods:
+  - id: product_survey
+    kind: survey
+    batch_size: 5
+    max_images: 0
+    questions:
+      - id: usage_frequency
+        text: How often would this type of product fit your normal work?
+        kind: single
+        options: [Daily, Weekly, Monthly, Rarely, Never]
+        objective_ids: [adoption]
+      - id: relevant_tasks
+        text: Which tasks would make this product relevant to you?
+        kind: multiple
+        options: [Planning, Communication, Analysis, Documentation, Learning, None of these]
+        objective_ids: [adoption, needs]
+      - id: experience_rating
+        text: Based on your needs, rate the importance of each experience quality.
+        kind: likert
+        rows: [Clarity, Speed, Control, Trust]
+        options: [Not important, Slightly important, Moderately important, Very important]
+        objective_ids: [needs]
+      - id: adoption_intent
+        text: How likely would you be to try this product if it supported your relevant tasks?
+        kind: single
+        options: [Very unlikely, Unlikely, Unsure, Likely, Very likely]
+        objective_ids: [adoption]
+      - id: adoption_reason
+        text: What is the main reason for your adoption answer?
+        objective_ids: [adoption, needs]
+      - id: likely_concern
+        text: What would be your most important concern, if any?
+        objective_ids: [needs]
+      - id: unlikely_barrier
+        text: What would need to change before you would consider trying it?
+        required: false
+        ask_if: {adoption_intent: Very unlikely}
+        objective_ids: [needs]
+model:
+  provider: openai_compatible
+  base_url: https://api.openai.com/v1
+  api_key_env: OPENAI_API_KEY
+  model: YOUR_MODEL_ID
+  timeout_seconds: 150
+  max_tokens: 5000
+  attempts: 3
+permissions:
+  send_persona: true
+  send_materials: true
+  send_screenshots: false
+budget:
+  max_calls: 50
+  max_tokens: 1500000
+  max_seconds: 1200
+output_dir: runs

@@ -1,0 +1,234 @@
+schema_version: '0.2'
+goal: >-
+  Consider a hypothetical digital assistant that could help with tasks you
+  explicitly choose and within limits you set. You may prefer not to delegate
+  anything, require confirmation, or consider limited delegation. No product
+  has been shown or used, and no capability, benefit or reliability is promised.
+  Answer as the supplied person, using profile-supported needs and preferences.
+  These are hypothetical judgments, not a record of past AI use or measured
+  adoption. Do not invent usage history, purchases, incidents, product actions
+  or external facts. Use the offered non-applicable or uncertain options when
+  appropriate; if the profile cannot support an answer, use value=null.
+cohort:
+  source: PATH_TO_AUTHORIZED_PERSONAS.json
+  size: 20
+  seed: 20261011
+environment:
+  mode: survey
+methods:
+  - id: delegation_survey
+    kind: survey
+    batch_size: 5
+    max_images: 0
+    max_followups: 0
+    questions:
+      - id: relevant_tasks
+        purpose: context
+        feedback_role: preference
+        objective_ids: [task_fit]
+        kind: multiple
+        text: >-
+          Which of these digital tasks are relevant to needs supported by your
+          profile? This does not ask whether you would delegate them. Select
+          any that apply, or select None of these by itself.
+        options:
+          - Drafting or revising text
+          - Finding and comparing information
+          - Organizing schedules or reminders
+          - Summarizing documents or messages
+          - Organizing digital files
+          - None of these
+      - id: delegation_position
+        purpose: reflection
+        feedback_role: preference
+        objective_ids: [task_fit, control]
+        kind: single
+        explain: true
+        text: >-
+          Given your own needs, which position best describes whether you would
+          consider delegating a relevant digital task to this hypothetical
+          assistant? Explain your choice without assuming it works reliably.
+        options:
+          - Would consider delegating at least one task
+          - Would not delegate any task
+          - Not enough information to decide
+      - id: first_task
+        purpose: reflection
+        feedback_role: preference
+        objective_ids: [task_fit]
+        ask_if:
+          delegation_position: Would consider delegating at least one task
+        text: >-
+          Which one task would you first consider delegating, and why that one?
+          Describe a possibility grounded in your needs, not a past experience.
+      - id: refusal_reason
+        purpose: reflection
+        feedback_role: preference
+        objective_ids: [conditions]
+        ask_if:
+          delegation_position: Would not delegate any task
+        text: >-
+          What is the main reason you would not delegate? It is valid to have
+          no relevant need; you do not have to propose a change that would
+          persuade you.
+      - id: approval_boundaries
+        purpose: reflection
+        feedback_role: preference
+        objective_ids: [control]
+        kind: likert
+        text: >-
+          For each hypothetical action, choose the permission arrangement you
+          would prefer. Do not assume that the assistant can do it safely.
+          These are categories, not a numeric rating scale.
+        rows:
+          - Create a draft without sending or publishing it
+          - Modify an existing document
+          - Send a message to another person
+          - Delete a digital file
+        options:
+          - Would not delegate
+          - Confirm every execution
+          - Allow within explicit limits without per-action confirmation
+          - Not applicable to me
+          - Cannot judge
+      - id: decision_priorities
+        purpose: reflection
+        feedback_role: preference
+        objective_ids: [conditions]
+        kind: likert
+        text: >-
+          How important would each quality be in your decision about whether
+          to use such an assistant? This asks about importance, not satisfaction
+          with a product.
+        rows:
+          - Accuracy of the output
+          - Time required from me
+          - Privacy of my information
+          - Control over what is executed
+          - Ability to undo or recover
+        options:
+          - Not important
+          - Slightly important
+          - Moderately important
+          - Very important
+          - Extremely important
+          - Not applicable or cannot judge
+      - id: uncertain_output
+        purpose: reflection
+        feedback_role: preference
+        objective_ids: [control]
+        kind: single
+        explain: true
+        text: >-
+          If the assistant were uncertain about a proposed result, which
+          default response would you prefer? Explain why, or say why you
+          cannot choose.
+        options:
+          - Stop and ask me before continuing
+          - Provide an uncertain draft for me to review
+          - Continue only within previously agreed limits and flag the uncertainty
+          - I would not use this assistant
+          - It depends or I cannot judge
+      - id: approval_information
+        purpose: reflection
+        feedback_role: preference
+        objective_ids: [control, conditions]
+        kind: multiple
+        text: >-
+          Which information, if any, would you want before approving an action?
+          Select what matters to you, or select None of these by itself.
+        options:
+          - Exact content or change
+          - Recipient or destination
+          - Permission scope and limits
+          - Reasons and supporting sources
+          - Changes since the previous version
+          - Undo or recovery options
+          - None of these
+      - id: main_concern
+        purpose: reflection
+        feedback_role: preference
+        objective_ids: [conditions]
+        text: >-
+          What would be your main concern, if any, about delegating a relevant
+          task? It is fine to have none. Do not invent an incident to explain it.
+      - id: acceptable_tradeoff
+        purpose: reflection
+        feedback_role: preference
+        objective_ids: [conditions]
+        text: >-
+          What trade-off, if any, would you accept in exchange for an arrangement
+          that fits your needs? It is fine if none would be worthwhile for you.
+      - id: use_context
+        purpose: reflection
+        feedback_role: preference
+        objective_ids: [task_fit]
+        kind: single
+        text: >-
+          In which setting, if any, would you first consider such assistance?
+          Do not assume that work or personal use must be relevant to you.
+        options:
+          - Personal tasks
+          - Work tasks
+          - Both personal and work tasks
+          - I would not consider using it
+          - Not enough information to decide
+      - id: next_validation
+        purpose: reflection
+        feedback_role: suggestion
+        objective_ids: [validation]
+        text: >-
+          What would you need to verify before deciding whether this idea fits
+          your needs? If nothing would make it relevant, say so. A wish or
+          verification request is not an observed product defect.
+model:
+  provider: openai_compatible
+  base_url: https://api.openai.com/v1
+  api_key_env: OPENAI_API_KEY
+  model: YOUR_MODEL_ID
+  temperature: 1
+  max_tokens: 12000
+  timeout_seconds: 180
+  attempts: 2
+  token_limit_field: max_completion_tokens
+permissions:
+  send_persona: false
+  send_materials: false
+  send_screenshots: false
+execution:
+  max_concurrent_personas: 5
+  max_concurrent_model_calls: 5
+budget:
+  max_calls: 500
+  max_tokens: 12000000
+  max_seconds: 1800
+  protection:
+    research_fraction: 0.55
+    analysis_fraction: 0.3
+study:
+  min_personas: 20
+  review: true
+  block_on_errors: true
+  objectives:
+    - id: task_fit
+      description: Identify relevant tasks and hypothetical delegation conditions, including no need.
+    - id: control
+      description: Explore preferred approval and uncertainty-handling boundaries without claiming execution.
+    - id: conditions
+      description: Understand stated priorities, concerns and trade-offs, not measured product benefits.
+    - id: validation
+      description: Identify what should be investigated with real participants before product decisions.
+insight:
+  language: en
+  context_window: 128000
+  input_budget_ratio: 0.6
+  chunk_target_tokens: 60000
+  max_findings: 8
+  focus:
+    - Hypothetical preferences and conditions, never observed usability or measured adoption.
+    - Separate task relevance from delegation willingness and approval boundaries.
+    - Preserve refusal, uncertainty, non-applicability and conditional-question denominators.
+    - Do not score the categorical approval matrix as an ordinal scale.
+    - Use preference or opportunity findings; recommend investigation or enhancement, not defect repair.
+    - No demographic causal claims or invented history of AI use.
+output_dir: runs

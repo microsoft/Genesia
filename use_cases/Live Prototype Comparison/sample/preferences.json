@@ -1,0 +1,111 @@
+{
+  "version_label_notice": "Public display aliases: Design A is source Design B; Design B is source Design D. Version labels in prose, quotations and question IDs are relabeled for readability only. The original study, participant order, answers, decisions and counts are unchanged.",
+  "counts": {
+    "Design A": 14,
+    "Design B": 4,
+    "No meaningful preference": 2,
+    "Insufficient experience": 0
+  },
+  "answers": [
+    {
+      "participant": "P01",
+      "value": "Design A",
+      "reason": "I preferred the roomier task view for careful reading. Moving between the feedback, context and result kept me oriented. B’s board was useful, but I would rather give more space to the document I am reviewing."
+    },
+    {
+      "participant": "P02",
+      "value": "Design A",
+      "reason": "I preferred its wider reading area and the decision panel beside the content. I am willing to scroll before deciding, but I would rather give that space to the document than keep the whole board visible."
+    },
+    {
+      "participant": "P03",
+      "value": "Design B",
+      "reason": "I could quickly see what needed my decision and watch the board update after confirming scope and accepting the document. That suits checking work between dispatch updates. I would accept the extra scrolling to review details, though the open panel squeezed the cards."
+    },
+    {
+      "participant": "P04",
+      "value": "Design B",
+      "reason": "I’d choose B because seeing what needs my input separately from continuing and handled work suits my follow-up routine. I’d accept some scrolling to check the details, though I’d want more reading space."
+    },
+    {
+      "participant": "P05",
+      "value": "Design A",
+      "reason": "I preferred having more room to read while keeping the task list visible. B’s progress columns were helpful, but checking the information matters more to me than seeing every stage at once."
+    },
+    {
+      "participant": "P06",
+      "value": "Design A",
+      "reason": "I preferred its list-and-details layout for reviewing work. I could keep the selected update visible while checking the message and authorization details. B’s status movement was useful, but its narrowed board was less comfortable to scan."
+    },
+    {
+      "participant": "P07",
+      "value": "Design A",
+      "reason": "I preferred having the content and decision panel alongside each other while reviewing. Reading the weekly update, checking its destination, and then seeing authorization separately from the simulated receipt suited the control I want over communications. I did not try that review process in B."
+    },
+    {
+      "participant": "P08",
+      "value": "Design A",
+      "reason": "I preferred having more room for the content and a separate, clear decision panel. B gave me a useful overview, but checking the actual wording matters more to me than keeping the whole board beside it. Scrolling before approving the sample update was a reasonable extra step."
+    },
+    {
+      "participant": "P09",
+      "value": "Design B",
+      "reason": "I preferred keeping the status board visible during review and seeing the accepted task move to Handled. That suits my short batches of review work. I’d want more reading width for longer documents."
+    },
+    {
+      "participant": "P10",
+      "value": "Design A",
+      "reason": "I would choose A because its document-focused layout suited my careful reading and revision checks. B's board helped me follow progress, but I would rather give the material more space than keep the whole board visible while reading."
+    },
+    {
+      "participant": "P11",
+      "value": "Design A",
+      "reason": "I would choose A because reading and checking the output matters more to me than seeing the whole board. Its larger content area and decision details alongside suited that, although I liked B’s visible status changes."
+    },
+    {
+      "participant": "P12",
+      "value": "Design A",
+      "reason": "I prefer the list beside the larger review area. With summaries turned on, I could see why work needed me and concentrate on the decision. B’s overall board was useful, but it became cramped when my draft was open. I tried different work in each, so this is mainly a layout preference."
+    },
+    {
+      "participant": "P13",
+      "value": "Design A",
+      "reason": "I preferred having more space to inspect the writing while keeping the decision beside it. B’s board helped me follow the revision, but careful reading matters more for the guide I want to create."
+    },
+    {
+      "participant": "P14",
+      "value": "Design A",
+      "reason": "I’d choose A for its roomier review layout. My main work is reading and checking drafts, so that mattered more than B’s board overview. This is a layout preference, not evidence that A handles lessons better."
+    },
+    {
+      "participant": "P15",
+      "value": "No meaningful preference",
+      "reason": "Both gave me a clear stopping point: a simulated receipt in A and a clearly labelled local draft in B. I liked B’s status headings and A’s focused review, but I haven’t established keyboard and screen-reader usability in either, which matters more to me than the layout."
+    },
+    {
+      "participant": "P16",
+      "value": "No meaningful preference",
+      "reason": "A suited the detailed update review, and B’s board was useful for seeing status. I only saved a draft in B, so I do not have a reason to choose one for the full planning review."
+    },
+    {
+      "participant": "P17",
+      "value": "Design A",
+      "reason": "I prefer its roomier reading area with the task list and decision controls alongside it. Careful document review matters more to me than seeing every status column at once. B’s board was useful, but felt cramped with details open."
+    },
+    {
+      "participant": "P18",
+      "value": "Design B",
+      "reason": "I’d choose B for the quick view of what needs me, what is progressing and what is handled. That suits my short work intervals, although I’d want more room to read the details. I’m choosing the layout, not assuming it would handle appointments better."
+    },
+    {
+      "participant": "P19",
+      "value": "Design A",
+      "reason": "I preferred its layout for concentrating on one piece of work and understanding what I was agreeing to. Scrolling to read the update was acceptable. B’s headings were helpful, but the narrowed cards beside the details felt less manageable. I did not try the same features in both."
+    },
+    {
+      "participant": "P20",
+      "value": "Design A",
+      "reason": "I preferred the room for reading an artifact while the decision controls stayed visible. B’s board was useful for locating work, but keeping it beside the details made the view cramped. Reviewing evidence matters more to me than keeping every status column visible."
+    }
+  ]
+}

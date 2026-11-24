@@ -1,0 +1,18 @@
+# Published JSON must retain the approved LF bytes on every platform.
+data/personas/global-digital-100/*.json text eol=lf
+
+# Hash-indexed sample files are immutable presentation artifacts.
+use_cases/*/sample/** -text
+
+# Preserve the frozen prototype's source hashes across checkouts.
+"use_cases/Live Prototype Comparison/prototype/**" -text
+
+# Keep the archived entrypoint as opaque, byte-exact study data.
+"use_cases/Live Prototype Comparison/prototype/frozen/main.tsx.snapshot" binary
+
+# Captured materials retain the hashes recorded in their provenance file.
+"use_cases/Specification & Screenshot Review/materials/**" -text
+
+# Preserve the exact task bytes recorded in published sample manifests.
+"use_cases/Profile-Grounded Persona Survey/task.yaml" -text
+"use_cases/Specification & Screenshot Review/task.yaml" -text

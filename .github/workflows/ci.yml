@@ -1,0 +1,88 @@
+name: Package and behavioral contracts
+on:
+  push:
+    branches: [main]
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  prototype:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: npm ci --prefix "use_cases/Live Prototype Comparison/prototype"
+      - run: npm run build --prefix "use_cases/Live Prototype Comparison/prototype"
+      - run: npm test --prefix "use_cases/Live Prototype Comparison/prototype"
+      - run: python -m pip install -e ".[dev,live]"
+      - run: python -m playwright install --with-deps chromium
+      - run: python -m pytest -q -m browser tests/test_agent_work_supervision_comparison.py
+  prototype-ui:
+    runs-on: windows-latest
+    defaults:
+      run:
+        working-directory: use_cases/Live Prototype Comparison/prototype
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: npm ci
+      - run: npx playwright install msedge
+      - run: npm run build
+      - run: npm run test:ui -- --config=playwright.ci.config.ts --workers=2
+      - uses: actions/upload-artifact@v4
+        if: failure()
+        with:
+          name: prototype-ui-failures
+          path: use_cases/Live Prototype Comparison/prototype/test-results
+          retention-days: 5
+  test:
+    strategy:
+      fail-fast: false
+      matrix:
+        python: ['3.11', '3.12']
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python }}
+      - run: python -m pip install -e ".[dev,live,media]"
+      - run: python -m playwright install chromium
+      - run: python -m ruff check --config pyproject.toml src tests examples use_cases
+      - run: python -m ruff format --check --config pyproject.toml src tests examples use_cases
+      - run: python -m pytest -q -m "not publication"
+      - name: Audit repository publication assets
+        if: matrix.python == '3.12'
+        run: python -m pytest -q -m publication tests\publication
+      - run: python -m build
+      - name: Test wheel without editable installation
+        shell: powershell
+        run: |
+          python -m pip uninstall -y genesia
+          $wheel = (Get-ChildItem dist/*.whl | Select-Object -First 1).FullName
+          python -m pip install --no-deps $wheel
+          python -I -m pytest -q -m "not publication"
+      - name: Test SDK suite from the source distribution
+        if: matrix.python == '3.12'
+        shell: powershell
+        run: |
+          $sdist = (Get-ChildItem dist/*.tar.gz | Select-Object -First 1).FullName
+          $destination = Join-Path $env:RUNNER_TEMP 'genesia-sdist-tests'
+          New-Item -ItemType Directory -Path $destination -Force | Out-Null
+          python -c "import sys,tarfile; archive=tarfile.open(sys.argv[1]); archive.extractall(sys.argv[2],filter='data'); archive.close()" $sdist $destination
+          if ($LASTEXITCODE -ne 0) { throw 'Source distribution extraction failed' }
+          $source = (Get-ChildItem $destination -Directory | Select-Object -First 1).FullName
+          Push-Location $source
+          try {
+            python -I -m pytest -q
+            if ($LASTEXITCODE -ne 0) { throw 'Source distribution SDK tests failed' }
+          } finally {
+            Pop-Location
+          }

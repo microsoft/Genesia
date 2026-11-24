@@ -1,0 +1,16 @@
+include README.md CONTRIBUTING.md SECURITY.md CHANGELOG.md LICENSE.txt CODE_OF_CONDUCT.md SUPPORT.md
+recursive-include .github/skills *.md *.yaml *.yml
+recursive-include docs *.md *.svg *.png
+recursive-include data *.json *.md
+recursive-include examples *.json *.yaml *.md
+recursive-include use_cases *.py *.json *.yaml *.md *.jpg
+recursive-include use_cases/*/materials *.png *.txt
+prune use_cases/*/runs
+prune use_cases/*/sample
+prune use_cases/*/prototype
+recursive-include src/genesia/resources *.js *.json *.md
+recursive-include tests *.py
+prune tests/publication
+prune local
+prune runs
+global-exclude __pycache__ *.py[cod]

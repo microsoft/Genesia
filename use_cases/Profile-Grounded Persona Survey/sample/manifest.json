@@ -1,0 +1,83 @@
+{
+  "schema_version": "1.0",
+  "case": "ai_task_delegation_survey",
+  "synthetic": true,
+  "source": {
+    "run_id": "20261103T024216Z-0d963e73",
+    "status": "completed",
+    "phase": "full_study",
+    "analysis_recovery_used": false,
+    "provider": "OpenRouter",
+    "upstream_model_id": "openai/gpt-6.1-terra",
+    "immutable_model_snapshot": null,
+    "inference_parameters": {
+      "max_tokens": 12000,
+      "temperature": 1.0,
+      "timeout_seconds": 180,
+      "attempts": 2,
+      "token_limit_field": "max_completion_tokens"
+    },
+    "result_sha256": "9f1e8827d1ac665d4a836172bb28ed2aa612d9aa12e49be9109761127a62466e",
+    "native_report_sha256": "c9a0fade5793a75dfdb6070338eed8f4797175702f0ee35ee3287249f1299921",
+    "analysis_provenance_sha256": "6d92367df2726ef7c5dd7ff42e32781e448ff95948349935974e7023b22bc904",
+    "sdk_source_fingerprint_sha256": "2d32597a48445f599e1eca4e37c3bb7846a83b73def7a176bd77aaa94fbf0e01",
+    "sdk_source_fingerprint_scope": "Changed answer-stage modules/resource plus their test and directly related documentation",
+    "answer_policy": "V3 answer-stage migration; shared intent/action policies unchanged"
+  },
+  "protocol": {
+    "personas": 20,
+    "persona_pool_sha256": "439da3fb95672264c0707f3d516dbe170e7a1fc4753bc70982171dd96b5d65a4",
+    "question_definitions": 12,
+    "question_slots": 240,
+    "answered": 220,
+    "skipped": 20,
+    "not_observed": 0,
+    "valid_method_responses": 20,
+    "invalid_method_responses": 0,
+    "missing_method_responses": 0,
+    "grounding": "profile",
+    "product_observations": 0,
+    "product_actions": 0,
+    "survey_batches": 80,
+    "reviewed_answers": 220,
+    "findings": 8,
+    "recommendations": 6,
+    "model_validation_corrections": 0,
+    "evidence_entries_verified": 465
+  },
+  "questionnaire_sha256": "e39d89a63d2c0ac8c040fec88a5ce9e244263441e942d41155323d331963e1ee",
+  "publication": {
+    "edition": "Reviewed saved Terra synthesis and deterministic anonymous question distributions",
+    "transformations": [
+      "Replace native title and remove local run heading and private appendix.",
+      "Add publication note about profile-only grounding, response convergence and evidence counts.",
+      "Retain the remaining saved synthesis text without another model analysis.",
+      "Publish question statistics without Persona segment memberships or individual answers.",
+      "Clarify deterministic contributor labels; saved findings, recommendations and numeric counts are unchanged.",
+      "Restore convergence, denominator, non-ranking and question-specific accessibility count notes, plus distribution link."
+    ],
+    "excluded": [
+      "Full profiles, original Persona and session IDs, individual answers",
+      "Model requests, credentials, local paths and raw operational logs"
+    ],
+    "evidence_labels": {
+      "meaning": "Distinct contributors from saved source answer sets; overlaps are allowed; not votes on every claim.",
+      "numbers_and_saved_memberships_unchanged": true,
+      "renderer_sha256": "3753b6e536c3271f68b037ccc82501b1557f8faca86b29a6c3ce8553322ff984"
+    }
+  },
+  "files": {
+    "README.md": {
+      "sha256": "610a5f7c139e89b6981ecf1bef660b01a4d9b2bf3eac9aa21009c12447e1873d"
+    },
+    "README_CN.md": {
+      "sha256": "4fa723a0a0c70e1ff6abf659ace5f417b189cb6dd2289cdd7c50c367a6c80c0b"
+    },
+    "report.md": {
+      "sha256": "bfd7d00ada0714f2ebc2e687d63c9269a2fb22eb575945668a911409aa0cfb69"
+    },
+    "distributions.json": {
+      "sha256": "6190dcc6dafcedf1dcc6f88d2075aa127c58e73c73fcb0ac8bd6678aa9f15c1b"
+    }
+  }
+}

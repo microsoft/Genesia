@@ -1,0 +1,87 @@
+schema_version: "0.2"
+goal: >-
+  Starting from the supplied prototype entry page, explore the feature named by the
+  study owner according to your preferences and computing habits. Try personally
+  relevant visible options, compare their effects, and adjust, revisit or restore
+  choices where useful. Choose your own path within that feature. Form an informed
+  view through hands-on experience; an acceptable initial configuration alone is not
+  the goal. Finish when further trials offer little value, or explain what prevents
+  you from continuing. This is an isolated prototype, not a production account.
+cohort:
+  source: PATH_TO_PERSONAS.json
+  size: 5
+  seed: 42
+environment:
+  mode: live
+  start_url: http://127.0.0.1:5173/
+  max_steps: 12
+  min_actions_before_stop: 0
+  required_url_fragments_before_stop: []
+  headless: true
+  width: 1024
+  height: 640
+  prototype:
+    scope: Replace with the feature scope supplied by the study owner.
+    known_limitations: []
+study:
+  min_personas: 5
+  objectives:
+    - id: discovery
+      description: Understand how participants find and enter the relevant feature
+    - id: clarity
+      description: Understand clarity, hesitation and feedback during use
+    - id: outcome
+      description: Separate observed changes from satisfaction and unverified outcomes
+methods:
+  - id: post_use_interview
+    kind: interview
+    batch_size: 6
+    evidence_mode: complete
+    max_images: 13
+    max_followups: 0
+    questions:
+      - id: start
+        feedback_role: journey
+        text: Evaluate the journey from the entry page to your final choice. What felt smooth, clear, awkward or incomplete, and why?
+        objective_ids: [discovery, clarity]
+      - id: choices
+        feedback_role: preference
+        text: Which tried option would you keep or restore, and what personal tradeoff drove that decision? Contrast only alternatives you actually experienced.
+        objective_ids: [clarity, outcome]
+      - id: hesitation
+        feedback_role: friction
+        text: Which specific implemented design element felt unclear, inefficient or uncomfortable, if any? Describe the moment and consequence; exclude automation failures and known prototype limits.
+        objective_ids: [clarity]
+      - id: feedback
+        feedback_role: strength
+        text: Which specific implemented design elements worked well for you, if any, and why did they help in your context?
+        objective_ids: [outcome]
+      - id: confidence
+        feedback_role: comparison
+        text: How well did the design help you understand, compare and reverse the choices you tried? What feedback was useful or insufficient?
+        objective_ids: [outcome]
+      - id: improvement
+        purpose: reflection
+        feedback_role: suggestion
+        text: What one change, if any, would most improve this experience for you? Tie it to an experienced need or label it as optional. No change needed is valid.
+        objective_ids: [clarity]
+model:
+  provider: openai_compatible
+  base_url: https://api.openai.com/v1
+  api_key_env: OPENAI_API_KEY
+  model: YOUR_MODEL_ID
+  timeout_seconds: 150
+  max_tokens: 5000
+  attempts: 3
+permissions:
+  send_persona: true
+  send_materials: true
+  send_screenshots: true
+budget:
+  max_calls: 140
+  max_tokens: 4000000
+  max_seconds: 1800
+  protection:
+    research_fraction: 0.3
+    analysis_fraction: 0.25
+output_dir: runs

@@ -1,0 +1,99 @@
+[
+  {
+    "id": "persona-0001",
+    "profile": {
+      "Core Identity": {
+        "age": "41",
+        "company": "Cobalt Grove Systems",
+        "current_residence": "Halifax, Nova Scotia, Canada",
+        "education": {
+          "degree": "Bachelor of Commerce",
+          "institution": "Larkspur Institute of Management",
+          "major": "Operations Management"
+        },
+        "full_name": "Avery Rowan",
+        "gender": "Woman",
+        "nationality": "Canadian",
+        "occupation": "manager",
+        "physical_attributes": {
+          "body_shape": "Medium build",
+          "dress_style": "Business casual with neutral layers and comfortable shoes",
+          "facial_features": "Oval face, dark eyes, and rectangular glasses",
+          "hairstyle": "Shoulder-length wavy black hair",
+          "height": "168 cm",
+          "skin_color": "Medium brown"
+        },
+        "role": "manager"
+      },
+      "Daily & Lifestyle Patterns": {
+        "evening_and_leisure": "Shares dinner, handles household tasks, then reads or streams music",
+        "morning_routine": "Wakes at 6:30, walks briefly, checks calendar, and prepares breakfast",
+        "sleep_schedule": "Usually sleeps from 10:45 p.m. to 6:30 a.m.",
+        "weekend_activities": "Visits markets, hikes locally, practices pottery, and plans the week",
+        "workday_habits": "Time-blocks focused work and reviews meeting notes between appointments"
+      },
+      "Decision-Making & Behavioral Insights": {
+        "brand_loyalty": "Moderate; remains loyal while reliability and support stay strong",
+        "decision_making_style": "Verifies evidence, checks affected stakeholders, then makes timely decisions",
+        "influence_factors": "Demonstrated accuracy, peer experience, workflow fit, and clear documentation",
+        "privacy_and_security_concerns": "Checks access permissions, sensitive details, retention, and recipient lists",
+        "tech_adoption": "Pragmatic early majority adopter who pilots tools before broader rollout"
+      },
+      "Digital Behavior & Online Habits": {
+        "ad_interactions": "Usually ignores ads and researches relevant products separately",
+        "communication_style": "Concise, courteous, and explicit about owners, deadlines, and decisions",
+        "device_usage": "Windows laptop for work; smartphone and tablet for personal tasks",
+        "ecommerce_behavior": "Compares reviews and return policies before planned purchases",
+        "preferred_content_sources": "Vendor documentation, industry newsletters, peer recommendations, and professional forums",
+        "search_patterns": "Uses specific queries, compares sources, and bookmarks authoritative guidance",
+        "social_media_usage": "Checks LinkedIn weekly and rarely posts elsewhere",
+        "subscriptions": "Business news, a productivity newsletter, music streaming, and cloud storage"
+      },
+      "Economic & Financial Profile": {
+        "financial_tools": "Mobile banking, budgeting software, credit monitoring, and employer retirement portal",
+        "income_level": "CAD 112,000 annual gross income",
+        "investment_habits": "Makes automated monthly contributions to diversified retirement funds",
+        "spending_patterns": "Budget-conscious on routine purchases but pays for durable quality"
+      },
+      "Health & Well-being": {
+        "health_related_digital_behavior": "Uses calendar blocks, task lists, notification limits, and focus mode",
+        "mental_health": "Uses written priorities, short walks, and device-free evening breaks",
+        "physical_health": "Moderately active through walking, hiking, and occasional yoga",
+        "work_life_balance": "Protects most evenings but occasionally finishes urgent documentation at home"
+      },
+      "Interests & Preferences": {
+        "content_consumption": "Short newsletters weekdays and long-form articles on weekends",
+        "entertainment_preferences": "Character dramas, design documentaries, mystery novels, and jazz playlists",
+        "hobbies": "Pottery, coastal hiking, and home cooking",
+        "learning_style": "Prefers worked examples, checklists, and hands-on experimentation",
+        "professional_interests": "Team operations, meeting effectiveness, documentation quality, and responsible AI"
+      },
+      "Other Unique Attributes & Contextual Information": {
+        "cultural_and_linguistic_background": "English-speaking Canadian with conversational French",
+        "personal_projects": "Building a reusable meeting-decision log for the team",
+        "travel_habits": "Takes two regional trips yearly and occasional work travel",
+        "unexpected_behavioral_traits": "Reads recaps aloud to detect awkward or misleading phrasing"
+      },
+      "Psychographics & Personality": {
+        "beliefs_and_values": "Accuracy, accountability, clarity, and respectful communication",
+        "cognitive_style": "Structured, evidence-oriented, and attentive to contextual inconsistencies",
+        "mbti": "ISTJ",
+        "motivations": "Ensure recaps represent decisions accurately before participant distribution",
+        "personality_traits": {
+          "agreeableness": "Moderately high",
+          "conscientiousness": "High",
+          "extraversion": "Moderate",
+          "neuroticism": "Low to moderate",
+          "openness": "Moderately high"
+        }
+      },
+      "Social & Relational Dynamics": {
+        "community_involvement": "Volunteers monthly with a neighborhood food cooperative",
+        "family_structure": "Lives with a spouse and one school-aged child",
+        "friendship_circle": "Small, longstanding circle supplemented by several work friendships",
+        "online_vs_offline_engagement": "Uses online channels for coordination but prefers substantive conversations offline",
+        "work_relationships": "Supportive with reports, candid with peers, and prepared with leaders"
+      }
+    }
+  }
+]

@@ -1,0 +1,67 @@
+schema_version: "0.2"
+goal: "Review the supplied calendar design for scheduling a work meeting. Continue while useful, or stop if the design cannot answer your needs."
+cohort:
+  source: ../data/personas/global-digital-100/personas.json
+  size: 3
+environment:
+  mode: walkthrough
+  max_steps: 6
+  fidelity_review: true
+  sources:
+    - kind: cards
+      path: cards
+study:
+  min_personas: 3
+  review: true
+  objectives:
+    - id: clarity
+      description: Understand the clarity and gaps of the supplied creation flow
+      evidence_terms: [meeting, save]
+  criteria:
+    - id: ease
+      description: Perceived clarity of the supplied flow
+      anchors: [Clear, Mixed, Confusing]
+methods:
+  - id: interview
+    kind: interview
+    max_followups: 1
+    questions:
+      - id: experience
+        text: What was clear or confusing in the screens you reviewed?
+        objective_ids: [clarity]
+  - id: survey
+    kind: survey
+    batch_size: 1
+    questions:
+      - id: ease
+        text: How clear was the supplied flow?
+        kind: single
+        options: [Clear, Mixed, Confusing]
+        criterion_ids: [ease]
+      - id: explain
+        text: What caused confusion?
+        ask_if: {ease: Confusing}
+  - id: design
+    kind: design_review
+    questions:
+      - id: change
+        text: What concrete change would help, based on what you actually saw?
+  - id: outcome
+    kind: task_outcome_review
+    questions:
+      - id: limits
+        text: What did you observe, and what remains unverified?
+model:
+  provider: openai_compatible
+  base_url: https://api.openai.com/v1
+  api_key_env: OPENAI_API_KEY
+  model: YOUR_MODEL_ID
+permissions:
+  send_persona: true
+  send_materials: true
+  send_screenshots: false
+budget:
+  max_calls: 70
+  max_tokens: 2000000
+  max_seconds: 1800
+output_dir: ../runs

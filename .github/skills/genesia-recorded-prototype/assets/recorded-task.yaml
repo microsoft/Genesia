@@ -1,0 +1,75 @@
+schema_version: "0.2"
+goal: >-
+  Review the supplied recorded prototype journey to understand the visible workflow,
+  choices and feedback. Continue while the recording provides useful evidence, or stop
+  when it cannot answer your needs. Do not claim to have operated the recorded product.
+cohort:
+  source: PATH_TO_PERSONAS.json
+  size: 5
+  seed: 42
+environment:
+  mode: auto
+  max_steps: 12
+  fidelity_review: true
+  sources:
+    - kind: video
+      path: PATH_TO_RECORDING.mp4
+      # Optional: relative timestamp trace in JSON or JSONL.
+      # trace_path: PATH_TO_INPUT_TRACE.jsonl
+      sample_seconds: 3
+      max_frames: 24
+study:
+  min_personas: 5
+  review: true
+  objectives:
+    - id: clarity
+      description: Understand clarity, hesitation and visible feedback in the recorded workflow
+    - id: evidence_limits
+      description: Separate visible recording evidence from unverified product behavior
+methods:
+  - id: recorded_interview
+    kind: interview
+    batch_size: 5
+    max_images: 3
+    max_followups: 0
+    questions:
+      - id: impression
+        text: What was your first impression of the recorded workflow?
+        objective_ids: [clarity]
+      - id: path
+        text: Walk through the states and choices you observed in the recording.
+        objective_ids: [clarity]
+      - id: hesitation
+        text: Where did the recorded journey appear unclear, hesitant or incomplete?
+        objective_ids: [clarity]
+      - id: feedback
+        text: What visible feedback suggested that an action had or had not taken effect?
+        objective_ids: [clarity, evidence_limits]
+      - id: limits
+        text: What remains unverified because this is a recording rather than your own live interaction?
+        objective_ids: [evidence_limits]
+  - id: recorded_outcome
+    kind: task_outcome_review
+    batch_size: 1
+    max_images: 3
+    questions:
+      - id: observed_outcome
+        text: What outcome is visibly supported by the recording, and what outcome cannot be confirmed?
+        objective_ids: [evidence_limits]
+model:
+  provider: openai_compatible
+  base_url: https://api.openai.com/v1
+  api_key_env: OPENAI_API_KEY
+  model: YOUR_MODEL_ID
+  timeout_seconds: 150
+  max_tokens: 5000
+  attempts: 3
+permissions:
+  send_persona: true
+  send_materials: true
+  send_screenshots: true
+budget:
+  max_calls: 100
+  max_tokens: 3500000
+  max_seconds: 2400
+output_dir: runs

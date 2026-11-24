@@ -1,0 +1,49 @@
+schema_version: "0.2"
+goal: "Review the supplied calendar product concept for planning a work meeting. Stop when you understand what it proposes and what remains unspecified."
+cohort:
+  source: ../data/personas/global-digital-100/personas.json
+  size: 3
+  seed: 42
+environment:
+  mode: auto
+  sources:
+    - kind: document
+      path: product_brief.md
+  max_steps: 6
+methods:
+  - id: interview
+    kind: interview
+    questions:
+      - id: clarity
+        text: What was clear or confusing in the flow you saw?
+  - id: survey
+    kind: survey
+    questions:
+      - id: confidence
+        text: How clear was the supplied meeting creation flow?
+        kind: single
+        options: [Clear, Mixed, Unclear]
+  - id: design
+    kind: design_review
+    questions:
+      - id: improvement
+        text: What specific improvement is supported by the screens you encountered?
+  - id: outcome
+    kind: task_outcome_review
+    questions:
+      - id: limits
+        text: What did you observe, and what could you not verify from this design material?
+model:
+  provider: openai_compatible
+  base_url: https://api.openai.com/v1
+  api_key_env: OPENAI_API_KEY
+  model: YOUR_MODEL_ID
+permissions:
+  send_persona: true
+  send_materials: true
+  send_screenshots: false
+budget:
+  max_calls: 60
+  max_tokens: 1500000
+  max_seconds: 1800
+output_dir: ../runs

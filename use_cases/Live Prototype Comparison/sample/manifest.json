@@ -1,0 +1,4309 @@
+{
+  "sample_schema_version": "2",
+  "version_label_notice": "Public display aliases: Design A is source Design B; Design B is source Design D. Version labels in prose, quotations and question IDs are relabeled for readability only. The original study, participant order, answers, decisions and counts are unchanged.",
+  "version_labels": [
+    {
+      "public": "Design A",
+      "source": "Design B"
+    },
+    {
+      "public": "Design B",
+      "source": "Design D"
+    }
+  ],
+  "study_date": "2026-10-22",
+  "synthetic": true,
+  "source_study_run_id": "20261103T032218Z-4ac45e6b",
+  "source_study_status": "completed",
+  "source_analysis_run_id": "20261103T033653Z-4427957c",
+  "source_analysis_status": "completed",
+  "same_episodes_and_responses": true,
+  "source_files_unchanged": true,
+  "cohort": {
+    "mode": "fixed authorized cohort; original IDs excluded",
+    "size": 20,
+    "seed": 20261011
+  },
+  "valid_responses": 20,
+  "invalid_responses": 0,
+  "missing_responses": 0,
+  "answers": 400,
+  "recorded_steps": 340,
+  "failed_actions": 0,
+  "preference_counts": {
+    "Design A": 14,
+    "Design B": 4,
+    "No meaningful preference": 2,
+    "Insufficient experience": 0
+  },
+  "analysis_answer_coverage": "400/400",
+  "evidence_verification": [
+    {
+      "run": "20261103T032218Z-4ac45e6b",
+      "valid": true,
+      "artifacts": 2286,
+      "errors": []
+    },
+    {
+      "run": "20261103T033653Z-4427957c",
+      "valid": true,
+      "artifacts": 2392,
+      "errors": []
+    }
+  ],
+  "source_hashes": {
+    "20261021T163805Z-89710f3f/research_result.json": "a9ac095f3b01328291ec6c1df2d5d5ddfec479ac332a98dc547f1314a2bee863",
+    "20261103T032218Z-4ac45e6b/research_result.json": "91e3f487e38836e6596232d321f85287f98b874e472fb70eca56daf67f1d7e61",
+    "20261103T033653Z-4427957c/research_result.json": "bf3e21211984435dd78ee0d462829c8aba4586771da7a5bc8f48cd3790a47427",
+    "20261103T033653Z-4427957c/run_manifest.json": "5c964cb0715dda14930ac26f0ee4c15acdb5b4412ab09b3dc92fef71906d93bb",
+    "20261103T033653Z-4427957c/evidence.json": "e00b193b42703081d219c72b12b4b303b6255edc867af30e769bfac5f54df96a"
+  },
+  "privacy": {
+    "aliases": true,
+    "full_profiles_removed": true,
+    "source_ids_removed": true,
+    "session_ids_removed": true,
+    "raw_requests_removed": true,
+    "complete_traces_removed": true,
+    "private_appendices_removed": true,
+    "prototype_fixture_labels_and_synthetic_task_briefs_visible": true,
+    "publication_requested_by_repository_owner": true
+  },
+  "publication": {
+    "model_calls": 0,
+    "new_browser_sessions": 0,
+    "gif_count": 20,
+    "all_recorded_steps_included": true,
+    "width": 960,
+    "frame_ms": 2000,
+    "final_frame_ms": 4000,
+    "timing_is_synthetic": true,
+    "standalone_embedded_journeys": 1,
+    "overlays_regenerated_from_verified_source_frames": true,
+    "font": "Pillow bundled default font",
+    "internal_operational_details_removed": true,
+    "model_and_release_configuration": "Public requested Sol model and temperature recorded; private operational details excluded",
+    "new_interview_over_saved_experience": true,
+    "journey_gifs_reused_byte_identically": true,
+    "evidence_labels": {
+      "meaning": "Distinct contributors from saved source answer sets; overlaps are allowed; not votes on every claim.",
+      "numbers_and_saved_memberships_unchanged": true,
+      "renderer_sha256": "3753b6e536c3271f68b037ccc82501b1557f8faca86b29a6c3ce8553322ff984"
+    }
+  },
+  "participants": [
+    {
+      "alias": "P01",
+      "steps": 12,
+      "preference": "Design A",
+      "gif": "journeys/p01-paired.gif",
+      "frames": 12,
+      "size": [
+        960,
+        693
+      ],
+      "duration_ms": 26000,
+      "source_frames": [
+        {
+          "evidence_ref": "e000011",
+          "sha256": "064e9de8446c8c6df664391190222bcb367096fc0ab72658054fa6d3b320ef37",
+          "candidate": "A",
+          "source_candidate": "B",
+          "step": 1,
+          "annotations": {
+            "title": "Dayline | P01 | Design A | Step 1/12",
+            "action": "SCROLL down"
+          }
+        },
+        {
+          "evidence_ref": "e000046",
+          "sha256": "9afefc2f742f3b922d42089330e9e584e58ce6ae214401936b4b5d267fce0434",
+          "candidate": "A",
+          "source_candidate": "B",
+          "step": 2,
+          "annotations": {
+            "title": "Dayline | P01 | Design A | Step 2/12",
+            "action": "CLICK | Sources & scope"
+          }
+        },
+        {
+          "evidence_ref": "e000061",
+          "sha256": "11380a32ca42b66fe7a8d473ab003ad9d5a070e1d971d71660ef46e08dda634d",
+          "candidate": "A",
+          "source_candidate": "B",
+          "step": 3,
+          "annotations": {
+            "title": "Dayline | P01 | Design A | Step 3/12",
+            "action": "CLICK | Workstream"
+          }
+        },
+        {
+          "evidence_ref": "e000088",
+          "sha256": "e5072341622f4a7acac6130e7730b5fb68341407310afb381419d9123c0938d9",
+          "candidate": "A",
+          "source_candidate": "B",
+          "step": 4,
+          "annotations": {
+            "title": "Dayline | P01 | Design A | Step 4/12",
+            "action": "CLICK | Review result"
+          }
+        },
+        {
+          "evidence_ref": "e000107",
+          "sha256": "7843f92958577e83ece373a91b16300ad4894bf09182f5bf3e8ad661fca5c6ac",
+          "candidate": "A",
+          "source_candidate": "B",
+          "step": 5,
+          "annotations": {
+            "title": "Dayline | P01 | Design A | Step 5/12",
+            "action": "CLICK | Accept v3"
+          }
+        },
+        {
+          "evidence_ref": "e000141",
+          "sha256": "75b2957809ec622c06c5ec460d33adfa09a54a238f3bafd8e1f517a11e14002d",
+          "candidate": "A",
+          "source_candidate": "B",
+          "step": 6,
+          "annotations": {
+            "title": "Dayline | P01 | Design A | Step 6/12",
+            "action": "ADVANCE to B (study handoff, not a product control)"
+          }
+        },
+        {
+          "evidence_ref": "e000166",
+          "sha256": "4f4c31bdd28710bd8eaea9a071ded19831b92e8b62fa7507db8703a13639f767",
+          "candidate": "B",
+          "source_candidate": "D",
+          "step": 7,
+          "annotations": {
+            "title": "Dayline | P01 | Design B | Step 7/12",
+            "action": "CLICK | Authorization"
+          }
+        },
+        {
+          "evidence_ref": "e000186",
+          "sha256": "9400c46f9473497d1e0c27e46c670adfb88271674827bf359a6cada405b328db",
+          "candidate": "B",
+          "source_candidate": "D",
+          "step": 8,
+          "annotations": {
+            "title": "Dayline | P01 | Design B | Step 8/12",
+            "action": "SCROLL down"
+          }
+        },
+        {
+          "evidence_ref": "e000206",
+          "sha256": "c827fe56354f1f492c8d4cf37e8d4d7d473d8713800579ab1455bd0ea6b22f06",
+          "candidate": "B",
+          "source_candidate": "D",
+          "step": 9,
+          "annotations": {
+            "title": "Dayline | P01 | Design B | Step 9/12",
+            "action": "SCROLL down"
+          }
+        },
+        {
+          "evidence_ref": "e000222",
+          "sha256": "4192df0cd0bef35da34be372098f7b9e10ea60602efc34e0fa438b21f0412f18",
+          "candidate": "B",
+          "source_candidate": "D",
+          "step": 10,
+          "annotations": {
+            "title": "Dayline | P01 | Design B | Step 10/12",
+            "action": "SCROLL down"
+          }
+        },
+        {
+          "evidence_ref": "e000242",
+          "sha256": "dbf16e81a62014336f4a6a53bde440dacfadabaffc54f0685d894d6f7d0fa1a6",
+          "candidate": "B",
+          "source_candidate": "D",
+          "step": 11,
+          "annotations": {
+            "title": "Dayline | P01 | Design B | Step 11/12",
+            "action": "CLICK | Decline"
+          }
+        },
+        {
+          "evidence_ref": "e000271",
+          "sha256": "27ff44811b5c1ccfc970060d4079e1bef86c68dc9b227b53fb43779bdcae1102",
+          "candidate": "B",
+          "source_candidate": "D",
+          "step": 12,
+          "annotations": {
+            "title": "Dayline | P01 | Design B | Step 12/12",
+            "action": "STOP (study control)"
+          }
+        }
+      ],
+      "source_gif_sha256": "b3e4758cdd59f3f80987c0c96c0aad1a5f1601ea588637086e16a7b5629dc290"
+    },
+    {
+      "alias": "P02",
+      "steps": 27,
+      "preference": "Design A",
+      "gif": "journeys/p02-paired.gif",
+      "frames": 27,
+      "size": [
+        960,
+        693
+      ],
+      "duration_ms": 56000,
+      "source_frames": [
+        {
+          "evidence_ref": "e000014",
+          "sha256": "064e9de8446c8c6df664391190222bcb367096fc0ab72658054fa6d3b320ef37",
+          "candidate": "A",
+          "source_candidate": "B",
+          "step": 1,
+          "annotations": {
+            "title": "Dayline | P02 | Design A | Step 1/27",
+            "action": "CLICK | New task"
+          }
+        },
+        {
+          "evidence_ref": "e000041",
+          "sha256": "51287f3034f8d2361bcc0fff16f5ff81e0394ef49d36c6b8708aad73f9271d6b",
+          "candidate": "A",
+          "source_candidate": "B",
+          "step": 2,
+          "annotations": {
+            "title": "Dayline | P02 | Design A | Step 2/27",
+            "action": "TYPE | e.g. Prepare release notes"
+          }
+        },
+        {
+          "evidence_ref": "e000052",
+          "sha256": "25fdf6ad7866054c650517107bae3d33140116b47c13b722cf541dbc6be6b6e4",
+          "candidate": "A",
+          "source_candidate": "B",
+          "step": 3,
+          "annotations": {
+            "title": "Dayline | P02 | Design A | Step 3/27",
+            "action": "TYPE | What good looks like, and what not to do…"
+          }
+        },
+        {
+          "evidence_ref": "e000085",
+          "sha256": "c6f297bf8a57b0c3839cd39e5d6f7215d33e0630946fdd782f1bb6493b90eafb",
+          "candidate": "A",
+          "source_candidate": "B",
+          "step": 4,
+          "annotations": {
+            "title": "Dayline | P02 | Design A | Step 4/27",
+            "action": "SELECT | Forge Local"
+          }
+        },
+        {
+          "evidence_ref": "e000104",
+          "sha256": "dfc442aef04fba9e470856e7ca0ac0de5f061541d2e8c3546958ba0ea7bddfac",
+          "candidate": "A",
+          "source_candidate": "B",
+          "step": 5,
+          "annotations": {
+            "title": "Dayline | P02 | Design A | Step 5/27",
+            "action": "CLICK | Create draft"
+          }
+        },
+        {
+          "evidence_ref": "e000123",
+          "sha256": "99d10047f5319d9ef0eb96f9433d6a95f39c4bbae3aa585fe11f4589d955ee53",
+          "candidate": "A",
+          "source_candidate": "B",
+          "step": 6,
+          "annotations": {
+            "title": "Dayline | P02 | Design A | Step 6/27",
+            "action": "CLICK | Clarification"
+          }
+        },
+        {
+          "evidence_ref": "e000146",
+          "sha256": "ca7968bc0072f23ec0ec55d1e1bb44cf70751a2f90274c85174bb95cac36adf7",
+          "candidate": "A",
+          "source_candidate": "B",
+          "step": 7,
+          "annotations": {
+            "title": "Dayline | P02 | Design A | Step 7/27",
+            "action": "CLICK | Workstream"
+          }
+        },
+        {
+          "evidence_ref": "e000171",
+          "sha256": "41fe84219608a251c593c2be850b0adc66a40625495115afcb44b6cb54953cd0",
+          "candidate": "A",
+          "source_candidate": "B",
+          "step": 8,
+          "annotations": {
+            "title": "Dayline | P02 | Design A | Step 8/27",
+            "action": "CLICK | Context"
+          }
+        },
+        {
+          "evidence_ref": "e000191",
+          "sha256": "1a95949f26b12473b548ed808a5e0d2047fbeac47c9a5a8ee59d952d0abf98f7",
+          "candidate": "A",
+          "source_candidate": "B",
+          "step": 9,
+          "annotations": {
+            "title": "Dayline | P02 | Design A | Step 9/27",
+            "action": "CLICK | Review result"
+          }
+        },
+        {
+          "evidence_ref": "e000216",
+          "sha256": "6188d244e204620ebcee2523da51f1847c11e08e2aa3f4bad695cb00d0d7c729",
+          "candidate": "A",
+          "source_candidate": "B",
+          "step": 10,
+          "annotations": {
+            "title": "Dayline | P02 | Design A | Step 10/27",
+            "action": "CLICK | Confirm scope"
+          }
+        },
+        {
+          "evidence_ref": "e000236",
+          "sha256": "086b53da162895d17f36dff227ed1b9e742e166fbf25c4e13c6d767fa8d91b7c",
+          "candidate": "A",
+          "source_candidate": "B",
+          "step": 11,
+          "annotations": {
+            "title": "Dayline | P02 | Design A | Step 11/27",
+            "action": "CLICK | Acceptance"
+          }
+        },
+        {
+          "evidence_ref": "e000263",
+          "sha256": "062609bebf1cd571c8583bea9d5885527b0ca830176ae7721a35f35d1169bd65",
+          "candidate": "A",
+          "source_candidate": "B",
+          "step": 12,
+          "annotations": {
+            "title": "Dayline | P02 | Design A | Step 12/27",
+            "action": "SCROLL down"
+          }
+        },
+        {
+          "evidence_ref": "e000291",
+          "sha256": "15b1d7cc25bfff1a42ee05f4d28fe8c17aa295a31384f733b2236d3b230e02bb",
+          "candidate": "A",
+          "source_candidate": "B",
+          "step": 13,
+          "annotations": {
+            "title": "Dayline | P02 | Design A | Step 13/27",
+            "action": "CLICK | Accept v3"
+          }
+        },
+        {
+          "evidence_ref": "e000311",
+          "sha256": "6a752c3337e29b7dbfdf742665966f946a5a2e15de7746e35bc406b76224b18b",
+          "candidate": "A",
+          "source_candidate": "B",
+          "step": 14,
+          "annotations": {
+            "title": "Dayline | P02 | Design A | Step 14/27",
+            "action": "CLICK | Authorization"
+          }
+        },
+        {
+          "evidence_ref": "e000340",
+          "sha256": "9b1848827a09da3fac2c22523ddd29afbf2e231c7e4e84dc64a54cfae5bb93f5",
+          "candidate": "A",
+          "source_candidate": "B",
+          "step": 15,
+          "annotations": {
+            "title": "Dayline | P02 | Design A | Step 15/27",
+            "action": "SCROLL down"
+          }
+        },
+        {
+          "evidence_ref": "e000354",
+          "sha256": "fb8355858a152b72f269327506c95552469212c4eabb3d6854953997d1ac9b6b",
+          "candidate": "A",
+          "source_candidate": "B",
+          "step": 16,
+          "annotations": {
+            "title": "Dayline | P02 | Design A | Step 16/27",
+            "action": "CLICK | Authorize once"
+          }
+        },
+        {
+          "evidence_ref": "e000387",
+          "sha256": "1fae258410088b1d3589a055e43aab89ec8bbb7aa28d85c7bc35d21585d99196",
+          "candidate": "A",
+          "source_candidate": "B",
+          "step": 17,
+          "annotations": {
+            "title": "Dayline | P02 | Design A | Step 17/27",
+            "action": "CLICK | Demo: generate simulated receipt"
+          }
+        },
+        {
+          "evidence_ref": "e000400",
+          "sha256": "e114c08076ea227b16d9f6ed2d0e9aad1df2bf008144401516f0f342d949510d",
+          "candidate": "A",
+          "source_candidate": "B",
+          "step": 18,
+          "annotations": {
+            "title": "Dayline | P02 | Design A | Step 18/27",
+            "action": "ADVANCE to B (study handoff, not a product control)"
+          }
+        },
+        {
+          "evidence_ref": "e000421",
+          "sha256": "4f4c31bdd28710bd8eaea9a071ded19831b92e8b62fa7507db8703a13639f767",
+          "candidate": "B",
+          "source_candidate": "D",
+          "step": 19,
+          "annotations": {
+            "title": "Dayline | P02 | Design B | Step 19/27",
+            "action": "CLICK | Acceptance"
+          }
+        },
+        {
+          "evidence_ref": "e000429",
+          "sha256": "a44797134a579ab71560d63ef824c6261f4a6ad42cdc238a97ccc88a016c1a6e",
+          "candidate": "B",
+          "source_candidate": "D",
+          "step": 20,
+          "annotations": {
+            "title": "Dayline | P02 | Design B | Step 20/27",
+            "action": "SCROLL down"
+          }
+        },
+        {
+          "evidence_ref": "e000434",
+          "sha256": "b852d13b442f602a59c2344faadb1b0c0d808bd1a700b38cd2a8263c2fe7f5d4",
+          "candidate": "B",
+          "source_candidate": "D",
+          "step": 21,
+          "annotations": {
+            "title": "Dayline | P02 | Design B | Step 21/27",
+            "action": "CLICK | Request changes"
+          }
+        },
+        {
+          "evidence_ref": "e000439",
+          "sha256": "eed74c975996e44bca88e68590ef0050ee7780674061a7ce91b4eb44adaf9ccf",
+          "candidate": "B",
+          "source_candidate": "D",
+          "step": 22,
+          "annotations": {
+            "title": "Dayline | P02 | Design B | Step 22/27",
+            "action": "TYPE | Name the section, issue, or acceptance criteria…"
+          }
+        },
+        {
+          "evidence_ref": "e000454",
+          "sha256": "66332dab540ba1a54f7fbf9b3af91b0229a004548282ce21118c34140e17d8a7",
+          "candidate": "B",
+          "source_candidate": "D",
+          "step": 23,
+          "annotations": {
+            "title": "Dayline | P02 | Design B | Step 23/27",
+            "action": "CLICK | Send revision request"
+          }
+        },
+        {
+          "evidence_ref": "e000459",
+          "sha256": "c6aba068bf953654fb80a5c7489c6d98b1c471d956314be1398751b5cfb603ee",
+          "candidate": "B",
+          "source_candidate": "D",
+          "step": 24,
+          "annotations": {
+            "title": "Dayline | P02 | Design B | Step 24/27",
+            "action": "CLICK | Demo: return a new revision"
+          }
+        },
+        {
+          "evidence_ref": "e000473",
+          "sha256": "452ffb61db669972e5b1e5bf277a7a764dad5b16e64ef07a4a7ebc54823780b7",
+          "candidate": "B",
+          "source_candidate": "D",
+          "step": 25,
+          "annotations": {
+            "title": "Dayline | P02 | Design B | Step 25/27",
+            "action": "SCROLL down"
+          }
+        },
+        {
+          "evidence_ref": "e000486",
+          "sha256": "943685a5ccfd3653423007789c68bdcb5a6ecf898841d528c607f3b991dcf829",
+          "candidate": "B",
+          "source_candidate": "D",
+          "step": 26,
+          "annotations": {
+            "title": "Dayline | P02 | Design B | Step 26/27",
+            "action": "SCROLL down"
+          }
+        },
+        {
+          "evidence_ref": "e000502",
+          "sha256": "38dc18cae2c5a5a96259ca357ea9e9e9f181459b598266cc90f6bb71b445c73b",
+          "candidate": "B",
+          "source_candidate": "D",
+          "step": 27,
+          "annotations": {
+            "title": "Dayline | P02 | Design B | Step 27/27",
+            "action": "STOP (study control)"
+          }
+        }
+      ],
+      "source_gif_sha256": "2664f370cbb848e65ef3aca4e7827f6e600e74fdf13e4728aec7ae82197370f1"
+    },
+    {
+      "alias": "P03",
+      "steps": 16,
+      "preference": "Design B",
+      "gif": "journeys/p03-paired.gif",
+      "frames": 16,
+      "size": [
+        960,
+        693
+      ],
+      "duration_ms": 34000,
+      "source_frames": [
+        {
+          "evidence_ref": "e000022",
+          "sha256": "064e9de8446c8c6df664391190222bcb367096fc0ab72658054fa6d3b320ef37",
+          "candidate": "A",
+          "source_candidate": "B",
+          "step": 1,
+          "annotations": {
+            "title": "Dayline | P03 | Design A | Step 1/16",
+            "action": "CLICK | All"
+          }
+        },
+        {
+          "evidence_ref": "e000035",
+          "sha256": "6e6c138d09c3aa6c6605a666b62ed92495683a771d361aa7e1b4fb04893a2928",
+          "candidate": "A",
+          "source_candidate": "B",
+          "step": 2,
+          "annotations": {
+            "title": "Dayline | P03 | Design A | Step 2/16",
+            "action": "CLICK | New task"
+          }
+        },
+        {
+          "evidence_ref": "e000066",
+          "sha256": "fad063bc215d33ae30dd2ec4ade74c41ee67f883978f7c6604332902eeba3c33",
+          "candidate": "A",
+          "source_candidate": "B",
+          "step": 3,
+          "annotations": {
+            "title": "Dayline | P03 | Design A | Step 3/16",
+            "action": "TYPE | e.g. Prepare release notes"
+          }
+        },
+        {
+          "evidence_ref": "e000091",
+          "sha256": "04700b404977b97906216bba6c26e11050f5e89fed2ac1f2c21d73c012b7a8a1",
+          "candidate": "A",
+          "source_candidate": "B",
+          "step": 4,
+          "annotations": {
+            "title": "Dayline | P03 | Design A | Step 4/16",
+            "action": "TYPE | What good looks like, and what not to do…"
+          }
+        },
+        {
+          "evidence_ref": "e000116",
+          "sha256": "6dacf7d0589cafa68b65201068ed8feff24386f057764ed5740004c84ecd6498",
+          "candidate": "A",
+          "source_candidate": "B",
+          "step": 5,
+          "annotations": {
+            "title": "Dayline | P03 | Design A | Step 5/16",
+            "action": "CLICK | Create draft"
+          }
+        },
+        {
+          "evidence_ref": "e000136",
+          "sha256": "9d5ff0d8331057aee124c4a04c33726b5a67cf14ccc09d61daf0c70c68ae3c97",
+          "candidate": "A",
+          "source_candidate": "B",
+          "step": 6,
+          "annotations": {
+            "title": "Dayline | P03 | Design A | Step 6/16",
+            "action": "CLICK | Authorization"
+          }
+        },
+        {
+          "evidence_ref": "e000162",
+          "sha256": "8d6a9a58a593f10a4c7b160f0f361f381446efda83793072898688ab3366be80",
+          "candidate": "A",
+          "source_candidate": "B",
+          "step": 7,
+          "annotations": {
+            "title": "Dayline | P03 | Design A | Step 7/16",
+            "action": "SCROLL down"
+          }
+        },
+        {
+          "evidence_ref": "e000201",
+          "sha256": "e9d0c6eb4873afc174ac6b7561e512cac5f10cddbc06353e653641ba80d80a3a",
+          "candidate": "A",
+          "source_candidate": "B",
+          "step": 8,
+          "annotations": {
+            "title": "Dayline | P03 | Design A | Step 8/16",
+            "action": "CLICK | Local draft"
+          }
+        },
+        {
+          "evidence_ref": "e000226",
+          "sha256": "d341d9bc1d52aaffd27e4809b57fb2ba7576df3d94bc9efb82f291ab67e6fb79",
+          "candidate": "A",
+          "source_candidate": "B",
+          "step": 9,
+          "annotations": {
+            "title": "Dayline | P03 | Design A | Step 9/16",
+            "action": "ADVANCE to B (study handoff, not a product control)"
+          }
+        },
+        {
+          "evidence_ref": "e000246",
+          "sha256": "4f4c31bdd28710bd8eaea9a071ded19831b92e8b62fa7507db8703a13639f767",
+          "candidate": "B",
+          "source_candidate": "D",
+          "step": 10,
+          "annotations": {
+            "title": "Dayline | P03 | Design B | Step 10/16",
+            "action": "CLICK | Clarification"
+          }
+        },
+        {
+          "evidence_ref": "e000265",
+          "sha256": "24eeaaeaf61490dd77894d70e0800f096b0ed5a34c2fbc1c8db9faa59da51bad",
+          "candidate": "B",
+          "source_candidate": "D",
+          "step": 11,
+          "annotations": {
+            "title": "Dayline | P03 | Design B | Step 11/16",
+            "action": "CLICK | Confirm scope"
+          }
+        },
+        {
+          "evidence_ref": "e000286",
+          "sha256": "06fd11134a764a1756864159affd5204cd7c97eb37929d350c28eee66244ca3f",
+          "candidate": "B",
+          "source_candidate": "D",
+          "step": 12,
+          "annotations": {
+            "title": "Dayline | P03 | Design B | Step 12/16",
+            "action": "CLICK | Acceptance"
+          }
+        },
+        {
+          "evidence_ref": "e000306",
+          "sha256": "ac275b32e3083be0829839bc92e22b84d21d6f8a6a84b23daaf6495550509933",
+          "candidate": "B",
+          "source_candidate": "D",
+          "step": 13,
+          "annotations": {
+            "title": "Dayline | P03 | Design B | Step 13/16",
+            "action": "SCROLL down"
+          }
+        },
+        {
+          "evidence_ref": "e000329",
+          "sha256": "9b691d8124a99faeed6b61180d9f56101ca6918db7bdbccfaf8eb75690af83ac",
+          "candidate": "B",
+          "source_candidate": "D",
+          "step": 14,
+          "annotations": {
+            "title": "Dayline | P03 | Design B | Step 14/16",
+            "action": "SCROLL down"
+          }
+        },
+        {
+          "evidence_ref": "e000349",
+          "sha256": "28a248787a692e23c8e879728943674df66c7b20983016f81be74d4e5b17cfa0",
+          "candidate": "B",
+          "source_candidate": "D",
+          "step": 15,
+          "annotations": {
+            "title": "Dayline | P03 | Design B | Step 15/16",
+            "action": "CLICK | Accept v3"
+          }
+        },
+        {
+          "evidence_ref": "e000369",
+          "sha256": "37940307db6e6086e90bcbfc0401747d86a7ed545aec0bf1828136f540ab0d90",
+          "candidate": "B",
+          "source_candidate": "D",
+          "step": 16,
+          "annotations": {
+            "title": "Dayline | P03 | Design B | Step 16/16",
+            "action": "STOP (study control)"
+          }
+        }
+      ],
+      "source_gif_sha256": "b876b43eee888014db497e40d8661adb29708e534b33d5b3dc67181128b37e55"
+    },
+    {
+      "alias": "P04",
+      "steps": 19,
+      "preference": "Design B",
+      "gif": "journeys/p04-paired.gif",
+      "frames": 19,
+      "size": [
+        960,
+        693
+      ],
+      "duration_ms": 40000,
+      "source_frames": [
+        {
+          "evidence_ref": "e000018",
+          "sha256": "064e9de8446c8c6df664391190222bcb367096fc0ab72658054fa6d3b320ef37",
+          "candidate": "A",
+          "source_candidate": "B",
+          "step": 1,
+          "annotations": {
+            "title": "Dayline | P04 | Design A | Step 1/19",
+            "action": "CLICK | New task"
+          }
+        },
+        {
+          "evidence_ref": "e000033",
+          "sha256": "51287f3034f8d2361bcc0fff16f5ff81e0394ef49d36c6b8708aad73f9271d6b",
+          "candidate": "A",
+          "source_candidate": "B",
+          "step": 2,
+          "annotations": {
+            "title": "Dayline | P04 | Design A | Step 2/19",
+            "action": "TYPE | e.g. Prepare release notes"
+          }
+        },
+        {
+          "evidence_ref": "e000056",
+          "sha256": "a711e5613e4ad09f28ff8ac486a8188c6a3cae7100e8dffe4263ec782e216ca2",
+          "candidate": "A",
+          "source_candidate": "B",
+          "step": 3,
+          "annotations": {
+            "title": "Dayline | P04 | Design A | Step 3/19",
+            "action": "TYPE | What good looks like, and what not to do…"
+          }
+        },
+        {
+          "evidence_ref": "e000076",
+          "sha256": "bfcbf40065313eb69b320fd0c53b4cbda326a9f642de46536f7c95e5f0b848d1",
+          "candidate": "A",
+          "source_candidate": "B",
+          "step": 4,
+          "annotations": {
+            "title": "Dayline | P04 | Design A | Step 4/19",
+            "action": "CLICK | Create draft"
+          }
+        },
+        {
+          "evidence_ref": "e000111",
+          "sha256": "d9bb6b866656ccb6900333fa0fa15d53c0a64ced5dbe3de1ab264dcc96e4e079",
+          "candidate": "A",
+          "source_candidate": "B",
+          "step": 5,
+          "annotations": {
+            "title": "Dayline | P04 | Design A | Step 5/19",
+            "action": "CLICK | Authorization"
+          }
+        },
+        {
+          "evidence_ref": "e000124",
+          "sha256": "98d640856c18129dad522567bfc2764e549a0e440d45f3f8655f7783e5a79244",
+          "candidate": "A",
+          "source_candidate": "B",
+          "step": 6,
+          "annotations": {
+            "title": "Dayline | P04 | Design A | Step 6/19",
+            "action": "SCROLL down"
+          }
+        },
+        {
+          "evidence_ref": "e000151",
+          "sha256": "70db4fa633b28436df41a6cce801969c86e6a8886dd3d010db2af2b2f13c315b",
+          "candidate": "A",
+          "source_candidate": "B",
+          "step": 7,
+          "annotations": {
+            "title": "Dayline | P04 | Design A | Step 7/19",
+            "action": "CLICK | Authorize once"
+          }
+        },
+        {
+          "evidence_ref": "e000181",
+          "sha256": "55ce5c8dc43176a796665fa640655cfc437d7abbc8c0a75274b26a3eadd6f4c4",
+          "candidate": "A",
+          "source_candidate": "B",
+          "step": 8,
+          "annotations": {
+            "title": "Dayline | P04 | Design A | Step 8/19",
+            "action": "CLICK | Demo: generate simulated receipt"
+          }
+        },
+        {
+          "evidence_ref": "e000211",
+          "sha256": "a2917e7c942de7e0c650eb72e3ea43823bcfefa059eb39780be77d09f40f0783",
+          "candidate": "A",
+          "source_candidate": "B",
+          "step": 9,
+          "annotations": {
+            "title": "Dayline | P04 | Design A | Step 9/19",
+            "action": "CLICK | Local draft"
+          }
+        },
+        {
+          "evidence_ref": "e000231",
+          "sha256": "aaf5c944a5cdcb27f36c80fdc8bda0fac6ffa3d3d92bb5570e0a63a5ce62e764",
+          "candidate": "A",
+          "source_candidate": "B",
+          "step": 10,
+          "annotations": {
+            "title": "Dayline | P04 | Design A | Step 10/19",
+            "action": "ADVANCE to B (study handoff, not a product control)"
+          }
+        },
+        {
+          "evidence_ref": "e000256",
+          "sha256": "4f4c31bdd28710bd8eaea9a071ded19831b92e8b62fa7507db8703a13639f767",
+          "candidate": "B",
+          "source_candidate": "D",
+          "step": 11,
+          "annotations": {
+            "title": "Dayline | P04 | Design B | Step 11/19",
+            "action": "CLICK | Acceptance"
+          }
+        },
+        {
+          "evidence_ref": "e000281",
+          "sha256": "a0724b0ecceecadb386ab783854c10bbd692a236a9039270a616f529e88e7cf4",
+          "candidate": "B",
+          "source_candidate": "D",
+          "step": 12,
+          "annotations": {
+            "title": "Dayline | P04 | Design B | Step 12/19",
+            "action": "SCROLL down"
+          }
+        },
+        {
+          "evidence_ref": "e000298",
+          "sha256": "b852d13b442f602a59c2344faadb1b0c0d808bd1a700b38cd2a8263c2fe7f5d4",
+          "candidate": "B",
+          "source_candidate": "D",
+          "step": 13,
+          "annotations": {
+            "title": "Dayline | P04 | Design B | Step 13/19",
+            "action": "SCROLL down"
+          }
+        },
+        {
+          "evidence_ref": "e000316",
+          "sha256": "27a10454fe597e98e63f4c7d702eeab607a2ed035d83b1102a94b72bb71994cb",
+          "candidate": "B",
+          "source_candidate": "D",
+          "step": 14,
+          "annotations": {
+            "title": "Dayline | P04 | Design B | Step 14/19",
+            "action": "CLICK | Accept v3"
+          }
+        },
+        {
+          "evidence_ref": "e000334",
+          "sha256": "c98dc8deb70fd13cd30e88c9c2c9f8fc0c9ce666aed2d0d60890d8227c6393d5",
+          "candidate": "B",
+          "source_candidate": "D",
+          "step": 15,
+          "annotations": {
+            "title": "Dayline | P04 | Design B | Step 15/19",
+            "action": "CLICK | Clarification"
+          }
+        },
+        {
+          "evidence_ref": "e000364",
+          "sha256": "4525217a19360a335c9fa3719a1a43657236486a78c3b2bd0f84a55266ddc302",
+          "candidate": "B",
+          "source_candidate": "D",
+          "step": 16,
+          "annotations": {
+            "title": "Dayline | P04 | Design B | Step 16/19",
+            "action": "CLICK | Confirm scope"
+          }
+        },
+        {
+          "evidence_ref": "e000374",
+          "sha256": "4985597bdf03c072aa9d4bca8d64674fe405de870529d05c0f2cd8efa34eb48e",
+          "candidate": "B",
+          "source_candidate": "D",
+          "step": 17,
+          "annotations": {
+            "title": "Dayline | P04 | Design B | Step 17/19",
+            "action": "CLICK | Workstream"
+          }
+        },
+        {
+          "evidence_ref": "e000395",
+          "sha256": "dae872a42bd01ffdafc2294bbf3a6264171760def85f1e0c1dce18b34e57e2c5",
+          "candidate": "B",
+          "source_candidate": "D",
+          "step": 18,
+          "annotations": {
+            "title": "Dayline | P04 | Design B | Step 18/19",
+            "action": "SCROLL down"
+          }
+        },
+        {
+          "evidence_ref": "e000410",
+          "sha256": "4161daffada9b37d0684571d9fce770cbeab30e86bb70d60ce8362914246cab8",
+          "candidate": "B",
+          "source_candidate": "D",
+          "step": 19,
+          "annotations": {
+            "title": "Dayline | P04 | Design B | Step 19/19",
+            "action": "STOP (study control)"
+          }
+        }
+      ],
+      "source_gif_sha256": "6e42b5a9853d1fa6329fb77c7d2f65892faab9252d9f2e7ec6a1953ad92efbb8"
+    },
+    {
+      "alias": "P05",
+      "steps": 15,
+      "preference": "Design A",
+      "gif": "journeys/p05-paired.gif",
+      "frames": 15,
+      "size": [
+        960,
+        693
+      ],
+      "duration_ms": 32000,
+      "source_frames": [
+        {
+          "evidence_ref": "e000026",
+          "sha256": "064e9de8446c8c6df664391190222bcb367096fc0ab72658054fa6d3b320ef37",
+          "candidate": "A",
+          "source_candidate": "B",
+          "step": 1,
+          "annotations": {
+            "title": "Dayline | P05 | Design A | Step 1/15",
+            "action": "CLICK | Authorization"
+          }
+        },
+        {
+          "evidence_ref": "e000071",
+          "sha256": "fdca7964e633807ad76d660b63e531d06e64084a036a69c9bbdf27dd9c03359f",
+          "candidate": "A",
+          "source_candidate": "B",
+          "step": 2,
+          "annotations": {
+            "title": "Dayline | P05 | Design A | Step 2/15",
+            "action": "SCROLL down"
+          }
+        },
+        {
+          "evidence_ref": "e000096",
+          "sha256": "3c79c0d46d1fd63d8536e61341d205b8f4eef4488ecf96765b174433023c249d",
+          "candidate": "A",
+          "source_candidate": "B",
+          "step": 3,
+          "annotations": {
+            "title": "Dayline | P05 | Design A | Step 3/15",
+            "action": "CLICK | Authorize once"
+          }
+        },
+        {
+          "evidence_ref": "e000131",
+          "sha256": "2a0f72dd09b5a552f121709fbd6768eb40de7d29597c7ca79b0fd08f647eec18",
+          "candidate": "A",
+          "source_candidate": "B",
+          "step": 4,
+          "annotations": {
+            "title": "Dayline | P05 | Design A | Step 4/15",
+            "action": "CLICK | Demo: generate simulated receipt"
+          }
+        },
+        {
+          "evidence_ref": "e000156",
+          "sha256": "e6f010494dfc62032ce1c7140e3fd2bb0480ff3aaf6980ff8626ec44fa9dbfb6",
+          "candidate": "A",
+          "source_candidate": "B",
+          "step": 5,
+          "annotations": {
+            "title": "Dayline | P05 | Design A | Step 5/15",
+            "action": "CLICK | New task"
+          }
+        },
+        {
+          "evidence_ref": "e000176",
+          "sha256": "a6fa96040fe5340af38372af719820f8789cd4b5cecd722b1c78f47707f3e2b9",
+          "candidate": "A",
+          "source_candidate": "B",
+          "step": 6,
+          "annotations": {
+            "title": "Dayline | P05 | Design A | Step 6/15",
+            "action": "TYPE | e.g. Prepare release notes"
+          }
+        },
+        {
+          "evidence_ref": "e000198",
+          "sha256": "f9d9dd9d12380405525dcacfcf79c4567a0b66dd316b13125211bd20410035e1",
+          "candidate": "A",
+          "source_candidate": "B",
+          "step": 7,
+          "annotations": {
+            "title": "Dayline | P05 | Design A | Step 7/15",
+            "action": "TYPE | What good looks like, and what not to do…"
+          }
+        },
+        {
+          "evidence_ref": "e000252",
+          "sha256": "376c0a3f443e212d4c81ef069db4d0d7bc874459189594c9d7ef7d6c42b33e30",
+          "candidate": "A",
+          "source_candidate": "B",
+          "step": 8,
+          "annotations": {
+            "title": "Dayline | P05 | Design A | Step 8/15",
+            "action": "SELECT | Forge Local"
+          }
+        },
+        {
+          "evidence_ref": "e000276",
+          "sha256": "e115911009c12dbc075960bd9802b7dbe71ad4ace9deeda51037c81aad85801d",
+          "candidate": "A",
+          "source_candidate": "B",
+          "step": 9,
+          "annotations": {
+            "title": "Dayline | P05 | Design A | Step 9/15",
+            "action": "CLICK | Create draft"
+          }
+        },
+        {
+          "evidence_ref": "e000301",
+          "sha256": "bde38de145b8ca5b91cb16fb6ae27df7f6670239ba416dce068799270e9bcb97",
+          "candidate": "A",
+          "source_candidate": "B",
+          "step": 10,
+          "annotations": {
+            "title": "Dayline | P05 | Design A | Step 10/15",
+            "action": "ADVANCE to B (study handoff, not a product control)"
+          }
+        },
+        {
+          "evidence_ref": "e000321",
+          "sha256": "4f4c31bdd28710bd8eaea9a071ded19831b92e8b62fa7507db8703a13639f767",
+          "candidate": "B",
+          "source_candidate": "D",
+          "step": 11,
+          "annotations": {
+            "title": "Dayline | P05 | Design B | Step 11/15",
+            "action": "CLICK | Acceptance"
+          }
+        },
+        {
+          "evidence_ref": "e000344",
+          "sha256": "a0724b0ecceecadb386ab783854c10bbd692a236a9039270a616f529e88e7cf4",
+          "candidate": "B",
+          "source_candidate": "D",
+          "step": 12,
+          "annotations": {
+            "title": "Dayline | P05 | Design B | Step 12/15",
+            "action": "SCROLL down"
+          }
+        },
+        {
+          "evidence_ref": "e000359",
+          "sha256": "b852d13b442f602a59c2344faadb1b0c0d808bd1a700b38cd2a8263c2fe7f5d4",
+          "candidate": "B",
+          "source_candidate": "D",
+          "step": 13,
+          "annotations": {
+            "title": "Dayline | P05 | Design B | Step 13/15",
+            "action": "SCROLL down"
+          }
+        },
+        {
+          "evidence_ref": "e000379",
+          "sha256": "27a10454fe597e98e63f4c7d702eeab607a2ed035d83b1102a94b72bb71994cb",
+          "candidate": "B",
+          "source_candidate": "D",
+          "step": 14,
+          "annotations": {
+            "title": "Dayline | P05 | Design B | Step 14/15",
+            "action": "CLICK | Accept v3"
+          }
+        },
+        {
+          "evidence_ref": "e000405",
+          "sha256": "c98dc8deb70fd13cd30e88c9c2c9f8fc0c9ce666aed2d0d60890d8227c6393d5",
+          "candidate": "B",
+          "source_candidate": "D",
+          "step": 15,
+          "annotations": {
+            "title": "Dayline | P05 | Design B | Step 15/15",
+            "action": "STOP (study control)"
+          }
+        }
+      ],
+      "source_gif_sha256": "17d770f6e7da21bcff18c47c735b1f0784461337518bb1a729bdb60b6b06a281"
+    },
+    {
+      "alias": "P06",
+      "steps": 13,
+      "preference": "Design A",
+      "gif": "journeys/p06-paired.gif",
+      "frames": 13,
+      "size": [
+        960,
+        693
+      ],
+      "duration_ms": 28000,
+      "source_frames": [
+        {
+          "evidence_ref": "e000463",
+          "sha256": "064e9de8446c8c6df664391190222bcb367096fc0ab72658054fa6d3b320ef37",
+          "candidate": "A",
+          "source_candidate": "B",
+          "step": 1,
+          "annotations": {
+            "title": "Dayline | P06 | Design A | Step 1/13",
+            "action": "CLICK | Authorization"
+          }
+        },
+        {
+          "evidence_ref": "e000468",
+          "sha256": "40e46f579ce325e02673685d87927ded71da1ceebcc22cd6ebfc3348433e68e3",
+          "candidate": "A",
+          "source_candidate": "B",
+          "step": 2,
+          "annotations": {
+            "title": "Dayline | P06 | Design A | Step 2/13",
+            "action": "SCROLL down"
+          }
+        },
+        {
+          "evidence_ref": "e000481",
+          "sha256": "3c79c0d46d1fd63d8536e61341d205b8f4eef4488ecf96765b174433023c249d",
+          "candidate": "A",
+          "source_candidate": "B",
+          "step": 3,
+          "annotations": {
+            "title": "Dayline | P06 | Design A | Step 3/13",
+            "action": "CLICK | Authorize once"
+          }
+        },
+        {
+          "evidence_ref": "e000497",
+          "sha256": "2a0f72dd09b5a552f121709fbd6768eb40de7d29597c7ca79b0fd08f647eec18",
+          "candidate": "A",
+          "source_candidate": "B",
+          "step": 4,
+          "annotations": {
+            "title": "Dayline | P06 | Design A | Step 4/13",
+            "action": "CLICK | Demo: generate simulated receipt"
+          }
+        },
+        {
+          "evidence_ref": "e000507",
+          "sha256": "fcd21d4c586286c66b8df94faeb7f2b8277a586d857fa76cd90e92237bb6ca88",
+          "candidate": "A",
+          "source_candidate": "B",
+          "step": 5,
+          "annotations": {
+            "title": "Dayline | P06 | Design A | Step 5/13",
+            "action": "ADVANCE to B (study handoff, not a product control)"
+          }
+        },
+        {
+          "evidence_ref": "e000512",
+          "sha256": "4f4c31bdd28710bd8eaea9a071ded19831b92e8b62fa7507db8703a13639f767",
+          "candidate": "B",
+          "source_candidate": "D",
+          "step": 6,
+          "annotations": {
+            "title": "Dayline | P06 | Design B | Step 6/13",
+            "action": "CLICK | Clarification"
+          }
+        },
+        {
+          "evidence_ref": "e000528",
+          "sha256": "24eeaaeaf61490dd77894d70e0800f096b0ed5a34c2fbc1c8db9faa59da51bad",
+          "candidate": "B",
+          "source_candidate": "D",
+          "step": 7,
+          "annotations": {
+            "title": "Dayline | P06 | Design B | Step 7/13",
+            "action": "CLICK | Confirm scope"
+          }
+        },
+        {
+          "evidence_ref": "e000536",
+          "sha256": "06fd11134a764a1756864159affd5204cd7c97eb37929d350c28eee66244ca3f",
+          "candidate": "B",
+          "source_candidate": "D",
+          "step": 8,
+          "annotations": {
+            "title": "Dayline | P06 | Design B | Step 8/13",
+            "action": "CLICK | New task"
+          }
+        },
+        {
+          "evidence_ref": "e000549",
+          "sha256": "c9bc5d218047d457f374f1526643d1aefd5db608a03be8eb0d973c6dd812014a",
+          "candidate": "B",
+          "source_candidate": "D",
+          "step": 9,
+          "annotations": {
+            "title": "Dayline | P06 | Design B | Step 9/13",
+            "action": "TYPE | e.g. Prepare release notes"
+          }
+        },
+        {
+          "evidence_ref": "e000568",
+          "sha256": "0c3f89c6e4ab7a040dc1f9af580059e21190dfcd4a122d5535a30195181a8a7c",
+          "candidate": "B",
+          "source_candidate": "D",
+          "step": 10,
+          "annotations": {
+            "title": "Dayline | P06 | Design B | Step 10/13",
+            "action": "TYPE | What good looks like, and what not to do…"
+          }
+        },
+        {
+          "evidence_ref": "e000587",
+          "sha256": "55fcb0026bea0fb329a15b7ac2647f85d33f8fe54cc348f94536640aabfbd5f0",
+          "candidate": "B",
+          "source_candidate": "D",
+          "step": 11,
+          "annotations": {
+            "title": "Dayline | P06 | Design B | Step 11/13",
+            "action": "SELECT | Forge Local"
+          }
+        },
+        {
+          "evidence_ref": "e000610",
+          "sha256": "cdf2d05a09b3542d4b2df763a561cac11929416969507edfff6ed4a47311494c",
+          "candidate": "B",
+          "source_candidate": "D",
+          "step": 12,
+          "annotations": {
+            "title": "Dayline | P06 | Design B | Step 12/13",
+            "action": "CLICK | Create draft"
+          }
+        },
+        {
+          "evidence_ref": "e000635",
+          "sha256": "8f95b38e38f3bcc99d22201f13e75c66634414cae9451f9cd34964d32ea2afa6",
+          "candidate": "B",
+          "source_candidate": "D",
+          "step": 13,
+          "annotations": {
+            "title": "Dayline | P06 | Design B | Step 13/13",
+            "action": "STOP (study control)"
+          }
+        }
+      ],
+      "source_gif_sha256": "563c57b6369f777f1b027174fafbe598c2b27ce0a0135d81d6024c1477abb30f"
+    },
+    {
+      "alias": "P07",
+      "steps": 13,
+      "preference": "Design A",
+      "gif": "journeys/p07-paired.gif",
+      "frames": 13,
+      "size": [
+        960,
+        693
+      ],
+      "duration_ms": 28000,
+      "source_frames": [
+        {
+          "evidence_ref": "e000540",
+          "sha256": "064e9de8446c8c6df664391190222bcb367096fc0ab72658054fa6d3b320ef37",
+          "candidate": "A",
+          "source_candidate": "B",
+          "step": 1,
+          "annotations": {
+            "title": "Dayline | P07 | Design A | Step 1/13",
+            "action": "CLICK | Authorization"
+          }
+        },
+        {
+          "evidence_ref": "e000560",
+          "sha256": "dfba08d3c5ec62848946c414a311a13d611ca467cddd9e10e804c0cad6c133b1",
+          "candidate": "A",
+          "source_candidate": "B",
+          "step": 2,
+          "annotations": {
+            "title": "Dayline | P07 | Design A | Step 2/13",
+            "action": "SCROLL down"
+          }
+        },
+        {
+          "evidence_ref": "e000573",
+          "sha256": "3c79c0d46d1fd63d8536e61341d205b8f4eef4488ecf96765b174433023c249d",
+          "candidate": "A",
+          "source_candidate": "B",
+          "step": 3,
+          "annotations": {
+            "title": "Dayline | P07 | Design A | Step 3/13",
+            "action": "CLICK | Authorize once"
+          }
+        },
+        {
+          "evidence_ref": "e000592",
+          "sha256": "2a0f72dd09b5a552f121709fbd6768eb40de7d29597c7ca79b0fd08f647eec18",
+          "candidate": "A",
+          "source_candidate": "B",
+          "step": 4,
+          "annotations": {
+            "title": "Dayline | P07 | Design A | Step 4/13",
+            "action": "CLICK | Demo: generate simulated receipt"
+          }
+        },
+        {
+          "evidence_ref": "e000615",
+          "sha256": "b8e09b03e712c5f4fb07cf9089e14a91886a2a24c0c08a27082225430befc665",
+          "candidate": "A",
+          "source_candidate": "B",
+          "step": 5,
+          "annotations": {
+            "title": "Dayline | P07 | Design A | Step 5/13",
+            "action": "CLICK | Acceptance"
+          }
+        },
+        {
+          "evidence_ref": "e000630",
+          "sha256": "5691177f9e60ac0565e7414bd03d6f49197ef20060af62922c29e1616392dd6f",
+          "candidate": "A",
+          "source_candidate": "B",
+          "step": 6,
+          "annotations": {
+            "title": "Dayline | P07 | Design A | Step 6/13",
+            "action": "SCROLL down"
+          }
+        },
+        {
+          "evidence_ref": "e000650",
+          "sha256": "765f11ed008c4fbdf2214ca0e2fc043274aa1144836778a76d3a203ac1feeca6",
+          "candidate": "A",
+          "source_candidate": "B",
+          "step": 7,
+          "annotations": {
+            "title": "Dayline | P07 | Design A | Step 7/13",
+            "action": "CLICK | Accept v3"
+          }
+        },
+        {
+          "evidence_ref": "e000663",
+          "sha256": "152ed2747a73fc10d3683cbf5e4e9d1fa8f7d5ef1bb5132b1d39ca7b1ef04c9d",
+          "candidate": "A",
+          "source_candidate": "B",
+          "step": 8,
+          "annotations": {
+            "title": "Dayline | P07 | Design A | Step 8/13",
+            "action": "ADVANCE to B (study handoff, not a product control)"
+          }
+        },
+        {
+          "evidence_ref": "e000686",
+          "sha256": "4f4c31bdd28710bd8eaea9a071ded19831b92e8b62fa7507db8703a13639f767",
+          "candidate": "B",
+          "source_candidate": "D",
+          "step": 9,
+          "annotations": {
+            "title": "Dayline | P07 | Design B | Step 9/13",
+            "action": "CLICK | New task"
+          }
+        },
+        {
+          "evidence_ref": "e000701",
+          "sha256": "95bbdd0c5bbba10b3cbc0e4a7e10682c731e98ff4fa74db9cc5a414c5254c7de",
+          "candidate": "B",
+          "source_candidate": "D",
+          "step": 10,
+          "annotations": {
+            "title": "Dayline | P07 | Design B | Step 10/13",
+            "action": "TYPE | e.g. Prepare release notes"
+          }
+        },
+        {
+          "evidence_ref": "e000728",
+          "sha256": "a128835cf521f764e4f4671ec895b244de34e3cc18cc415d64a6b1bfaa836a66",
+          "candidate": "B",
+          "source_candidate": "D",
+          "step": 11,
+          "annotations": {
+            "title": "Dayline | P07 | Design B | Step 11/13",
+            "action": "TYPE | What good looks like, and what not to do…"
+          }
+        },
+        {
+          "evidence_ref": "e000752",
+          "sha256": "097c1d0499c7750afe92cf42f0823915bb9cb0a2c8d86f8b784796c4a31efa93",
+          "candidate": "B",
+          "source_candidate": "D",
+          "step": 12,
+          "annotations": {
+            "title": "Dayline | P07 | Design B | Step 12/13",
+            "action": "CLICK | Create draft"
+          }
+        },
+        {
+          "evidence_ref": "e000777",
+          "sha256": "652c8923d549419a0006688f6ae1d1cc28d303fca0f9876aa752e7c017b93896",
+          "candidate": "B",
+          "source_candidate": "D",
+          "step": 13,
+          "annotations": {
+            "title": "Dayline | P07 | Design B | Step 13/13",
+            "action": "STOP (study control)"
+          }
+        }
+      ],
+      "source_gif_sha256": "ea955b7931efd62548cae6a3574f9dbd325d73f8ffc5c1b950dac973c75e03e6"
+    },
+    {
+      "alias": "P08",
+      "steps": 14,
+      "preference": "Design A",
+      "gif": "journeys/p08-paired.gif",
+      "frames": 14,
+      "size": [
+        960,
+        693
+      ],
+      "duration_ms": 30000,
+      "source_frames": [
+        {
+          "evidence_ref": "e000544",
+          "sha256": "064e9de8446c8c6df664391190222bcb367096fc0ab72658054fa6d3b320ef37",
+          "candidate": "A",
+          "source_candidate": "B",
+          "step": 1,
+          "annotations": {
+            "title": "Dayline | P08 | Design A | Step 1/14",
+            "action": "CLICK | New task"
+          }
+        },
+        {
+          "evidence_ref": "e000563",
+          "sha256": "51287f3034f8d2361bcc0fff16f5ff81e0394ef49d36c6b8708aad73f9271d6b",
+          "candidate": "A",
+          "source_candidate": "B",
+          "step": 2,
+          "annotations": {
+            "title": "Dayline | P08 | Design A | Step 2/14",
+            "action": "TYPE | e.g. Prepare release notes"
+          }
+        },
+        {
+          "evidence_ref": "e000578",
+          "sha256": "0558078b7502ab5f592f3d7581d0f51b57828caf204970bd7135f1e1df1d1799",
+          "candidate": "A",
+          "source_candidate": "B",
+          "step": 3,
+          "annotations": {
+            "title": "Dayline | P08 | Design A | Step 3/14",
+            "action": "TYPE | What good looks like, and what not to do…"
+          }
+        },
+        {
+          "evidence_ref": "e000605",
+          "sha256": "4bfb674d332c710fe8c21a98ec7387365920542aede3561475ff85fe07a37f1b",
+          "candidate": "A",
+          "source_candidate": "B",
+          "step": 4,
+          "annotations": {
+            "title": "Dayline | P08 | Design A | Step 4/14",
+            "action": "CLICK | Create draft"
+          }
+        },
+        {
+          "evidence_ref": "e000625",
+          "sha256": "1bc6cc5c451bbda4d9cd84be84b4e7c79be0a39c2a3fec33d542de990bc97c48",
+          "candidate": "A",
+          "source_candidate": "B",
+          "step": 5,
+          "annotations": {
+            "title": "Dayline | P08 | Design A | Step 5/14",
+            "action": "CLICK | Authorization"
+          }
+        },
+        {
+          "evidence_ref": "e000640",
+          "sha256": "42e3ffc2d9e60dab1626262ab99d1edf9d2acef9808ed59dfb842d19aed242ba",
+          "candidate": "A",
+          "source_candidate": "B",
+          "step": 6,
+          "annotations": {
+            "title": "Dayline | P08 | Design A | Step 6/14",
+            "action": "SCROLL down"
+          }
+        },
+        {
+          "evidence_ref": "e000658",
+          "sha256": "3e908c92279e59b12020130df099d0188d2ccaed19cb7ae5c97f349e3f1bf769",
+          "candidate": "A",
+          "source_candidate": "B",
+          "step": 7,
+          "annotations": {
+            "title": "Dayline | P08 | Design A | Step 7/14",
+            "action": "CLICK | Authorize once"
+          }
+        },
+        {
+          "evidence_ref": "e000671",
+          "sha256": "5e68d0e94a409530881e37cbf738eaec958410381adacf6acf924a7bf45a75a3",
+          "candidate": "A",
+          "source_candidate": "B",
+          "step": 8,
+          "annotations": {
+            "title": "Dayline | P08 | Design A | Step 8/14",
+            "action": "CLICK | Demo: generate simulated receipt"
+          }
+        },
+        {
+          "evidence_ref": "e000682",
+          "sha256": "e245eedf6ea9f5bb563ecfe3a75127bc5642edddb5be8cfbf1b060abcd612926",
+          "candidate": "A",
+          "source_candidate": "B",
+          "step": 9,
+          "annotations": {
+            "title": "Dayline | P08 | Design A | Step 9/14",
+            "action": "ADVANCE to B (study handoff, not a product control)"
+          }
+        },
+        {
+          "evidence_ref": "e000696",
+          "sha256": "4f4c31bdd28710bd8eaea9a071ded19831b92e8b62fa7507db8703a13639f767",
+          "candidate": "B",
+          "source_candidate": "D",
+          "step": 10,
+          "annotations": {
+            "title": "Dayline | P08 | Design B | Step 10/14",
+            "action": "CLICK | Acceptance"
+          }
+        },
+        {
+          "evidence_ref": "e000714",
+          "sha256": "a0724b0ecceecadb386ab783854c10bbd692a236a9039270a616f529e88e7cf4",
+          "candidate": "B",
+          "source_candidate": "D",
+          "step": 11,
+          "annotations": {
+            "title": "Dayline | P08 | Design B | Step 11/14",
+            "action": "SCROLL down"
+          }
+        },
+        {
+          "evidence_ref": "e000733",
+          "sha256": "b852d13b442f602a59c2344faadb1b0c0d808bd1a700b38cd2a8263c2fe7f5d4",
+          "candidate": "B",
+          "source_candidate": "D",
+          "step": 12,
+          "annotations": {
+            "title": "Dayline | P08 | Design B | Step 12/14",
+            "action": "SCROLL down"
+          }
+        },
+        {
+          "evidence_ref": "e000743",
+          "sha256": "27a10454fe597e98e63f4c7d702eeab607a2ed035d83b1102a94b72bb71994cb",
+          "candidate": "B",
+          "source_candidate": "D",
+          "step": 13,
+          "annotations": {
+            "title": "Dayline | P08 | Design B | Step 13/14",
+            "action": "CLICK | Accept v3"
+          }
+        },
+        {
+          "evidence_ref": "e000768",
+          "sha256": "c98dc8deb70fd13cd30e88c9c2c9f8fc0c9ce666aed2d0d60890d8227c6393d5",
+          "candidate": "B",
+          "source_candidate": "D",
+          "step": 14,
+          "annotations": {
+            "title": "Dayline | P08 | Design B | Step 14/14",
+            "action": "STOP (study control)"
+          }
+        }
+      ],
+      "source_gif_sha256": "7e58f35ceef821b09c3026cb9fd801385131855c604e7e891e260f6df59b8cf7"
+    },
+    {
+      "alias": "P09",
+      "steps": 13,
+      "preference": "Design B",
+      "gif": "journeys/p09-paired.gif",
+      "frames": 13,
+      "size": [
+        960,
+        693
+      ],
+      "duration_ms": 28000,
+      "source_frames": [
+        {
+          "evidence_ref": "e000582",
+          "sha256": "064e9de8446c8c6df664391190222bcb367096fc0ab72658054fa6d3b320ef37",
+          "candidate": "A",
+          "source_candidate": "B",
+          "step": 1,
+          "annotations": {
+            "title": "Dayline | P09 | Design A | Step 1/13",
+            "action": "CLICK | Authorization"
+          }
+        },
+        {
+          "evidence_ref": "e000600",
+          "sha256": "40e46f579ce325e02673685d87927ded71da1ceebcc22cd6ebfc3348433e68e3",
+          "candidate": "A",
+          "source_candidate": "B",
+          "step": 2,
+          "annotations": {
+            "title": "Dayline | P09 | Design A | Step 2/13",
+            "action": "SCROLL down"
+          }
+        },
+        {
+          "evidence_ref": "e000620",
+          "sha256": "3c79c0d46d1fd63d8536e61341d205b8f4eef4488ecf96765b174433023c249d",
+          "candidate": "A",
+          "source_candidate": "B",
+          "step": 3,
+          "annotations": {
+            "title": "Dayline | P09 | Design A | Step 3/13",
+            "action": "CLICK | Decline"
+          }
+        },
+        {
+          "evidence_ref": "e000645",
+          "sha256": "b865cd65c94f54499c2e0184b62736cee7cc79b3d88f2061861162a0eea60ef0",
+          "candidate": "A",
+          "source_candidate": "B",
+          "step": 4,
+          "annotations": {
+            "title": "Dayline | P09 | Design A | Step 4/13",
+            "action": "CLICK | Workstream"
+          }
+        },
+        {
+          "evidence_ref": "e000676",
+          "sha256": "448dc5d3a7c482550772f9733aa8b317e4a40643f29b73e4ee608f2f4392ac37",
+          "candidate": "A",
+          "source_candidate": "B",
+          "step": 5,
+          "annotations": {
+            "title": "Dayline | P09 | Design A | Step 5/13",
+            "action": "SCROLL down"
+          }
+        },
+        {
+          "evidence_ref": "e000691",
+          "sha256": "1b5200e4c98ab2b66f2a0e8b057ffd7f0b966a29d47e1240b51b9a1ddad6a180",
+          "candidate": "A",
+          "source_candidate": "B",
+          "step": 6,
+          "annotations": {
+            "title": "Dayline | P09 | Design A | Step 6/13",
+            "action": "TYPE | Add direction or leave a note…"
+          }
+        },
+        {
+          "evidence_ref": "e000706",
+          "sha256": "ab809852a6018c6e1b910db902262ec7dc0654b0c8ddd2a878822b68b0934359",
+          "candidate": "A",
+          "source_candidate": "B",
+          "step": 7,
+          "annotations": {
+            "title": "Dayline | P09 | Design A | Step 7/13",
+            "action": "CLICK | Save note"
+          }
+        },
+        {
+          "evidence_ref": "e000725",
+          "sha256": "e793a162f0b2024cd31b5a819a278821e7eed22f227473d779c73f4363552b81",
+          "candidate": "A",
+          "source_candidate": "B",
+          "step": 8,
+          "annotations": {
+            "title": "Dayline | P09 | Design A | Step 8/13",
+            "action": "ADVANCE to B (study handoff, not a product control)"
+          }
+        },
+        {
+          "evidence_ref": "e000738",
+          "sha256": "4f4c31bdd28710bd8eaea9a071ded19831b92e8b62fa7507db8703a13639f767",
+          "candidate": "B",
+          "source_candidate": "D",
+          "step": 9,
+          "annotations": {
+            "title": "Dayline | P09 | Design B | Step 9/13",
+            "action": "CLICK | Acceptance"
+          }
+        },
+        {
+          "evidence_ref": "e000757",
+          "sha256": "a44797134a579ab71560d63ef824c6261f4a6ad42cdc238a97ccc88a016c1a6e",
+          "candidate": "B",
+          "source_candidate": "D",
+          "step": 10,
+          "annotations": {
+            "title": "Dayline | P09 | Design B | Step 10/13",
+            "action": "SCROLL down"
+          }
+        },
+        {
+          "evidence_ref": "e000772",
+          "sha256": "b852d13b442f602a59c2344faadb1b0c0d808bd1a700b38cd2a8263c2fe7f5d4",
+          "candidate": "B",
+          "source_candidate": "D",
+          "step": 11,
+          "annotations": {
+            "title": "Dayline | P09 | Design B | Step 11/13",
+            "action": "SCROLL down"
+          }
+        },
+        {
+          "evidence_ref": "e000790",
+          "sha256": "27a10454fe597e98e63f4c7d702eeab607a2ed035d83b1102a94b72bb71994cb",
+          "candidate": "B",
+          "source_candidate": "D",
+          "step": 12,
+          "annotations": {
+            "title": "Dayline | P09 | Design B | Step 12/13",
+            "action": "CLICK | Accept v3"
+          }
+        },
+        {
+          "evidence_ref": "e000806",
+          "sha256": "c98dc8deb70fd13cd30e88c9c2c9f8fc0c9ce666aed2d0d60890d8227c6393d5",
+          "candidate": "B",
+          "source_candidate": "D",
+          "step": 13,
+          "annotations": {
+            "title": "Dayline | P09 | Design B | Step 13/13",
+            "action": "STOP (study control)"
+          }
+        }
+      ],
+      "source_gif_sha256": "604d591e658e509a457562e943c507efaed83ad19852ea0402ad08419347b1e7"
+    },
+    {
+      "alias": "P10",
+      "steps": 23,
+      "preference": "Design A",
+      "gif": "journeys/p10-paired.gif",
+      "frames": 23,
+      "size": [
+        960,
+        693
+      ],
+      "duration_ms": 48000,
+      "source_frames": [
+        {
+          "evidence_ref": "e000747",
+          "sha256": "064e9de8446c8c6df664391190222bcb367096fc0ab72658054fa6d3b320ef37",
+          "candidate": "A",
+          "source_candidate": "B",
+          "step": 1,
+          "annotations": {
+            "title": "Dayline | P10 | Design A | Step 1/23",
+            "action": "CLICK | All"
+          }
+        },
+        {
+          "evidence_ref": "e000762",
+          "sha256": "6e6c138d09c3aa6c6605a666b62ed92495683a771d361aa7e1b4fb04893a2928",
+          "candidate": "A",
+          "source_candidate": "B",
+          "step": 2,
+          "annotations": {
+            "title": "Dayline | P10 | Design A | Step 2/23",
+            "action": "CLICK | New task"
+          }
+        },
+        {
+          "evidence_ref": "e000782",
+          "sha256": "fad063bc215d33ae30dd2ec4ade74c41ee67f883978f7c6604332902eeba3c33",
+          "candidate": "A",
+          "source_candidate": "B",
+          "step": 3,
+          "annotations": {
+            "title": "Dayline | P10 | Design A | Step 3/23",
+            "action": "TYPE | e.g. Prepare release notes"
+          }
+        },
+        {
+          "evidence_ref": "e000801",
+          "sha256": "838b53e85e8493b2121a3a72746ae5f92ad5f22587bafafb091edbcc1df267c4",
+          "candidate": "A",
+          "source_candidate": "B",
+          "step": 4,
+          "annotations": {
+            "title": "Dayline | P10 | Design A | Step 4/23",
+            "action": "TYPE | What good looks like, and what not to do…"
+          }
+        },
+        {
+          "evidence_ref": "e000811",
+          "sha256": "998a4954a633b182b86028e55f770bd0f8dcb6cab3c6a974ff84e241023e3946",
+          "candidate": "A",
+          "source_candidate": "B",
+          "step": 5,
+          "annotations": {
+            "title": "Dayline | P10 | Design A | Step 5/23",
+            "action": "SELECT | Forge Local"
+          }
+        },
+        {
+          "evidence_ref": "e000822",
+          "sha256": "be0733bf46c06d9e1387d9e4e5c564793f5b796d87c95ea2885d2191d92f4c7b",
+          "candidate": "A",
+          "source_candidate": "B",
+          "step": 6,
+          "annotations": {
+            "title": "Dayline | P10 | Design A | Step 6/23",
+            "action": "CLICK | Create draft"
+          }
+        },
+        {
+          "evidence_ref": "e000828",
+          "sha256": "5ddc92312e0ff5fa8b2e3105c07e8236c8faf8a150f1f550a7c439bc7bd94a87",
+          "candidate": "A",
+          "source_candidate": "B",
+          "step": 7,
+          "annotations": {
+            "title": "Dayline | P10 | Design A | Step 7/23",
+            "action": "CLICK | Acceptance"
+          }
+        },
+        {
+          "evidence_ref": "e000836",
+          "sha256": "501b74ff802d4d5c0812c75ba655b118d3ccbd924b0716ad99e8539dd94a85af",
+          "candidate": "A",
+          "source_candidate": "B",
+          "step": 8,
+          "annotations": {
+            "title": "Dayline | P10 | Design A | Step 8/23",
+            "action": "SCROLL down"
+          }
+        },
+        {
+          "evidence_ref": "e000848",
+          "sha256": "ea0902f28ab23821ded3b2388a90f331a5005e3c2ff400b757672a761835092e",
+          "candidate": "A",
+          "source_candidate": "B",
+          "step": 9,
+          "annotations": {
+            "title": "Dayline | P10 | Design A | Step 9/23",
+            "action": "CLICK | Sources & scope"
+          }
+        },
+        {
+          "evidence_ref": "e000861",
+          "sha256": "30ce927aed0c2878d370d4f0d8f10e2c3826180c56e526cf9844a88c01289283",
+          "candidate": "A",
+          "source_candidate": "B",
+          "step": 10,
+          "annotations": {
+            "title": "Dayline | P10 | Design A | Step 10/23",
+            "action": "CLICK | Review result"
+          }
+        },
+        {
+          "evidence_ref": "e000873",
+          "sha256": "b01dd5c3c5a6490dd5955bd90c9163df60b4d967c55460fe844a91c79d65ee93",
+          "candidate": "A",
+          "source_candidate": "B",
+          "step": 11,
+          "annotations": {
+            "title": "Dayline | P10 | Design A | Step 11/23",
+            "action": "CLICK | Request changes"
+          }
+        },
+        {
+          "evidence_ref": "e000887",
+          "sha256": "11ea931ae4469372491ee71d548893586ef4ac62ded0d174117ab7bf3e207eaf",
+          "candidate": "A",
+          "source_candidate": "B",
+          "step": 12,
+          "annotations": {
+            "title": "Dayline | P10 | Design A | Step 12/23",
+            "action": "TYPE | Name the section, issue, or acceptance criteria…"
+          }
+        },
+        {
+          "evidence_ref": "e000905",
+          "sha256": "22b5c00818b23a25e7e43e31c10b88c6faa5912813f6d7ba4567ebc04c8692f3",
+          "candidate": "A",
+          "source_candidate": "B",
+          "step": 13,
+          "annotations": {
+            "title": "Dayline | P10 | Design A | Step 13/23",
+            "action": "CLICK | Send revision request"
+          }
+        },
+        {
+          "evidence_ref": "e000915",
+          "sha256": "76c0ec3cd3ff5d3da236650c3b45a834dfbd8ddb1ca2aa3cfb984f022d67b770",
+          "candidate": "A",
+          "source_candidate": "B",
+          "step": 14,
+          "annotations": {
+            "title": "Dayline | P10 | Design A | Step 14/23",
+            "action": "CLICK | Demo: return a new revision"
+          }
+        },
+        {
+          "evidence_ref": "e000929",
+          "sha256": "6404f859ebbe0b1801b27e7fd8312b59577348913fae5beee512e52d0c8ea937",
+          "candidate": "A",
+          "source_candidate": "B",
+          "step": 15,
+          "annotations": {
+            "title": "Dayline | P10 | Design A | Step 15/23",
+            "action": "SCROLL down"
+          }
+        },
+        {
+          "evidence_ref": "e000947",
+          "sha256": "44eda21a966f1110dc9fc8086b407c5d75cd752829ad3989396781332c040283",
+          "candidate": "A",
+          "source_candidate": "B",
+          "step": 16,
+          "annotations": {
+            "title": "Dayline | P10 | Design A | Step 16/23",
+            "action": "ADVANCE to B (study handoff, not a product control)"
+          }
+        },
+        {
+          "evidence_ref": "e000966",
+          "sha256": "4f4c31bdd28710bd8eaea9a071ded19831b92e8b62fa7507db8703a13639f767",
+          "candidate": "B",
+          "source_candidate": "D",
+          "step": 17,
+          "annotations": {
+            "title": "Dayline | P10 | Design B | Step 17/23",
+            "action": "CLICK | Authorization"
+          }
+        },
+        {
+          "evidence_ref": "e000990",
+          "sha256": "78ea044e47dbcd5cec2bd98aada29267c26c8926424735e2d16b91d1fc64430e",
+          "candidate": "B",
+          "source_candidate": "D",
+          "step": 18,
+          "annotations": {
+            "title": "Dayline | P10 | Design B | Step 18/23",
+            "action": "SCROLL down"
+          }
+        },
+        {
+          "evidence_ref": "e001005",
+          "sha256": "c827fe56354f1f492c8d4cf37e8d4d7d473d8713800579ab1455bd0ea6b22f06",
+          "candidate": "B",
+          "source_candidate": "D",
+          "step": 19,
+          "annotations": {
+            "title": "Dayline | P10 | Design B | Step 19/23",
+            "action": "SCROLL down"
+          }
+        },
+        {
+          "evidence_ref": "e001015",
+          "sha256": "4192df0cd0bef35da34be372098f7b9e10ea60602efc34e0fa438b21f0412f18",
+          "candidate": "B",
+          "source_candidate": "D",
+          "step": 20,
+          "annotations": {
+            "title": "Dayline | P10 | Design B | Step 20/23",
+            "action": "SCROLL down"
+          }
+        },
+        {
+          "evidence_ref": "e001049",
+          "sha256": "dbf16e81a62014336f4a6a53bde440dacfadabaffc54f0685d894d6f7d0fa1a6",
+          "candidate": "B",
+          "source_candidate": "D",
+          "step": 21,
+          "annotations": {
+            "title": "Dayline | P10 | Design B | Step 21/23",
+            "action": "CLICK | Authorize once"
+          }
+        },
+        {
+          "evidence_ref": "e001084",
+          "sha256": "16e4bc109ced16580ff214735dfc80f02ca9a15d923498f3199f32e168dbd9ce",
+          "candidate": "B",
+          "source_candidate": "D",
+          "step": 22,
+          "annotations": {
+            "title": "Dayline | P10 | Design B | Step 22/23",
+            "action": "CLICK | Demo: generate simulated receipt"
+          }
+        },
+        {
+          "evidence_ref": "e001104",
+          "sha256": "42a7ed4b577c7e75354d1d42049bde2bd86117971160877be4eb2999b1390141",
+          "candidate": "B",
+          "source_candidate": "D",
+          "step": 23,
+          "annotations": {
+            "title": "Dayline | P10 | Design B | Step 23/23",
+            "action": "STOP (study control)"
+          }
+        }
+      ],
+      "source_gif_sha256": "92a9cf50a9bef87317a28547b863390e432d5a61af3e9f76aa8841702ee0f3db"
+    },
+    {
+      "alias": "P11",
+      "steps": 21,
+      "preference": "Design A",
+      "gif": "journeys/p11-paired.gif",
+      "frames": 21,
+      "size": [
+        960,
+        693
+      ],
+      "duration_ms": 44000,
+      "source_frames": [
+        {
+          "evidence_ref": "e000842",
+          "sha256": "064e9de8446c8c6df664391190222bcb367096fc0ab72658054fa6d3b320ef37",
+          "candidate": "A",
+          "source_candidate": "B",
+          "step": 1,
+          "annotations": {
+            "title": "Dayline | P11 | Design A | Step 1/21",
+            "action": "CLICK | Authorization"
+          }
+        },
+        {
+          "evidence_ref": "e000856",
+          "sha256": "fdca7964e633807ad76d660b63e531d06e64084a036a69c9bbdf27dd9c03359f",
+          "candidate": "A",
+          "source_candidate": "B",
+          "step": 2,
+          "annotations": {
+            "title": "Dayline | P11 | Design A | Step 2/21",
+            "action": "SCROLL down"
+          }
+        },
+        {
+          "evidence_ref": "e000866",
+          "sha256": "3c79c0d46d1fd63d8536e61341d205b8f4eef4488ecf96765b174433023c249d",
+          "candidate": "A",
+          "source_candidate": "B",
+          "step": 3,
+          "annotations": {
+            "title": "Dayline | P11 | Design A | Step 3/21",
+            "action": "CLICK | Authorize once"
+          }
+        },
+        {
+          "evidence_ref": "e000876",
+          "sha256": "2a0f72dd09b5a552f121709fbd6768eb40de7d29597c7ca79b0fd08f647eec18",
+          "candidate": "A",
+          "source_candidate": "B",
+          "step": 4,
+          "annotations": {
+            "title": "Dayline | P11 | Design A | Step 4/21",
+            "action": "CLICK | Demo: generate simulated receipt"
+          }
+        },
+        {
+          "evidence_ref": "e000892",
+          "sha256": "f4939abd3105c29e93a70c6789afeffc53e59552f1703e976be57bee057ae611",
+          "candidate": "A",
+          "source_candidate": "B",
+          "step": 5,
+          "annotations": {
+            "title": "Dayline | P11 | Design A | Step 5/21",
+            "action": "CLICK | New task"
+          }
+        },
+        {
+          "evidence_ref": "e000900",
+          "sha256": "848c941e3bf5153c7af1182bf25df920dcd1996404ea20938d66120a87b5f97c",
+          "candidate": "A",
+          "source_candidate": "B",
+          "step": 6,
+          "annotations": {
+            "title": "Dayline | P11 | Design A | Step 6/21",
+            "action": "TYPE | e.g. Prepare release notes"
+          }
+        },
+        {
+          "evidence_ref": "e000910",
+          "sha256": "f44c74cb87fe5f8b48f91499568d1035aab8f948ba6cf59c269ed2e541057730",
+          "candidate": "A",
+          "source_candidate": "B",
+          "step": 7,
+          "annotations": {
+            "title": "Dayline | P11 | Design A | Step 7/21",
+            "action": "TYPE | What good looks like, and what not to do…"
+          }
+        },
+        {
+          "evidence_ref": "e000932",
+          "sha256": "c98fdc682c23694e17944b1510c7b2647019747773edad554ef43c70d4e3cf24",
+          "candidate": "A",
+          "source_candidate": "B",
+          "step": 8,
+          "annotations": {
+            "title": "Dayline | P11 | Design A | Step 8/21",
+            "action": "CLICK | Create draft"
+          }
+        },
+        {
+          "evidence_ref": "e000938",
+          "sha256": "4c781f824767ea67696fa07ca57e0b9bd34f36f33558cf1a8fb8e7e22fdd83cf",
+          "candidate": "A",
+          "source_candidate": "B",
+          "step": 9,
+          "annotations": {
+            "title": "Dayline | P11 | Design A | Step 9/21",
+            "action": "ADVANCE to B (study handoff, not a product control)"
+          }
+        },
+        {
+          "evidence_ref": "e000956",
+          "sha256": "4f4c31bdd28710bd8eaea9a071ded19831b92e8b62fa7507db8703a13639f767",
+          "candidate": "B",
+          "source_candidate": "D",
+          "step": 10,
+          "annotations": {
+            "title": "Dayline | P11 | Design B | Step 10/21",
+            "action": "CLICK | Clarification"
+          }
+        },
+        {
+          "evidence_ref": "e000979",
+          "sha256": "24eeaaeaf61490dd77894d70e0800f096b0ed5a34c2fbc1c8db9faa59da51bad",
+          "candidate": "B",
+          "source_candidate": "D",
+          "step": 11,
+          "annotations": {
+            "title": "Dayline | P11 | Design B | Step 11/21",
+            "action": "CLICK | Confirm scope"
+          }
+        },
+        {
+          "evidence_ref": "e001000",
+          "sha256": "06fd11134a764a1756864159affd5204cd7c97eb37929d350c28eee66244ca3f",
+          "candidate": "B",
+          "source_candidate": "D",
+          "step": 12,
+          "annotations": {
+            "title": "Dayline | P11 | Design B | Step 12/21",
+            "action": "CLICK | Acceptance"
+          }
+        },
+        {
+          "evidence_ref": "e001020",
+          "sha256": "ac275b32e3083be0829839bc92e22b84d21d6f8a6a84b23daaf6495550509933",
+          "candidate": "B",
+          "source_candidate": "D",
+          "step": 13,
+          "annotations": {
+            "title": "Dayline | P11 | Design B | Step 13/21",
+            "action": "SCROLL down"
+          }
+        },
+        {
+          "evidence_ref": "e001040",
+          "sha256": "9b691d8124a99faeed6b61180d9f56101ca6918db7bdbccfaf8eb75690af83ac",
+          "candidate": "B",
+          "source_candidate": "D",
+          "step": 14,
+          "annotations": {
+            "title": "Dayline | P11 | Design B | Step 14/21",
+            "action": "SCROLL down"
+          }
+        },
+        {
+          "evidence_ref": "e001066",
+          "sha256": "28a248787a692e23c8e879728943674df66c7b20983016f81be74d4e5b17cfa0",
+          "candidate": "B",
+          "source_candidate": "D",
+          "step": 15,
+          "annotations": {
+            "title": "Dayline | P11 | Design B | Step 15/21",
+            "action": "CLICK | Request changes"
+          }
+        },
+        {
+          "evidence_ref": "e001099",
+          "sha256": "77bf1ab6423c928096c44417a57881a1c67e7a674fa0357ec167b0bbe2af09ab",
+          "candidate": "B",
+          "source_candidate": "D",
+          "step": 16,
+          "annotations": {
+            "title": "Dayline | P11 | Design B | Step 16/21",
+            "action": "TYPE | Name the section, issue, or acceptance criteria…"
+          }
+        },
+        {
+          "evidence_ref": "e001119",
+          "sha256": "e5c611d204607e3e5e3729922b0caa57ef9aedc325b81f046f33b0a848137f28",
+          "candidate": "B",
+          "source_candidate": "D",
+          "step": 17,
+          "annotations": {
+            "title": "Dayline | P11 | Design B | Step 17/21",
+            "action": "CLICK | Send revision request"
+          }
+        },
+        {
+          "evidence_ref": "e001142",
+          "sha256": "67ba04355d689771e425e2d32673e227f2bd2e67d3792b1600019bdf911a00d0",
+          "candidate": "B",
+          "source_candidate": "D",
+          "step": 18,
+          "annotations": {
+            "title": "Dayline | P11 | Design B | Step 18/21",
+            "action": "CLICK | Demo: return a new revision"
+          }
+        },
+        {
+          "evidence_ref": "e001162",
+          "sha256": "c0c17b68eb0950cea8d7f9375f5971283de43cbb51275bc8b7cdb17a4cdcbf03",
+          "candidate": "B",
+          "source_candidate": "D",
+          "step": 19,
+          "annotations": {
+            "title": "Dayline | P11 | Design B | Step 19/21",
+            "action": "SCROLL down"
+          }
+        },
+        {
+          "evidence_ref": "e001179",
+          "sha256": "b6f328e2a1639e3b055f2e75ead85623addbbf4eae6fb34dc4f893e7a42f5ccb",
+          "candidate": "B",
+          "source_candidate": "D",
+          "step": 20,
+          "annotations": {
+            "title": "Dayline | P11 | Design B | Step 20/21",
+            "action": "SCROLL down"
+          }
+        },
+        {
+          "evidence_ref": "e001195",
+          "sha256": "45dcf0392c3f40019f871045269d0858975227b38c3b2728edfdbc603ac7c256",
+          "candidate": "B",
+          "source_candidate": "D",
+          "step": 21,
+          "annotations": {
+            "title": "Dayline | P11 | Design B | Step 21/21",
+            "action": "STOP (study control)"
+          }
+        }
+      ],
+      "source_gif_sha256": "61e4ffde55a02dfc1270b53e0807d27ecb5d5982736a2f3ef642a257db58053a"
+    },
+    {
+      "alias": "P12",
+      "steps": 22,
+      "preference": "Design A",
+      "gif": "journeys/p12-paired.gif",
+      "frames": 22,
+      "size": [
+        960,
+        693
+      ],
+      "duration_ms": 46000,
+      "source_frames": [
+        {
+          "evidence_ref": "e000944",
+          "sha256": "064e9de8446c8c6df664391190222bcb367096fc0ab72658054fa6d3b320ef37",
+          "candidate": "A",
+          "source_candidate": "B",
+          "step": 1,
+          "annotations": {
+            "title": "Dayline | P12 | Design A | Step 1/22",
+            "action": "CLICK | Authorization"
+          }
+        },
+        {
+          "evidence_ref": "e000961",
+          "sha256": "dfba08d3c5ec62848946c414a311a13d611ca467cddd9e10e804c0cad6c133b1",
+          "candidate": "A",
+          "source_candidate": "B",
+          "step": 2,
+          "annotations": {
+            "title": "Dayline | P12 | Design A | Step 2/22",
+            "action": "SCROLL down"
+          }
+        },
+        {
+          "evidence_ref": "e000984",
+          "sha256": "3c79c0d46d1fd63d8536e61341d205b8f4eef4488ecf96765b174433023c249d",
+          "candidate": "A",
+          "source_candidate": "B",
+          "step": 3,
+          "annotations": {
+            "title": "Dayline | P12 | Design A | Step 3/22",
+            "action": "CLICK | Authorize once"
+          }
+        },
+        {
+          "evidence_ref": "e001010",
+          "sha256": "2a0f72dd09b5a552f121709fbd6768eb40de7d29597c7ca79b0fd08f647eec18",
+          "candidate": "A",
+          "source_candidate": "B",
+          "step": 4,
+          "annotations": {
+            "title": "Dayline | P12 | Design A | Step 4/22",
+            "action": "CLICK | Demo: generate simulated receipt"
+          }
+        },
+        {
+          "evidence_ref": "e001034",
+          "sha256": "d638123cd654fe71bff09c6f7143c6c332158050e6d844518f25cf391db32d16",
+          "candidate": "A",
+          "source_candidate": "B",
+          "step": 5,
+          "annotations": {
+            "title": "Dayline | P12 | Design A | Step 5/22",
+            "action": "CLICK | Show summaries"
+          }
+        },
+        {
+          "evidence_ref": "e001059",
+          "sha256": "603b7607907470706320773e018cb2dce15a9ce870d754bb00ced999bdb69733",
+          "candidate": "A",
+          "source_candidate": "B",
+          "step": 6,
+          "annotations": {
+            "title": "Dayline | P12 | Design A | Step 6/22",
+            "action": "CLICK | In progress"
+          }
+        },
+        {
+          "evidence_ref": "e001079",
+          "sha256": "67edb343a18d74b8281dfe3dc78a03384ba900555f5505fbafdcdf3fe77c75d5",
+          "candidate": "A",
+          "source_candidate": "B",
+          "step": 7,
+          "annotations": {
+            "title": "Dayline | P12 | Design A | Step 7/22",
+            "action": "CLICK | In progress"
+          }
+        },
+        {
+          "evidence_ref": "e001094",
+          "sha256": "b724c8e96d24f980aba0190cf267b4a8bb6a06131f539b13caab2dfc688f896e",
+          "candidate": "A",
+          "source_candidate": "B",
+          "step": 8,
+          "annotations": {
+            "title": "Dayline | P12 | Design A | Step 8/22",
+            "action": "CLICK | Needs you 2"
+          }
+        },
+        {
+          "evidence_ref": "e001114",
+          "sha256": "e735bd33df4824a4ab3b88f6dbf4ca550eb96d7f63bbf3df2475d5164de25677",
+          "candidate": "A",
+          "source_candidate": "B",
+          "step": 9,
+          "annotations": {
+            "title": "Dayline | P12 | Design A | Step 9/22",
+            "action": "CLICK | Acceptance"
+          }
+        },
+        {
+          "evidence_ref": "e001132",
+          "sha256": "5d8c703fa95ef5db4320cb19ede6a0bbb7e556f50c355aa85852d3ca10213645",
+          "candidate": "A",
+          "source_candidate": "B",
+          "step": 10,
+          "annotations": {
+            "title": "Dayline | P12 | Design A | Step 10/22",
+            "action": "SCROLL down"
+          }
+        },
+        {
+          "evidence_ref": "e001147",
+          "sha256": "55c6de75afac62915975d8c8488f24e98b54645056201504aa8a98aa1463d2ed",
+          "candidate": "A",
+          "source_candidate": "B",
+          "step": 11,
+          "annotations": {
+            "title": "Dayline | P12 | Design A | Step 11/22",
+            "action": "CLICK | Accept v3"
+          }
+        },
+        {
+          "evidence_ref": "e001172",
+          "sha256": "5524a973352d5f546fe3ad486785255baf9acce5dec09fe19ececee1f27fc58f",
+          "candidate": "A",
+          "source_candidate": "B",
+          "step": 12,
+          "annotations": {
+            "title": "Dayline | P12 | Design A | Step 12/22",
+            "action": "CLICK | Clarification"
+          }
+        },
+        {
+          "evidence_ref": "e001187",
+          "sha256": "8ef8c7b129ad141578c5524ee046b1f1752bcfde66b3cf497ea5a32072f535df",
+          "candidate": "A",
+          "source_candidate": "B",
+          "step": 13,
+          "annotations": {
+            "title": "Dayline | P12 | Design A | Step 13/22",
+            "action": "CLICK | Confirm scope"
+          }
+        },
+        {
+          "evidence_ref": "e001207",
+          "sha256": "1465ac518e70893659277152253e252579cb34eed2bb008f48fb1c1952d822ec",
+          "candidate": "A",
+          "source_candidate": "B",
+          "step": 14,
+          "annotations": {
+            "title": "Dayline | P12 | Design A | Step 14/22",
+            "action": "ADVANCE to B (study handoff, not a product control)"
+          }
+        },
+        {
+          "evidence_ref": "e001228",
+          "sha256": "4f4c31bdd28710bd8eaea9a071ded19831b92e8b62fa7507db8703a13639f767",
+          "candidate": "B",
+          "source_candidate": "D",
+          "step": 15,
+          "annotations": {
+            "title": "Dayline | P12 | Design B | Step 15/22",
+            "action": "CLICK | New task"
+          }
+        },
+        {
+          "evidence_ref": "e001238",
+          "sha256": "95bbdd0c5bbba10b3cbc0e4a7e10682c731e98ff4fa74db9cc5a414c5254c7de",
+          "candidate": "B",
+          "source_candidate": "D",
+          "step": 16,
+          "annotations": {
+            "title": "Dayline | P12 | Design B | Step 16/22",
+            "action": "TYPE | e.g. Prepare release notes"
+          }
+        },
+        {
+          "evidence_ref": "e001263",
+          "sha256": "92c4468c706f7be9050f7b1514d252661ffb21651fdbf1ce3efa0ce4b286d8ce",
+          "candidate": "B",
+          "source_candidate": "D",
+          "step": 17,
+          "annotations": {
+            "title": "Dayline | P12 | Design B | Step 17/22",
+            "action": "TYPE | What good looks like, and what not to do…"
+          }
+        },
+        {
+          "evidence_ref": "e001284",
+          "sha256": "bfca51c798bba2cb1343028b5a3f0577ccc17acf2fe126269506618a34008630",
+          "candidate": "B",
+          "source_candidate": "D",
+          "step": 18,
+          "annotations": {
+            "title": "Dayline | P12 | Design B | Step 18/22",
+            "action": "CLICK | Create draft"
+          }
+        },
+        {
+          "evidence_ref": "e001299",
+          "sha256": "40db45741d9717dd1ee13da1e02c96d865987949f7d303f6938342a840efedc8",
+          "candidate": "B",
+          "source_candidate": "D",
+          "step": 19,
+          "annotations": {
+            "title": "Dayline | P12 | Design B | Step 19/22",
+            "action": "CLICK | Context"
+          }
+        },
+        {
+          "evidence_ref": "e001319",
+          "sha256": "45137862df64a7439a7907809edb47d5bf7b39d0781b0459042b3223953a8e43",
+          "candidate": "B",
+          "source_candidate": "D",
+          "step": 20,
+          "annotations": {
+            "title": "Dayline | P12 | Design B | Step 20/22",
+            "action": "SCROLL down"
+          }
+        },
+        {
+          "evidence_ref": "e001333",
+          "sha256": "81f584599a9b54681d3030a38fcac5f76208cb2fd3cb2bbeee55b57c2ba671e5",
+          "candidate": "B",
+          "source_candidate": "D",
+          "step": 21,
+          "annotations": {
+            "title": "Dayline | P12 | Design B | Step 21/22",
+            "action": "CLICK | Result"
+          }
+        },
+        {
+          "evidence_ref": "e001380",
+          "sha256": "40db45741d9717dd1ee13da1e02c96d865987949f7d303f6938342a840efedc8",
+          "candidate": "B",
+          "source_candidate": "D",
+          "step": 22,
+          "annotations": {
+            "title": "Dayline | P12 | Design B | Step 22/22",
+            "action": "STOP (study control)"
+          }
+        }
+      ],
+      "source_gif_sha256": "340c5b0c24bb568de413fe8fa0afb2685d059e0d3997fcaee6f999c2a34e5542"
+    },
+    {
+      "alias": "P13",
+      "steps": 23,
+      "preference": "Design A",
+      "gif": "journeys/p13-paired.gif",
+      "frames": 23,
+      "size": [
+        960,
+        693
+      ],
+      "duration_ms": 48000,
+      "source_frames": [
+        {
+          "evidence_ref": "e000951",
+          "sha256": "064e9de8446c8c6df664391190222bcb367096fc0ab72658054fa6d3b320ef37",
+          "candidate": "A",
+          "source_candidate": "B",
+          "step": 1,
+          "annotations": {
+            "title": "Dayline | P13 | Design A | Step 1/23",
+            "action": "CLICK | New task"
+          }
+        },
+        {
+          "evidence_ref": "e000971",
+          "sha256": "51287f3034f8d2361bcc0fff16f5ff81e0394ef49d36c6b8708aad73f9271d6b",
+          "candidate": "A",
+          "source_candidate": "B",
+          "step": 2,
+          "annotations": {
+            "title": "Dayline | P13 | Design A | Step 2/23",
+            "action": "TYPE | e.g. Prepare release notes"
+          }
+        },
+        {
+          "evidence_ref": "e000996",
+          "sha256": "4e0c4af4b0bb3f6a9a91c579ccd5d98b2691cdfbfb1ca51e44e7e78b8a4fd4ec",
+          "candidate": "A",
+          "source_candidate": "B",
+          "step": 3,
+          "annotations": {
+            "title": "Dayline | P13 | Design A | Step 3/23",
+            "action": "TYPE | What good looks like, and what not to do…"
+          }
+        },
+        {
+          "evidence_ref": "e001029",
+          "sha256": "c645ccd6cf6ce77f27292a810424333d3ac8b3f4cde7276cb3d9d71e19f74679",
+          "candidate": "A",
+          "source_candidate": "B",
+          "step": 4,
+          "annotations": {
+            "title": "Dayline | P13 | Design A | Step 4/23",
+            "action": "SELECT | Forge Local"
+          }
+        },
+        {
+          "evidence_ref": "e001056",
+          "sha256": "ffe1a294d7ce6b0f29297186e568bdeef309d01c9e627579b1fec68a5f41a436",
+          "candidate": "A",
+          "source_candidate": "B",
+          "step": 5,
+          "annotations": {
+            "title": "Dayline | P13 | Design A | Step 5/23",
+            "action": "CLICK | Create draft"
+          }
+        },
+        {
+          "evidence_ref": "e001074",
+          "sha256": "4f4100ca70797bd644b593a0c2e566858197107e3cff69c5d4a3b832f4843f02",
+          "candidate": "A",
+          "source_candidate": "B",
+          "step": 6,
+          "annotations": {
+            "title": "Dayline | P13 | Design A | Step 6/23",
+            "action": "CLICK | Clarification"
+          }
+        },
+        {
+          "evidence_ref": "e001089",
+          "sha256": "9598fb9efbd2898e8386a2f16c18fa6b803f4ac8f17d3ccb1450faffab31379d",
+          "candidate": "A",
+          "source_candidate": "B",
+          "step": 7,
+          "annotations": {
+            "title": "Dayline | P13 | Design A | Step 7/23",
+            "action": "CLICK | Confirm scope"
+          }
+        },
+        {
+          "evidence_ref": "e001111",
+          "sha256": "1618ee27de50e930244c70b2a037e74306f9d9e83b1897811fbd4c230903f8f0",
+          "candidate": "A",
+          "source_candidate": "B",
+          "step": 8,
+          "annotations": {
+            "title": "Dayline | P13 | Design A | Step 8/23",
+            "action": "CLICK | Acceptance"
+          }
+        },
+        {
+          "evidence_ref": "e001127",
+          "sha256": "900314311b512ffaf0409813d816ed4acb856fdf573c7b8cc41845d4cf093257",
+          "candidate": "A",
+          "source_candidate": "B",
+          "step": 9,
+          "annotations": {
+            "title": "Dayline | P13 | Design A | Step 9/23",
+            "action": "SCROLL down"
+          }
+        },
+        {
+          "evidence_ref": "e001152",
+          "sha256": "2f2356af3a03b18732dc3c414e9ea34a47f6f3766f4c95edf49cc4498a6fa226",
+          "candidate": "A",
+          "source_candidate": "B",
+          "step": 10,
+          "annotations": {
+            "title": "Dayline | P13 | Design A | Step 10/23",
+            "action": "CLICK | Accept v3"
+          }
+        },
+        {
+          "evidence_ref": "e001168",
+          "sha256": "a166ecc6c39c6ee64be919d42e7ec7670e8c69cff2ebb2cebe3dfb0ec564fea1",
+          "candidate": "A",
+          "source_candidate": "B",
+          "step": 11,
+          "annotations": {
+            "title": "Dayline | P13 | Design A | Step 11/23",
+            "action": "CLICK | Authorization"
+          }
+        },
+        {
+          "evidence_ref": "e001202",
+          "sha256": "cde9c6b6d1c3f3fbfa1b0af6a3026c80b02a732dd8c941c70fdf59b27d4e41a0",
+          "candidate": "A",
+          "source_candidate": "B",
+          "step": 12,
+          "annotations": {
+            "title": "Dayline | P13 | Design A | Step 12/23",
+            "action": "SCROLL down"
+          }
+        },
+        {
+          "evidence_ref": "e001224",
+          "sha256": "33059e7c049bd51477ec61576d75ff2404276f590e5fa21d977f2944e32a86e6",
+          "candidate": "A",
+          "source_candidate": "B",
+          "step": 13,
+          "annotations": {
+            "title": "Dayline | P13 | Design A | Step 13/23",
+            "action": "CLICK | Authorize once"
+          }
+        },
+        {
+          "evidence_ref": "e001248",
+          "sha256": "fedc79c4fbaf94241e3879930d5faa2eb413561ae3cd6338beab3ed29f3aa836",
+          "candidate": "A",
+          "source_candidate": "B",
+          "step": 14,
+          "annotations": {
+            "title": "Dayline | P13 | Design A | Step 14/23",
+            "action": "CLICK | Demo: generate simulated receipt"
+          }
+        },
+        {
+          "evidence_ref": "e001258",
+          "sha256": "f6530209875832c89563b531c7d7b14e3fde1d0805df422a2b7601b0538ce72f",
+          "candidate": "A",
+          "source_candidate": "B",
+          "step": 15,
+          "annotations": {
+            "title": "Dayline | P13 | Design A | Step 15/23",
+            "action": "ADVANCE to B (study handoff, not a product control)"
+          }
+        },
+        {
+          "evidence_ref": "e001270",
+          "sha256": "4f4c31bdd28710bd8eaea9a071ded19831b92e8b62fa7507db8703a13639f767",
+          "candidate": "B",
+          "source_candidate": "D",
+          "step": 16,
+          "annotations": {
+            "title": "Dayline | P13 | Design B | Step 16/23",
+            "action": "CLICK | Acceptance"
+          }
+        },
+        {
+          "evidence_ref": "e001289",
+          "sha256": "a0724b0ecceecadb386ab783854c10bbd692a236a9039270a616f529e88e7cf4",
+          "candidate": "B",
+          "source_candidate": "D",
+          "step": 17,
+          "annotations": {
+            "title": "Dayline | P13 | Design B | Step 17/23",
+            "action": "CLICK | Request changes"
+          }
+        },
+        {
+          "evidence_ref": "e001304",
+          "sha256": "eb1a696746cda009fce95112adefc1475a6aaa186d318675e932b6124b1e01d8",
+          "candidate": "B",
+          "source_candidate": "D",
+          "step": 18,
+          "annotations": {
+            "title": "Dayline | P13 | Design B | Step 18/23",
+            "action": "TYPE | Name the section, issue, or acceptance criteria…"
+          }
+        },
+        {
+          "evidence_ref": "e001314",
+          "sha256": "212e0633bb9b4ae428d9b67fd061c0b11fca76643ed4c2121cafdf0cf94385a8",
+          "candidate": "B",
+          "source_candidate": "D",
+          "step": 19,
+          "annotations": {
+            "title": "Dayline | P13 | Design B | Step 19/23",
+            "action": "CLICK | Send revision request"
+          }
+        },
+        {
+          "evidence_ref": "e001327",
+          "sha256": "7f3cf326c42b0d01ae6e1b665539e43cc0014de4522d3739530fe420415deda0",
+          "candidate": "B",
+          "source_candidate": "D",
+          "step": 20,
+          "annotations": {
+            "title": "Dayline | P13 | Design B | Step 20/23",
+            "action": "CLICK | Demo: return a new revision"
+          }
+        },
+        {
+          "evidence_ref": "e001338",
+          "sha256": "261f5b2929220bdbd1e22ac7d0532472d637e9c9ba41bfb6972db1cc887f74cd",
+          "candidate": "B",
+          "source_candidate": "D",
+          "step": 21,
+          "annotations": {
+            "title": "Dayline | P13 | Design B | Step 21/23",
+            "action": "SCROLL down"
+          }
+        },
+        {
+          "evidence_ref": "e001356",
+          "sha256": "f6bf7d722217e9f5a31ef3c90fefd20e3c52125ea98fe5797298217592a9051d",
+          "candidate": "B",
+          "source_candidate": "D",
+          "step": 22,
+          "annotations": {
+            "title": "Dayline | P13 | Design B | Step 22/23",
+            "action": "SCROLL down"
+          }
+        },
+        {
+          "evidence_ref": "e001375",
+          "sha256": "5a33327d9db742d1bd3b402bf2a750fc7727ab92c7114ee86b5d141e2f0dc0c5",
+          "candidate": "B",
+          "source_candidate": "D",
+          "step": 23,
+          "annotations": {
+            "title": "Dayline | P13 | Design B | Step 23/23",
+            "action": "STOP (study control)"
+          }
+        }
+      ],
+      "source_gif_sha256": "c512aeffb4b77de168bd8051d7f5f5572775bf3464b86674b1c5a20d9e21beae"
+    },
+    {
+      "alias": "P14",
+      "steps": 19,
+      "preference": "Design A",
+      "gif": "journeys/p14-paired.gif",
+      "frames": 19,
+      "size": [
+        960,
+        693
+      ],
+      "duration_ms": 40000,
+      "source_frames": [
+        {
+          "evidence_ref": "e001026",
+          "sha256": "064e9de8446c8c6df664391190222bcb367096fc0ab72658054fa6d3b320ef37",
+          "candidate": "A",
+          "source_candidate": "B",
+          "step": 1,
+          "annotations": {
+            "title": "Dayline | P14 | Design A | Step 1/19",
+            "action": "CLICK | All"
+          }
+        },
+        {
+          "evidence_ref": "e001044",
+          "sha256": "344e387cfddd3d067df0dafb9673c243b4e6bee61309a903ef35361c279c60f2",
+          "candidate": "A",
+          "source_candidate": "B",
+          "step": 2,
+          "annotations": {
+            "title": "Dayline | P14 | Design A | Step 2/19",
+            "action": "SCROLL down"
+          }
+        },
+        {
+          "evidence_ref": "e001067",
+          "sha256": "b464495b1c4a17fcca7675e1dd9eb5c20d6c1b0726ab5d1ed040763128543902",
+          "candidate": "A",
+          "source_candidate": "B",
+          "step": 3,
+          "annotations": {
+            "title": "Dayline | P14 | Design A | Step 3/19",
+            "action": "CLICK | Sources & scope"
+          }
+        },
+        {
+          "evidence_ref": "e001137",
+          "sha256": "65232f73be62b28089b79c15118c3d02e1ab070f82dd1be9edd914b32cfd4f43",
+          "candidate": "A",
+          "source_candidate": "B",
+          "step": 4,
+          "annotations": {
+            "title": "Dayline | P14 | Design A | Step 4/19",
+            "action": "CLICK | Workstream"
+          }
+        },
+        {
+          "evidence_ref": "e001157",
+          "sha256": "1fe292af77b24ec578962e19ff53cb42d3420943f7a89dab15d899272d790469",
+          "candidate": "A",
+          "source_candidate": "B",
+          "step": 5,
+          "annotations": {
+            "title": "Dayline | P14 | Design A | Step 5/19",
+            "action": "CLICK | New task"
+          }
+        },
+        {
+          "evidence_ref": "e001181",
+          "sha256": "17f3af7f37a1ac09b6e4f17a1f27f52554dd52a6ca4b30d622bcdca8df5aa61f",
+          "candidate": "A",
+          "source_candidate": "B",
+          "step": 6,
+          "annotations": {
+            "title": "Dayline | P14 | Design A | Step 6/19",
+            "action": "TYPE | e.g. Prepare release notes"
+          }
+        },
+        {
+          "evidence_ref": "e001197",
+          "sha256": "efbe733f128782a5bea2d858537adcb3b0d2c0cae8b32b80e8bdcf3336e475bc",
+          "candidate": "A",
+          "source_candidate": "B",
+          "step": 7,
+          "annotations": {
+            "title": "Dayline | P14 | Design A | Step 7/19",
+            "action": "TYPE | What good looks like, and what not to do…"
+          }
+        },
+        {
+          "evidence_ref": "e001215",
+          "sha256": "f8e2fbe7e041de29bce0827661ede2bf31a5b3d49357a71f239d21fef39e6ba0",
+          "candidate": "A",
+          "source_candidate": "B",
+          "step": 8,
+          "annotations": {
+            "title": "Dayline | P14 | Design A | Step 8/19",
+            "action": "SELECT | Forge Local"
+          }
+        },
+        {
+          "evidence_ref": "e001233",
+          "sha256": "f3e7dae19c8921782e9d1761caab0b3b06a736569ce6278d708de1e57f272a7d",
+          "candidate": "A",
+          "source_candidate": "B",
+          "step": 9,
+          "annotations": {
+            "title": "Dayline | P14 | Design A | Step 9/19",
+            "action": "CLICK | Create draft"
+          }
+        },
+        {
+          "evidence_ref": "e001244",
+          "sha256": "8553bad8e669002aa26819c414c06e7fb5977b56864459c180b2d70717cb9283",
+          "candidate": "A",
+          "source_candidate": "B",
+          "step": 10,
+          "annotations": {
+            "title": "Dayline | P14 | Design A | Step 10/19",
+            "action": "ADVANCE to B (study handoff, not a product control)"
+          }
+        },
+        {
+          "evidence_ref": "e001253",
+          "sha256": "4f4c31bdd28710bd8eaea9a071ded19831b92e8b62fa7507db8703a13639f767",
+          "candidate": "B",
+          "source_candidate": "D",
+          "step": 11,
+          "annotations": {
+            "title": "Dayline | P14 | Design B | Step 11/19",
+            "action": "CLICK | Authorization"
+          }
+        },
+        {
+          "evidence_ref": "e001272",
+          "sha256": "a0903f3925ef14ae7b5ad5ff0367b6bbf97db7ce6cda2faf2482e98f339aadde",
+          "candidate": "B",
+          "source_candidate": "D",
+          "step": 12,
+          "annotations": {
+            "title": "Dayline | P14 | Design B | Step 12/19",
+            "action": "SCROLL down"
+          }
+        },
+        {
+          "evidence_ref": "e001294",
+          "sha256": "c827fe56354f1f492c8d4cf37e8d4d7d473d8713800579ab1455bd0ea6b22f06",
+          "candidate": "B",
+          "source_candidate": "D",
+          "step": 13,
+          "annotations": {
+            "title": "Dayline | P14 | Design B | Step 13/19",
+            "action": "SCROLL down"
+          }
+        },
+        {
+          "evidence_ref": "e001309",
+          "sha256": "4192df0cd0bef35da34be372098f7b9e10ea60602efc34e0fa438b21f0412f18",
+          "candidate": "B",
+          "source_candidate": "D",
+          "step": 14,
+          "annotations": {
+            "title": "Dayline | P14 | Design B | Step 14/19",
+            "action": "SCROLL down"
+          }
+        },
+        {
+          "evidence_ref": "e001350",
+          "sha256": "dbf16e81a62014336f4a6a53bde440dacfadabaffc54f0685d894d6f7d0fa1a6",
+          "candidate": "B",
+          "source_candidate": "D",
+          "step": 15,
+          "annotations": {
+            "title": "Dayline | P14 | Design B | Step 15/19",
+            "action": "CLICK | Context"
+          }
+        },
+        {
+          "evidence_ref": "e001365",
+          "sha256": "c7b5ea1483a7213aac502ba25231e188186d41aba855e6f30187e625f509bb5b",
+          "candidate": "B",
+          "source_candidate": "D",
+          "step": 16,
+          "annotations": {
+            "title": "Dayline | P14 | Design B | Step 16/19",
+            "action": "SCROLL down"
+          }
+        },
+        {
+          "evidence_ref": "e001385",
+          "sha256": "613d8fa8a824455aad5f9c8044180e4f6df8305c5df5eb384b52caf2d4649359",
+          "candidate": "B",
+          "source_candidate": "D",
+          "step": 17,
+          "annotations": {
+            "title": "Dayline | P14 | Design B | Step 17/19",
+            "action": "CLICK | Review result"
+          }
+        },
+        {
+          "evidence_ref": "e001406",
+          "sha256": "856e4c74c5f0bbaf21f43bbc5d780087dd13e261e8b06a0b354885bf5ac67cff",
+          "candidate": "B",
+          "source_candidate": "D",
+          "step": 18,
+          "annotations": {
+            "title": "Dayline | P14 | Design B | Step 18/19",
+            "action": "CLICK | Decline"
+          }
+        },
+        {
+          "evidence_ref": "e001413",
+          "sha256": "27ff44811b5c1ccfc970060d4079e1bef86c68dc9b227b53fb43779bdcae1102",
+          "candidate": "B",
+          "source_candidate": "D",
+          "step": 19,
+          "annotations": {
+            "title": "Dayline | P14 | Design B | Step 19/19",
+            "action": "STOP (study control)"
+          }
+        }
+      ],
+      "source_gif_sha256": "702d041df3f5087420af1d4b38068b90231408c963a92194feae3a3ad3bead78"
+    },
+    {
+      "alias": "P15",
+      "steps": 11,
+      "preference": "No meaningful preference",
+      "gif": "journeys/p15-paired.gif",
+      "frames": 11,
+      "size": [
+        960,
+        693
+      ],
+      "duration_ms": 24000,
+      "source_frames": [
+        {
+          "evidence_ref": "e001342",
+          "sha256": "064e9de8446c8c6df664391190222bcb367096fc0ab72658054fa6d3b320ef37",
+          "candidate": "A",
+          "source_candidate": "B",
+          "step": 1,
+          "annotations": {
+            "title": "Dayline | P15 | Design A | Step 1/11",
+            "action": "CLICK | Authorization"
+          }
+        },
+        {
+          "evidence_ref": "e001360",
+          "sha256": "fdca7964e633807ad76d660b63e531d06e64084a036a69c9bbdf27dd9c03359f",
+          "candidate": "A",
+          "source_candidate": "B",
+          "step": 2,
+          "annotations": {
+            "title": "Dayline | P15 | Design A | Step 2/11",
+            "action": "SCROLL down"
+          }
+        },
+        {
+          "evidence_ref": "e001370",
+          "sha256": "3c79c0d46d1fd63d8536e61341d205b8f4eef4488ecf96765b174433023c249d",
+          "candidate": "A",
+          "source_candidate": "B",
+          "step": 3,
+          "annotations": {
+            "title": "Dayline | P15 | Design A | Step 3/11",
+            "action": "CLICK | Authorize once"
+          }
+        },
+        {
+          "evidence_ref": "e001390",
+          "sha256": "2a0f72dd09b5a552f121709fbd6768eb40de7d29597c7ca79b0fd08f647eec18",
+          "candidate": "A",
+          "source_candidate": "B",
+          "step": 4,
+          "annotations": {
+            "title": "Dayline | P15 | Design A | Step 4/11",
+            "action": "CLICK | Demo: generate simulated receipt"
+          }
+        },
+        {
+          "evidence_ref": "e001403",
+          "sha256": "b0326da68da93363e3a66674fa44917931b7687de82f224a1aa67b0fe9f90159",
+          "candidate": "A",
+          "source_candidate": "B",
+          "step": 5,
+          "annotations": {
+            "title": "Dayline | P15 | Design A | Step 5/11",
+            "action": "ADVANCE to B (study handoff, not a product control)"
+          }
+        },
+        {
+          "evidence_ref": "e001414",
+          "sha256": "4f4c31bdd28710bd8eaea9a071ded19831b92e8b62fa7507db8703a13639f767",
+          "candidate": "B",
+          "source_candidate": "D",
+          "step": 6,
+          "annotations": {
+            "title": "Dayline | P15 | Design B | Step 6/11",
+            "action": "CLICK | New task"
+          }
+        },
+        {
+          "evidence_ref": "e001424",
+          "sha256": "95bbdd0c5bbba10b3cbc0e4a7e10682c731e98ff4fa74db9cc5a414c5254c7de",
+          "candidate": "B",
+          "source_candidate": "D",
+          "step": 7,
+          "annotations": {
+            "title": "Dayline | P15 | Design B | Step 7/11",
+            "action": "TYPE | e.g. Prepare release notes"
+          }
+        },
+        {
+          "evidence_ref": "e001433",
+          "sha256": "40fb0168fe390ce467e513ff5315d452d0b27405638526960327f58f68a49d57",
+          "candidate": "B",
+          "source_candidate": "D",
+          "step": 8,
+          "annotations": {
+            "title": "Dayline | P15 | Design B | Step 8/11",
+            "action": "TYPE | What good looks like, and what not to do…"
+          }
+        },
+        {
+          "evidence_ref": "e001444",
+          "sha256": "fea34a71b5d8fe1fb1c90fd5255984998c5a8e55363dcb2970a20417ace90336",
+          "candidate": "B",
+          "source_candidate": "D",
+          "step": 9,
+          "annotations": {
+            "title": "Dayline | P15 | Design B | Step 9/11",
+            "action": "SELECT | Forge Local"
+          }
+        },
+        {
+          "evidence_ref": "e001458",
+          "sha256": "3fa7de2026b6a6c4fb83a84fb7487f9ed6e2a15062027d40b4425bb10bb20ac5",
+          "candidate": "B",
+          "source_candidate": "D",
+          "step": 10,
+          "annotations": {
+            "title": "Dayline | P15 | Design B | Step 10/11",
+            "action": "CLICK | Create draft"
+          }
+        },
+        {
+          "evidence_ref": "e001484",
+          "sha256": "ae6e6b8fecc680ff870392c2bc420e3cf92919499d228830d52edd2e85bf6688",
+          "candidate": "B",
+          "source_candidate": "D",
+          "step": 11,
+          "annotations": {
+            "title": "Dayline | P15 | Design B | Step 11/11",
+            "action": "STOP (study control)"
+          }
+        }
+      ],
+      "source_gif_sha256": "55fda8da0d5ca0b9d836417dbb633d3c2170f5a004256cbf72624bebeac6ba59"
+    },
+    {
+      "alias": "P16",
+      "steps": 15,
+      "preference": "No meaningful preference",
+      "gif": "journeys/p16-paired.gif",
+      "frames": 15,
+      "size": [
+        960,
+        693
+      ],
+      "duration_ms": 32000,
+      "source_frames": [
+        {
+          "evidence_ref": "e001448",
+          "sha256": "064e9de8446c8c6df664391190222bcb367096fc0ab72658054fa6d3b320ef37",
+          "candidate": "A",
+          "source_candidate": "B",
+          "step": 1,
+          "annotations": {
+            "title": "Dayline | P16 | Design A | Step 1/15",
+            "action": "CLICK | All"
+          }
+        },
+        {
+          "evidence_ref": "e001453",
+          "sha256": "d7056f1dcf2bec48e7802a9f92332778cc5190dc5a8686edc71cfb73158751e7",
+          "candidate": "A",
+          "source_candidate": "B",
+          "step": 2,
+          "annotations": {
+            "title": "Dayline | P16 | Design A | Step 2/15",
+            "action": "CLICK | Authorization"
+          }
+        },
+        {
+          "evidence_ref": "e001463",
+          "sha256": "2f4dfde6f85a21d283932e724b2ca860bf194f5098225ba81a41cc7374942a93",
+          "candidate": "A",
+          "source_candidate": "B",
+          "step": 3,
+          "annotations": {
+            "title": "Dayline | P16 | Design A | Step 3/15",
+            "action": "SCROLL down"
+          }
+        },
+        {
+          "evidence_ref": "e001471",
+          "sha256": "9865fdb12ebfb45f4e180a7a18cba05265dd410831afc3b2df29527926079755",
+          "candidate": "A",
+          "source_candidate": "B",
+          "step": 4,
+          "annotations": {
+            "title": "Dayline | P16 | Design A | Step 4/15",
+            "action": "CLICK | Context"
+          }
+        },
+        {
+          "evidence_ref": "e001476",
+          "sha256": "320c5cc950b1adb278f2b836af79798839a25f530aa93ceed08323fdbd25046f",
+          "candidate": "A",
+          "source_candidate": "B",
+          "step": 5,
+          "annotations": {
+            "title": "Dayline | P16 | Design A | Step 5/15",
+            "action": "CLICK | Workstream"
+          }
+        },
+        {
+          "evidence_ref": "e001489",
+          "sha256": "2fd4da6d9d2b2377f49a7e170df7cfb0b133198481bc871ece3adb27b77e5832",
+          "candidate": "A",
+          "source_candidate": "B",
+          "step": 6,
+          "annotations": {
+            "title": "Dayline | P16 | Design A | Step 6/15",
+            "action": "TYPE | Add direction or leave a note…"
+          }
+        },
+        {
+          "evidence_ref": "e001500",
+          "sha256": "ca1810b1bf0903c0114654a726463aa1d0caa657b01249117f11c178d929bad7",
+          "candidate": "A",
+          "source_candidate": "B",
+          "step": 7,
+          "annotations": {
+            "title": "Dayline | P16 | Design A | Step 7/15",
+            "action": "CLICK | Save note"
+          }
+        },
+        {
+          "evidence_ref": "e001511",
+          "sha256": "3b94d5ccc2159cb956d8d41815abf868353033f478b9d83c8765246e7155fe57",
+          "candidate": "A",
+          "source_candidate": "B",
+          "step": 8,
+          "annotations": {
+            "title": "Dayline | P16 | Design A | Step 8/15",
+            "action": "CLICK | Review result"
+          }
+        },
+        {
+          "evidence_ref": "e001517",
+          "sha256": "4dddb24b165a2c28ca23e39fb3ff2f82851aa08aff4f554442bfb7e08efc3c0c",
+          "candidate": "A",
+          "source_candidate": "B",
+          "step": 9,
+          "annotations": {
+            "title": "Dayline | P16 | Design A | Step 9/15",
+            "action": "CLICK | Decline"
+          }
+        },
+        {
+          "evidence_ref": "e001533",
+          "sha256": "e42d69a54022be6d1cdcf3163b4b5907a2edbe7f623ce1adbd9987d664033884",
+          "candidate": "A",
+          "source_candidate": "B",
+          "step": 10,
+          "annotations": {
+            "title": "Dayline | P16 | Design A | Step 10/15",
+            "action": "ADVANCE to B (study handoff, not a product control)"
+          }
+        },
+        {
+          "evidence_ref": "e001551",
+          "sha256": "4f4c31bdd28710bd8eaea9a071ded19831b92e8b62fa7507db8703a13639f767",
+          "candidate": "B",
+          "source_candidate": "D",
+          "step": 11,
+          "annotations": {
+            "title": "Dayline | P16 | Design B | Step 11/15",
+            "action": "CLICK | New task"
+          }
+        },
+        {
+          "evidence_ref": "e001566",
+          "sha256": "95bbdd0c5bbba10b3cbc0e4a7e10682c731e98ff4fa74db9cc5a414c5254c7de",
+          "candidate": "B",
+          "source_candidate": "D",
+          "step": 12,
+          "annotations": {
+            "title": "Dayline | P16 | Design B | Step 12/15",
+            "action": "TYPE | e.g. Prepare release notes"
+          }
+        },
+        {
+          "evidence_ref": "e001582",
+          "sha256": "15009eba3b43fc0e4d2fbe19b88cf12201882ee635b37f8fecf6891f2dfd8eae",
+          "candidate": "B",
+          "source_candidate": "D",
+          "step": 13,
+          "annotations": {
+            "title": "Dayline | P16 | Design B | Step 13/15",
+            "action": "TYPE | What good looks like, and what not to do…"
+          }
+        },
+        {
+          "evidence_ref": "e001605",
+          "sha256": "afcc6ae2202dfb35adda114cd54bfca2a82f77f3df136f9325be3f338f62c0fb",
+          "candidate": "B",
+          "source_candidate": "D",
+          "step": 14,
+          "annotations": {
+            "title": "Dayline | P16 | Design B | Step 14/15",
+            "action": "CLICK | Create draft"
+          }
+        },
+        {
+          "evidence_ref": "e001623",
+          "sha256": "3e725af32b4f44e94ca4d541cb120765d8b5b648dd658fb43ffb3acf94cf7020",
+          "candidate": "B",
+          "source_candidate": "D",
+          "step": 15,
+          "annotations": {
+            "title": "Dayline | P16 | Design B | Step 15/15",
+            "action": "STOP (study control)"
+          }
+        }
+      ],
+      "source_gif_sha256": "fa7c3eebdfde61e157bc8b6ff88d540ae874b9eaa6680b92fa323466225a866a"
+    },
+    {
+      "alias": "P17",
+      "steps": 19,
+      "preference": "Design A",
+      "gif": "journeys/p17-paired.gif",
+      "frames": 19,
+      "size": [
+        960,
+        693
+      ],
+      "duration_ms": 40000,
+      "source_frames": [
+        {
+          "evidence_ref": "e001525",
+          "sha256": "064e9de8446c8c6df664391190222bcb367096fc0ab72658054fa6d3b320ef37",
+          "candidate": "A",
+          "source_candidate": "B",
+          "step": 1,
+          "annotations": {
+            "title": "Dayline | P17 | Design A | Step 1/19",
+            "action": "CLICK | New task"
+          }
+        },
+        {
+          "evidence_ref": "e001538",
+          "sha256": "51287f3034f8d2361bcc0fff16f5ff81e0394ef49d36c6b8708aad73f9271d6b",
+          "candidate": "A",
+          "source_candidate": "B",
+          "step": 2,
+          "annotations": {
+            "title": "Dayline | P17 | Design A | Step 2/19",
+            "action": "TYPE | e.g. Prepare release notes"
+          }
+        },
+        {
+          "evidence_ref": "e001556",
+          "sha256": "315279d4bca157ded6664f75c4f11f6db01819c8ad2443c00db1c2ee703c8e68",
+          "candidate": "A",
+          "source_candidate": "B",
+          "step": 3,
+          "annotations": {
+            "title": "Dayline | P17 | Design A | Step 3/19",
+            "action": "TYPE | What good looks like, and what not to do…"
+          }
+        },
+        {
+          "evidence_ref": "e001576",
+          "sha256": "5035b66b84be3fce35305a506653446a3c2463bf23f562926d736998c6f9560f",
+          "candidate": "A",
+          "source_candidate": "B",
+          "step": 4,
+          "annotations": {
+            "title": "Dayline | P17 | Design A | Step 4/19",
+            "action": "CLICK | Create draft"
+          }
+        },
+        {
+          "evidence_ref": "e001595",
+          "sha256": "863fb26a50312975a364f2de64b268ec118d845fc98fbba3e9c82783ae34a7d6",
+          "candidate": "A",
+          "source_candidate": "B",
+          "step": 5,
+          "annotations": {
+            "title": "Dayline | P17 | Design A | Step 5/19",
+            "action": "CLICK | Acceptance"
+          }
+        },
+        {
+          "evidence_ref": "e001615",
+          "sha256": "c5effac80c44ca118469d9b11b57e2d7ba79a6a09ae5e7dcae46e70116c1ff51",
+          "candidate": "A",
+          "source_candidate": "B",
+          "step": 6,
+          "annotations": {
+            "title": "Dayline | P17 | Design A | Step 6/19",
+            "action": "SCROLL down"
+          }
+        },
+        {
+          "evidence_ref": "e001638",
+          "sha256": "541415af80f32d2efb97468b1f179e042a1f6ac65220ce967b785b9fe2cfd089",
+          "candidate": "A",
+          "source_candidate": "B",
+          "step": 7,
+          "annotations": {
+            "title": "Dayline | P17 | Design A | Step 7/19",
+            "action": "CLICK | Accept v3"
+          }
+        },
+        {
+          "evidence_ref": "e001656",
+          "sha256": "bbd8964cde448a11082600dd4b6488ca28c9c7b574f5a6ee653c6083d280415f",
+          "candidate": "A",
+          "source_candidate": "B",
+          "step": 8,
+          "annotations": {
+            "title": "Dayline | P17 | Design A | Step 8/19",
+            "action": "ADVANCE to B (study handoff, not a product control)"
+          }
+        },
+        {
+          "evidence_ref": "e001671",
+          "sha256": "4f4c31bdd28710bd8eaea9a071ded19831b92e8b62fa7507db8703a13639f767",
+          "candidate": "B",
+          "source_candidate": "D",
+          "step": 9,
+          "annotations": {
+            "title": "Dayline | P17 | Design B | Step 9/19",
+            "action": "CLICK | Authorization"
+          }
+        },
+        {
+          "evidence_ref": "e001685",
+          "sha256": "78ea044e47dbcd5cec2bd98aada29267c26c8926424735e2d16b91d1fc64430e",
+          "candidate": "B",
+          "source_candidate": "D",
+          "step": 10,
+          "annotations": {
+            "title": "Dayline | P17 | Design B | Step 10/19",
+            "action": "SCROLL down"
+          }
+        },
+        {
+          "evidence_ref": "e001700",
+          "sha256": "c827fe56354f1f492c8d4cf37e8d4d7d473d8713800579ab1455bd0ea6b22f06",
+          "candidate": "B",
+          "source_candidate": "D",
+          "step": 11,
+          "annotations": {
+            "title": "Dayline | P17 | Design B | Step 11/19",
+            "action": "SCROLL down"
+          }
+        },
+        {
+          "evidence_ref": "e001717",
+          "sha256": "4192df0cd0bef35da34be372098f7b9e10ea60602efc34e0fa438b21f0412f18",
+          "candidate": "B",
+          "source_candidate": "D",
+          "step": 12,
+          "annotations": {
+            "title": "Dayline | P17 | Design B | Step 12/19",
+            "action": "SCROLL down"
+          }
+        },
+        {
+          "evidence_ref": "e001732",
+          "sha256": "dbf16e81a62014336f4a6a53bde440dacfadabaffc54f0685d894d6f7d0fa1a6",
+          "candidate": "B",
+          "source_candidate": "D",
+          "step": 13,
+          "annotations": {
+            "title": "Dayline | P17 | Design B | Step 13/19",
+            "action": "CLICK | Decline"
+          }
+        },
+        {
+          "evidence_ref": "e001757",
+          "sha256": "27ff44811b5c1ccfc970060d4079e1bef86c68dc9b227b53fb43779bdcae1102",
+          "candidate": "B",
+          "source_candidate": "D",
+          "step": 14,
+          "annotations": {
+            "title": "Dayline | P17 | Design B | Step 14/19",
+            "action": "CLICK | Workstream"
+          }
+        },
+        {
+          "evidence_ref": "e001785",
+          "sha256": "184dd0a0c46d2aae0996efdbd220b5e44445fc392baf7136983dac751e721969",
+          "candidate": "B",
+          "source_candidate": "D",
+          "step": 15,
+          "annotations": {
+            "title": "Dayline | P17 | Design B | Step 15/19",
+            "action": "SCROLL down"
+          }
+        },
+        {
+          "evidence_ref": "e001803",
+          "sha256": "1b921359e3a974ec5369df9c5d19ee36d477771a7559484b9c99b330bc9b86c9",
+          "candidate": "B",
+          "source_candidate": "D",
+          "step": 16,
+          "annotations": {
+            "title": "Dayline | P17 | Design B | Step 16/19",
+            "action": "TYPE | Add direction or leave a note…"
+          }
+        },
+        {
+          "evidence_ref": "e001818",
+          "sha256": "468d6cc9da61b7af72bd3829644c045aed51318db9f5f70038259c8875bc6ca4",
+          "candidate": "B",
+          "source_candidate": "D",
+          "step": 17,
+          "annotations": {
+            "title": "Dayline | P17 | Design B | Step 17/19",
+            "action": "SCROLL down"
+          }
+        },
+        {
+          "evidence_ref": "e001839",
+          "sha256": "6a06bc2243dee5b4a7d2ec1bf2046d2ee9b6895f231c12940d9d5596f3d3d8ed",
+          "candidate": "B",
+          "source_candidate": "D",
+          "step": 18,
+          "annotations": {
+            "title": "Dayline | P17 | Design B | Step 18/19",
+            "action": "CLICK | Save note"
+          }
+        },
+        {
+          "evidence_ref": "e001849",
+          "sha256": "5b0b96f1d92907eb4d2588c3a972db8def484261c9a5c6eeb9f4471da4a6db67",
+          "candidate": "B",
+          "source_candidate": "D",
+          "step": 19,
+          "annotations": {
+            "title": "Dayline | P17 | Design B | Step 19/19",
+            "action": "STOP (study control)"
+          }
+        }
+      ],
+      "source_gif_sha256": "a665330989542c30e7ca18c4b0006ca76fddc5cceec9ace1d7c6a2a718dfb621"
+    },
+    {
+      "alias": "P18",
+      "steps": 14,
+      "preference": "Design B",
+      "gif": "journeys/p18-paired.gif",
+      "frames": 14,
+      "size": [
+        960,
+        693
+      ],
+      "duration_ms": 30000,
+      "source_frames": [
+        {
+          "evidence_ref": "e001542",
+          "sha256": "064e9de8446c8c6df664391190222bcb367096fc0ab72658054fa6d3b320ef37",
+          "candidate": "A",
+          "source_candidate": "B",
+          "step": 1,
+          "annotations": {
+            "title": "Dayline | P18 | Design A | Step 1/14",
+            "action": "CLICK | Authorization"
+          }
+        },
+        {
+          "evidence_ref": "e001561",
+          "sha256": "503fe44a8398ec67f04b72b0ac24a9a1c16c5ab48a4a04d95ab6eba0590f920a",
+          "candidate": "A",
+          "source_candidate": "B",
+          "step": 2,
+          "annotations": {
+            "title": "Dayline | P18 | Design A | Step 2/14",
+            "action": "SCROLL down"
+          }
+        },
+        {
+          "evidence_ref": "e001571",
+          "sha256": "3c79c0d46d1fd63d8536e61341d205b8f4eef4488ecf96765b174433023c249d",
+          "candidate": "A",
+          "source_candidate": "B",
+          "step": 3,
+          "annotations": {
+            "title": "Dayline | P18 | Design A | Step 3/14",
+            "action": "CLICK | Authorize once"
+          }
+        },
+        {
+          "evidence_ref": "e001590",
+          "sha256": "2a0f72dd09b5a552f121709fbd6768eb40de7d29597c7ca79b0fd08f647eec18",
+          "candidate": "A",
+          "source_candidate": "B",
+          "step": 4,
+          "annotations": {
+            "title": "Dayline | P18 | Design A | Step 4/14",
+            "action": "CLICK | Demo: generate simulated receipt"
+          }
+        },
+        {
+          "evidence_ref": "e001610",
+          "sha256": "c49580d252c28eb73b34e083a7fbc2e6503cbd57ba6dc5ff86dda7ba438db397",
+          "candidate": "A",
+          "source_candidate": "B",
+          "step": 5,
+          "annotations": {
+            "title": "Dayline | P18 | Design A | Step 5/14",
+            "action": "CLICK | New task"
+          }
+        },
+        {
+          "evidence_ref": "e001633",
+          "sha256": "cf48f344507a8cb7256e064361eecc8551a68a7107299c95b4175855d842f89d",
+          "candidate": "A",
+          "source_candidate": "B",
+          "step": 6,
+          "annotations": {
+            "title": "Dayline | P18 | Design A | Step 6/14",
+            "action": "TYPE | e.g. Prepare release notes"
+          }
+        },
+        {
+          "evidence_ref": "e001648",
+          "sha256": "5a367a8bdb6cb23ce3e4e3476e29bae90969bea5676892e0d8f0c5a6d67215ec",
+          "candidate": "A",
+          "source_candidate": "B",
+          "step": 7,
+          "annotations": {
+            "title": "Dayline | P18 | Design A | Step 7/14",
+            "action": "TYPE | What good looks like, and what not to do…"
+          }
+        },
+        {
+          "evidence_ref": "e001666",
+          "sha256": "4da890951525573b25cc11d904f3443e9a5e631fdf13cab2a3eb755dbafd3ddf",
+          "candidate": "A",
+          "source_candidate": "B",
+          "step": 8,
+          "annotations": {
+            "title": "Dayline | P18 | Design A | Step 8/14",
+            "action": "CLICK | Create draft"
+          }
+        },
+        {
+          "evidence_ref": "e001690",
+          "sha256": "77c05cf9732268e1f6dcc41b9a41cea3fc598950de2e5dbe8226ea909e4ac618",
+          "candidate": "A",
+          "source_candidate": "B",
+          "step": 9,
+          "annotations": {
+            "title": "Dayline | P18 | Design A | Step 9/14",
+            "action": "ADVANCE to B (study handoff, not a product control)"
+          }
+        },
+        {
+          "evidence_ref": "e001705",
+          "sha256": "4f4c31bdd28710bd8eaea9a071ded19831b92e8b62fa7507db8703a13639f767",
+          "candidate": "B",
+          "source_candidate": "D",
+          "step": 10,
+          "annotations": {
+            "title": "Dayline | P18 | Design B | Step 10/14",
+            "action": "CLICK | Acceptance"
+          }
+        },
+        {
+          "evidence_ref": "e001722",
+          "sha256": "a44797134a579ab71560d63ef824c6261f4a6ad42cdc238a97ccc88a016c1a6e",
+          "candidate": "B",
+          "source_candidate": "D",
+          "step": 11,
+          "annotations": {
+            "title": "Dayline | P18 | Design B | Step 11/14",
+            "action": "SCROLL down"
+          }
+        },
+        {
+          "evidence_ref": "e001737",
+          "sha256": "b852d13b442f602a59c2344faadb1b0c0d808bd1a700b38cd2a8263c2fe7f5d4",
+          "candidate": "B",
+          "source_candidate": "D",
+          "step": 12,
+          "annotations": {
+            "title": "Dayline | P18 | Design B | Step 12/14",
+            "action": "SCROLL down"
+          }
+        },
+        {
+          "evidence_ref": "e001754",
+          "sha256": "27a10454fe597e98e63f4c7d702eeab607a2ed035d83b1102a94b72bb71994cb",
+          "candidate": "B",
+          "source_candidate": "D",
+          "step": 13,
+          "annotations": {
+            "title": "Dayline | P18 | Design B | Step 13/14",
+            "action": "CLICK | Accept v3"
+          }
+        },
+        {
+          "evidence_ref": "e001772",
+          "sha256": "c98dc8deb70fd13cd30e88c9c2c9f8fc0c9ce666aed2d0d60890d8227c6393d5",
+          "candidate": "B",
+          "source_candidate": "D",
+          "step": 14,
+          "annotations": {
+            "title": "Dayline | P18 | Design B | Step 14/14",
+            "action": "STOP (study control)"
+          }
+        }
+      ],
+      "source_gif_sha256": "13654729ecdb0f432d54416572d09f7de86fdfa1b1fac43b9dd6a5d89d0eb1c6"
+    },
+    {
+      "alias": "P19",
+      "steps": 12,
+      "preference": "Design A",
+      "gif": "journeys/p19-paired.gif",
+      "frames": 12,
+      "size": [
+        960,
+        693
+      ],
+      "duration_ms": 26000,
+      "source_frames": [
+        {
+          "evidence_ref": "e001585",
+          "sha256": "064e9de8446c8c6df664391190222bcb367096fc0ab72658054fa6d3b320ef37",
+          "candidate": "A",
+          "source_candidate": "B",
+          "step": 1,
+          "annotations": {
+            "title": "Dayline | P19 | Design A | Step 1/12",
+            "action": "CLICK | All"
+          }
+        },
+        {
+          "evidence_ref": "e001600",
+          "sha256": "d7056f1dcf2bec48e7802a9f92332778cc5190dc5a8686edc71cfb73158751e7",
+          "candidate": "A",
+          "source_candidate": "B",
+          "step": 2,
+          "annotations": {
+            "title": "Dayline | P19 | Design A | Step 2/12",
+            "action": "CLICK | Authorization"
+          }
+        },
+        {
+          "evidence_ref": "e001628",
+          "sha256": "2f4dfde6f85a21d283932e724b2ca860bf194f5098225ba81a41cc7374942a93",
+          "candidate": "A",
+          "source_candidate": "B",
+          "step": 3,
+          "annotations": {
+            "title": "Dayline | P19 | Design A | Step 3/12",
+            "action": "SCROLL down"
+          }
+        },
+        {
+          "evidence_ref": "e001644",
+          "sha256": "9865fdb12ebfb45f4e180a7a18cba05265dd410831afc3b2df29527926079755",
+          "candidate": "A",
+          "source_candidate": "B",
+          "step": 4,
+          "annotations": {
+            "title": "Dayline | P19 | Design A | Step 4/12",
+            "action": "CLICK | Authorize once"
+          }
+        },
+        {
+          "evidence_ref": "e001661",
+          "sha256": "4754131e998359f1376451ffc691c2de695908633afd5ac8c345066703296585",
+          "candidate": "A",
+          "source_candidate": "B",
+          "step": 5,
+          "annotations": {
+            "title": "Dayline | P19 | Design A | Step 5/12",
+            "action": "CLICK | Demo: generate simulated receipt"
+          }
+        },
+        {
+          "evidence_ref": "e001679",
+          "sha256": "3f53a1232f7678d33d2b772af6aa150611ab79faebf6fced5733b28de3083136",
+          "candidate": "A",
+          "source_candidate": "B",
+          "step": 6,
+          "annotations": {
+            "title": "Dayline | P19 | Design A | Step 6/12",
+            "action": "ADVANCE to B (study handoff, not a product control)"
+          }
+        },
+        {
+          "evidence_ref": "e001695",
+          "sha256": "4f4c31bdd28710bd8eaea9a071ded19831b92e8b62fa7507db8703a13639f767",
+          "candidate": "B",
+          "source_candidate": "D",
+          "step": 7,
+          "annotations": {
+            "title": "Dayline | P19 | Design B | Step 7/12",
+            "action": "CLICK | New task"
+          }
+        },
+        {
+          "evidence_ref": "e001747",
+          "sha256": "95bbdd0c5bbba10b3cbc0e4a7e10682c731e98ff4fa74db9cc5a414c5254c7de",
+          "candidate": "B",
+          "source_candidate": "D",
+          "step": 8,
+          "annotations": {
+            "title": "Dayline | P19 | Design B | Step 8/12",
+            "action": "TYPE | e.g. Prepare release notes"
+          }
+        },
+        {
+          "evidence_ref": "e001764",
+          "sha256": "9b04bd59c740f41c4206fd7c4bfab5c00262d66b3d6f0c963b2d0ee9c888c746",
+          "candidate": "B",
+          "source_candidate": "D",
+          "step": 9,
+          "annotations": {
+            "title": "Dayline | P19 | Design B | Step 9/12",
+            "action": "TYPE | What good looks like, and what not to do…"
+          }
+        },
+        {
+          "evidence_ref": "e001790",
+          "sha256": "1e7efd29e8a9656c4f40f9f7a825c2eaa48993220181b085633649c1f92fecd4",
+          "candidate": "B",
+          "source_candidate": "D",
+          "step": 10,
+          "annotations": {
+            "title": "Dayline | P19 | Design B | Step 10/12",
+            "action": "CLICK | Create draft"
+          }
+        },
+        {
+          "evidence_ref": "e001808",
+          "sha256": "d7d03d68f32b188661e1b889405ca51d15a22fbeab29d3245a682911ca3d0681",
+          "candidate": "B",
+          "source_candidate": "D",
+          "step": 11,
+          "annotations": {
+            "title": "Dayline | P19 | Design B | Step 11/12",
+            "action": "CLICK | Local drafts"
+          }
+        },
+        {
+          "evidence_ref": "e001823",
+          "sha256": "6a55da3a19bc75296f2b8d509ccf34d361f7053f3d03746c93d3877eb22503ee",
+          "candidate": "B",
+          "source_candidate": "D",
+          "step": 12,
+          "annotations": {
+            "title": "Dayline | P19 | Design B | Step 12/12",
+            "action": "STOP (study control)"
+          }
+        }
+      ],
+      "source_gif_sha256": "04b1bacdec7004f0f4d3df17adc535e035c46841ec88e4d39545f5dbdf2c27cb"
+    },
+    {
+      "alias": "P20",
+      "steps": 19,
+      "preference": "Design A",
+      "gif": "journeys/p20-paired.gif",
+      "frames": 19,
+      "size": [
+        960,
+        693
+      ],
+      "duration_ms": 40000,
+      "source_frames": [
+        {
+          "evidence_ref": "e001712",
+          "sha256": "064e9de8446c8c6df664391190222bcb367096fc0ab72658054fa6d3b320ef37",
+          "candidate": "A",
+          "source_candidate": "B",
+          "step": 1,
+          "annotations": {
+            "title": "Dayline | P20 | Design A | Step 1/19",
+            "action": "SCROLL down"
+          }
+        },
+        {
+          "evidence_ref": "e001727",
+          "sha256": "9afefc2f742f3b922d42089330e9e584e58ce6ae214401936b4b5d267fce0434",
+          "candidate": "A",
+          "source_candidate": "B",
+          "step": 2,
+          "annotations": {
+            "title": "Dayline | P20 | Design A | Step 2/19",
+            "action": "CLICK | Sources & scope"
+          }
+        },
+        {
+          "evidence_ref": "e001742",
+          "sha256": "bc6964850e3085d7a59c84e9079a1f4c311bd8882eaae76e600de622be1d3bad",
+          "candidate": "A",
+          "source_candidate": "B",
+          "step": 3,
+          "annotations": {
+            "title": "Dayline | P20 | Design A | Step 3/19",
+            "action": "CLICK | Workstream"
+          }
+        },
+        {
+          "evidence_ref": "e001767",
+          "sha256": "7a034ce64a1fca5ad8d99178a346897e5adcbf908ed4dde554fd85b4408b539c",
+          "candidate": "A",
+          "source_candidate": "B",
+          "step": 4,
+          "annotations": {
+            "title": "Dayline | P20 | Design A | Step 4/19",
+            "action": "CLICK | Review result"
+          }
+        },
+        {
+          "evidence_ref": "e001780",
+          "sha256": "7843f92958577e83ece373a91b16300ad4894bf09182f5bf3e8ad661fca5c6ac",
+          "candidate": "A",
+          "source_candidate": "B",
+          "step": 5,
+          "annotations": {
+            "title": "Dayline | P20 | Design A | Step 5/19",
+            "action": "CLICK | Accept v3"
+          }
+        },
+        {
+          "evidence_ref": "e001798",
+          "sha256": "75b2957809ec622c06c5ec460d33adfa09a54a238f3bafd8e1f517a11e14002d",
+          "candidate": "A",
+          "source_candidate": "B",
+          "step": 6,
+          "annotations": {
+            "title": "Dayline | P20 | Design A | Step 6/19",
+            "action": "CLICK | Authorization"
+          }
+        },
+        {
+          "evidence_ref": "e001813",
+          "sha256": "fa4b366de0bb4a0daf0aa9bfd7e814a01b232a7dbea9755eaf44677a88329305",
+          "candidate": "A",
+          "source_candidate": "B",
+          "step": 7,
+          "annotations": {
+            "title": "Dayline | P20 | Design A | Step 7/19",
+            "action": "SCROLL down"
+          }
+        },
+        {
+          "evidence_ref": "e001828",
+          "sha256": "91d30b187f731f4e8a0011cc67fa89f22e0a489a97b3bb9a9b182d8ddf7cf89d",
+          "candidate": "A",
+          "source_candidate": "B",
+          "step": 8,
+          "annotations": {
+            "title": "Dayline | P20 | Design A | Step 8/19",
+            "action": "CLICK | Authorize once"
+          }
+        },
+        {
+          "evidence_ref": "e001844",
+          "sha256": "0805d6d5f62e1b7ce3f9908645cfa091a86ee54b9a0062b4f932154d3617e8cb",
+          "candidate": "A",
+          "source_candidate": "B",
+          "step": 9,
+          "annotations": {
+            "title": "Dayline | P20 | Design A | Step 9/19",
+            "action": "CLICK | Demo: generate simulated receipt"
+          }
+        },
+        {
+          "evidence_ref": "e001857",
+          "sha256": "c604853298cc0bd8339956e503c43540ccdc674cf128306da24c4ce6a5a663c5",
+          "candidate": "A",
+          "source_candidate": "B",
+          "step": 10,
+          "annotations": {
+            "title": "Dayline | P20 | Design A | Step 10/19",
+            "action": "ADVANCE to B (study handoff, not a product control)"
+          }
+        },
+        {
+          "evidence_ref": "e001865",
+          "sha256": "4f4c31bdd28710bd8eaea9a071ded19831b92e8b62fa7507db8703a13639f767",
+          "candidate": "B",
+          "source_candidate": "D",
+          "step": 11,
+          "annotations": {
+            "title": "Dayline | P20 | Design B | Step 11/19",
+            "action": "CLICK | In progress"
+          }
+        },
+        {
+          "evidence_ref": "e001873",
+          "sha256": "3ee06b92c980075bd40e90b52ce3bbd738c16298b320ebcc9e309a2d22d7f34d",
+          "candidate": "B",
+          "source_candidate": "D",
+          "step": 12,
+          "annotations": {
+            "title": "Dayline | P20 | Design B | Step 12/19",
+            "action": "CLICK | Context"
+          }
+        },
+        {
+          "evidence_ref": "e001881",
+          "sha256": "87a5adc6ec5bb8f665e09da2c0f68e4df864b7679cadef752738bdeb848fa5d4",
+          "candidate": "B",
+          "source_candidate": "D",
+          "step": 13,
+          "annotations": {
+            "title": "Dayline | P20 | Design B | Step 13/19",
+            "action": "CLICK | Workstream"
+          }
+        },
+        {
+          "evidence_ref": "e001886",
+          "sha256": "09f11056a94c747df37f98fdd736402c54fd8686e0d43859daf5916d41543287",
+          "candidate": "B",
+          "source_candidate": "D",
+          "step": 14,
+          "annotations": {
+            "title": "Dayline | P20 | Design B | Step 14/19",
+            "action": "TYPE | Add direction or leave a note…"
+          }
+        },
+        {
+          "evidence_ref": "e001894",
+          "sha256": "fdc440bb10d9d40bce0da99e2870f4b236e6292f6e5a9295523d602e7f6518af",
+          "candidate": "B",
+          "source_candidate": "D",
+          "step": 15,
+          "annotations": {
+            "title": "Dayline | P20 | Design B | Step 15/19",
+            "action": "SCROLL down"
+          }
+        },
+        {
+          "evidence_ref": "e001905",
+          "sha256": "355375c483def60d242ba477718cbcaba93b3c7c01e3b21063c56acce4b284be",
+          "candidate": "B",
+          "source_candidate": "D",
+          "step": 16,
+          "annotations": {
+            "title": "Dayline | P20 | Design B | Step 16/19",
+            "action": "CLICK | Save note"
+          }
+        },
+        {
+          "evidence_ref": "e001913",
+          "sha256": "42d8e55d48b16cfee5a498cef4ea06dbdbd286e852f43cbca851672a950357b3",
+          "candidate": "B",
+          "source_candidate": "D",
+          "step": 17,
+          "annotations": {
+            "title": "Dayline | P20 | Design B | Step 17/19",
+            "action": "CLICK | Completed"
+          }
+        },
+        {
+          "evidence_ref": "e001921",
+          "sha256": "5a93510ffe8c87336b4e5a42bd90d9adfa5625fcca9e33f7664f2f3e1bee3916",
+          "candidate": "B",
+          "source_candidate": "D",
+          "step": 18,
+          "annotations": {
+            "title": "Dayline | P20 | Design B | Step 18/19",
+            "action": "CLICK | Workstream"
+          }
+        },
+        {
+          "evidence_ref": "e001926",
+          "sha256": "5950ad9b6f358ca1ec80b6f876ae449614ccf6e75b375a26edc462c0cd9f85da",
+          "candidate": "B",
+          "source_candidate": "D",
+          "step": 19,
+          "annotations": {
+            "title": "Dayline | P20 | Design B | Step 19/19",
+            "action": "STOP (study control)"
+          }
+        }
+      ],
+      "source_gif_sha256": "8ddc4d7ee0cb5cc207a94d33384e70d4c3a060c0d3744f336ea0b5677c4710c7"
+    }
+  ],
+  "files": [
+    {
+      "path": "index.html",
+      "sha256": "c7d2947abc491d50c031ce828d7c00d33dbbb56950b5bc31af271b372d400593",
+      "bytes": 7750
+    },
+    {
+      "path": "journeys/p01-paired.gif",
+      "sha256": "1f3d7f7a7acbd96bffab744aab72302c169d7cb0da0d4dce2f1fc4f1d23145e0",
+      "bytes": 1877258
+    },
+    {
+      "path": "journeys/p02-paired.gif",
+      "sha256": "922a34b02fab9bcb5188141c63ac6648e0b4df9f3025c3b3c42df3988da4b651",
+      "bytes": 4278861
+    },
+    {
+      "path": "journeys/p03-paired.gif",
+      "sha256": "74381b90b35e3baed00e2dca5626fe863ed0e78d146d66b3d77c32ec32280907",
+      "bytes": 2493792
+    },
+    {
+      "path": "journeys/p04-paired.gif",
+      "sha256": "0bc56f086ea6d2e1ec4b5a719573dd56800eac39e22b16b58cdfae3aad7aa992",
+      "bytes": 2954470
+    },
+    {
+      "path": "journeys/p05-paired.gif",
+      "sha256": "b73bb938c177aaa57ccf735c081289bf2beae09db07c1526347a7ad1909d98af",
+      "bytes": 2210011
+    },
+    {
+      "path": "journeys/p06-paired.gif",
+      "sha256": "354a00876bba50841566015f4c87a50b5c279538533090f3e8a9c01ef06f4122",
+      "bytes": 2024334
+    },
+    {
+      "path": "journeys/p07-paired.gif",
+      "sha256": "4cb455f8c5ac387cc5deb906ba2319db58f16523c3a92c39be74e82f212ce63f",
+      "bytes": 1908265
+    },
+    {
+      "path": "journeys/p08-paired.gif",
+      "sha256": "a46ca9baf9be564f089bc9701fdd4490441525747c91e46c5b5eb487969c0ba4",
+      "bytes": 2129194
+    },
+    {
+      "path": "journeys/p09-paired.gif",
+      "sha256": "387d968801cced032e71479f127391630d7c358f5faf4f732242e7b5db705864",
+      "bytes": 2001739
+    },
+    {
+      "path": "journeys/p10-paired.gif",
+      "sha256": "83282e7187e4997c9e62b37b403a02dc7a839726f85ff3625e887b106ca8bbdf",
+      "bytes": 3701832
+    },
+    {
+      "path": "journeys/p11-paired.gif",
+      "sha256": "45cc67fcd10307157493f5c12c3099d74e026c11daa7013a7a872250ae836478",
+      "bytes": 3344952
+    },
+    {
+      "path": "journeys/p12-paired.gif",
+      "sha256": "190044c6ae50123a96bd27a6a488e213371477576c14ce3c41fbb28df3705c69",
+      "bytes": 3256144
+    },
+    {
+      "path": "journeys/p13-paired.gif",
+      "sha256": "0cffc41c7426a4747bf5e31fcddfaafddc7857c2022023e1744f1737144fbd3d",
+      "bytes": 3615664
+    },
+    {
+      "path": "journeys/p14-paired.gif",
+      "sha256": "cc7653908f675f7f2b360b4c950fc7948c11859994318557f8d388cc2f76806a",
+      "bytes": 2944137
+    },
+    {
+      "path": "journeys/p15-paired.gif",
+      "sha256": "f8fbe5b5ebb6cbd3bfdb8e91a64b4b02b2575cd6e6ed956abbd0a162f9e57a44",
+      "bytes": 1581367
+    },
+    {
+      "path": "journeys/p16-paired.gif",
+      "sha256": "7dc447ac1d69863526b502aac52d71765c54fa6d1bb7a855114b0ce0591e1e80",
+      "bytes": 2257499
+    },
+    {
+      "path": "journeys/p17-paired.gif",
+      "sha256": "fea67a4d87aa0f10eac7597586467cee82ace367282eb37e49e7683a3d8ebf3a",
+      "bytes": 3008953
+    },
+    {
+      "path": "journeys/p18-paired.gif",
+      "sha256": "b42f36729f40dc976eeb0028a3cbbc6615859663a5c686cd3c11266dd443c60b",
+      "bytes": 2075163
+    },
+    {
+      "path": "journeys/p19-paired.gif",
+      "sha256": "bb0f7a5e26d0957e269aa8bcfc995d6a6c2220f9ccce4b5434bc3292ed7d46dc",
+      "bytes": 1816244
+    },
+    {
+      "path": "journeys/p20-paired.gif",
+      "sha256": "e07e7bb079acceb3613f7a56b6745f0d7fb5d71d2fa153acbdde4a13a77bf3a1",
+      "bytes": 2896600
+    },
+    {
+      "path": "preferences.json",
+      "sha256": "a1701efbfee57bf8a693551d414f3d5df08b481358677de69e6a3c8ebf76f243",
+      "bytes": 6939
+    },
+    {
+      "path": "prototype.json",
+      "sha256": "39efd3440f1475fbf659d0c55fd9c37c888ede87032730912cffb0f8793d2595",
+      "bytes": 3077
+    },
+    {
+      "path": "README.md",
+      "sha256": "1fd9cfdbb6ecbc5033701a62386bfbc76ccb091314b756b8b7905e56641affbd",
+      "bytes": 4367
+    },
+    {
+      "path": "README_CN.md",
+      "sha256": "14bdbe49eb8baf5553117487ad028d4f2e0b21578e6ce4daabdea3e84b753988",
+      "bytes": 3643
+    },
+    {
+      "path": "report.html",
+      "sha256": "02255a72875733a457c1ce1fa87a6bdf8a878fae85055a6373362698badb2d70",
+      "bytes": 23315
+    },
+    {
+      "path": "report.md",
+      "sha256": "34ccf8a328b483afa81eb8211c8a1c67dfb0991382f3ab3c812514a18c4b33f5",
+      "bytes": 21488
+    },
+    {
+      "path": "standalone-report.html",
+      "sha256": "1766bd617395987fd07c195d8b2af7a7941e93bf40ab7b25977700aaf681ba9f",
+      "bytes": 2526588
+    }
+  ],
+  "answer_date": "2026-11-03",
+  "model_configuration": {
+    "run_id": "20261103T033653Z-4427957c",
+    "status": "completed",
+    "phase": "analysis_only",
+    "analysis_recovery_used": false,
+    "provider": "OpenAI-compatible research endpoint",
+    "upstream_model_id": "gpt-6.1-sol",
+    "immutable_model_snapshot": null,
+    "inference_parameters": {
+      "max_tokens": 12000,
+      "temperature": 1.0,
+      "timeout_seconds": 180,
+      "attempts": 2,
+      "token_limit_field": "max_completion_tokens"
+    },
+    "result_sha256": "bf3e21211984435dd78ee0d462829c8aba4586771da7a5bc8f48cd3790a47427",
+    "native_report_sha256": "db0cac8d9912ea53127afc32b375baa9edb1f3b925eccb2cee7a997629d25b49",
+    "analysis_provenance_sha256": "d1977e97b0566d2e3c09441c2a5ab8a8bd656f8bd6e5e62e6d9700c34e1a4af4",
+    "sdk_source_fingerprint_sha256": "2d32597a48445f599e1eca4e37c3bb7846a83b73def7a176bd77aaa94fbf0e01",
+    "sdk_source_fingerprint_scope": "Changed answer-stage modules/resource plus their test and directly related documentation",
+    "answer_policy": "V3 answer-stage migration; shared intent/action policies unchanged"
+  },
+  "source_experience": {
+    "run_id": "20261021T163805Z-89710f3f",
+    "status": "partial",
+    "study_date": "2026-10-22",
+    "steps": 340,
+    "new_interaction": false,
+    "original_answers_replaced_by_new_interview": true
+  }
+}

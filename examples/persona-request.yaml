@@ -1,0 +1,40 @@
+description: >-
+  Evaluate how managers and individual contributors review, correct, and share
+  AI-generated meeting recaps. Cover frequent and occasional users in the US
+  and Europe.
+sample_size: 6
+seed: 42
+segments:
+  - id: frequent-manager
+    description: Managers who frequently review or share meeting recaps
+    quota: 2
+    constraints:
+      role: manager
+      usage_frequency: frequent
+  - id: frequent-ic
+    description: Individual contributors who frequently consume or edit recaps
+    quota: 2
+    constraints:
+      role: individual_contributor
+      usage_frequency: frequent
+  - id: occasional-user
+    description: Eligible participants who use recap occasionally
+    quota: 2
+    constraints:
+      usage_frequency: occasional
+quotas:
+  - field: region
+    policy: hard
+    counts:
+      US: 3
+      Europe: 3
+diversity_anchors:
+  - field: verification_style
+    values:
+      - quick_accept
+      - careful_verify
+      - collaborative_review
+    policy: soft
+    scope: cohort
+    minimum_per_value: 1
+    rationale: Recap review behavior affects correction and sharing workflows.

@@ -1,0 +1,25 @@
+# Local work and research outputs
+local/
+runs/
+use_cases/_shared/
+pytest_run.txt
+
+# Python caches and package metadata
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+*.egg-info/
+
+# Build outputs
+build/
+dist/
+
+# Virtual environments and environment files
+.venv/
+.env
+.env.*
+!.env.example
+
+# Editor settings
+.vscode/

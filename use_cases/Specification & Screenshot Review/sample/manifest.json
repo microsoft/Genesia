@@ -1,0 +1,109 @@
+{
+  "schema_version": "1.0",
+  "case": "dayline_spec_and_screenshots",
+  "public_design": "Design A",
+  "synthetic": true,
+  "source": {
+    "run_id": "20261103T032217Z-5d709c46",
+    "status": "completed",
+    "phase": "full_study",
+    "analysis_recovery_used": false,
+    "provider": "OpenAI-compatible research endpoint",
+    "upstream_model_id": "gpt-6.1-sol",
+    "immutable_model_snapshot": null,
+    "inference_parameters": {
+      "max_tokens": 12000,
+      "temperature": 1.0,
+      "timeout_seconds": 180,
+      "attempts": 2,
+      "token_limit_field": "max_completion_tokens"
+    },
+    "result_sha256": "ad01ee536572edaa9db6dcbd3866d862bed2c5331514e7a074b8a03d96562369",
+    "native_report_sha256": "309028a7bdc11f47d23cfff21d87e7c37af296509bcdc704caad5646d013b13e",
+    "analysis_provenance_sha256": "38d74b67dfb43daf3e6d2c973f55580d460b4dd6cbe07894adc42a0e1f20fe29",
+    "sdk_source_fingerprint_sha256": "2d32597a48445f599e1eca4e37c3bb7846a83b73def7a176bd77aaa94fbf0e01",
+    "sdk_source_fingerprint_scope": "Changed answer-stage modules/resource plus their test and directly related documentation",
+    "answer_policy": "V3 answer-stage migration; shared intent/action policies unchanged",
+    "intact_run_notice": "This selected new run rebuilt the environment and all20 sessions independently; no answers or episodes were merged from prior attempts."
+  },
+  "protocol": {
+    "cohort": "20 fixed authorized synthetic Personas from the public Global Digital 100 pool",
+    "persona_pool_sha256": "439da3fb95672264c0707f3d516dbe170e7a1fc4753bc70982171dd96b5d65a4",
+    "personas": 20,
+    "questions_per_persona": 10,
+    "question_batch_size": 5,
+    "max_followups": 0,
+    "interaction_mode": "captured_graph",
+    "live_product_execution": false,
+    "states": 11,
+    "cards": 11,
+    "declared_transitions": 26,
+    "background_passages": 13,
+    "steps": 110,
+    "valid_method_responses": 20,
+    "invalid_method_responses": 0,
+    "missing_method_responses": 0,
+    "failed_actions": 0,
+    "eligible_answers": 200,
+    "reviewed_answers": 200,
+    "analysis_calls": 11,
+    "model_validation_corrections": 0,
+    "findings": 6,
+    "recommendations": 4,
+    "usefulness_counts": {
+      "Useful": 17,
+      "Mixed": 3
+    },
+    "evidence_entries_verified": 882,
+    "fidelity_warnings": [
+      {
+        "severity": "warning",
+        "category": "fidelity",
+        "message": "The compiled message-workstream omits the displayed action-intent expiry, 'valid until 12:30,' losing a stated permission constraint.",
+        "suggestion": "Include the displayed expiry as synthetic intent metadata, without claiming expiration behavior was tested."
+      },
+      {
+        "severity": "warning",
+        "category": "fidelity",
+        "message": "The compiled message-result omits the Medium risk label and warning that recipients may read a sent message and retaining an older local version cannot recall it.",
+        "suggestion": "Preserve the displayed risk and recall warning while maintaining that no sending outcome was captured."
+      }
+    ]
+  },
+  "inputs": {
+    "task_sha256": "8d4b12db414283bd40ef3d811fef2b9d83f9ad4506796a8b5fccc54747c45fa4",
+    "material_provenance_sha256": "298e0d91c01ffe0c200be9455e3b34e36ff15e5cf4d50cb43f5c468d8ef25a57",
+    "spec_sha256": "c3571028d09b592aacf6201cdf36caf88f456bf951a5e4440ebb1685dbe64797"
+  },
+  "publication": {
+    "edition": "Reviewed saved synthesis; research prose unchanged",
+    "transformations": [
+      "Replace the native report title and remove its local run heading.",
+      "Remove the private Appendix / Evidence section and links to raw run records.",
+      "Add a publication note explaining the scope of merged evidence counts.",
+      "Clarify deterministic contributor labels; saved findings, recommendations and numeric counts are unchanged.",
+      "Disclose unvisited Activity evidence and compiled-text fidelity warnings."
+    ],
+    "excluded": [
+      "Full Persona profiles and original Persona/session IDs",
+      "Raw answers, episodes, model requests and private appendices",
+      "Credentials, local paths and raw operational logs"
+    ],
+    "evidence_labels": {
+      "meaning": "Distinct contributors from saved source answer sets; overlaps are allowed; not votes on every claim.",
+      "numbers_and_saved_memberships_unchanged": true,
+      "renderer_sha256": "3753b6e536c3271f68b037ccc82501b1557f8faca86b29a6c3ce8553322ff984"
+    }
+  },
+  "files": {
+    "README.md": {
+      "sha256": "c90c8b77a56e247dc9a8b6da153d3a0df4d5c3799c798d8c52625a1cadaf6f8b"
+    },
+    "README_CN.md": {
+      "sha256": "7f603d269159e8b5ab72e56b48318ffde8ddd2a1bbe6e0b2cddf62f90e6023ac"
+    },
+    "report.md": {
+      "sha256": "bd18bdeb900273edd423af4dcc8271c0ae084db91d432039b292a6654b94fb4f"
+    }
+  }
+}

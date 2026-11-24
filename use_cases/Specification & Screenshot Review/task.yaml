@@ -1,0 +1,154 @@
+schema_version: '0.2'
+goal: >-
+  Dayline is a simulated workspace for supervising Agent work. Review the supplied
+  Design A specification and captured screens as yourself. Explore the material
+  that matters to your own needs, assess what it helps you understand, and stop
+  when you have enough context or no longer want to continue. You are reviewing
+  an evidence-limited representation, not operating a live product. Do not infer
+  unshown content, completed tasks or real external actions from visible buttons.
+cohort:
+  source: PATH_TO_AUTHORIZED_PERSONAS.json
+  size: 20
+  seed: 20261011
+environment:
+  mode: auto
+  max_steps: 18
+  min_actions_before_stop: 0
+  fidelity_review: true
+  sources:
+    - kind: document
+      path: materials/spec.md
+    - kind: image
+      path: materials/screenshots/review-result.png
+    - kind: image
+      path: materials/screenshots/review-workstream.png
+    - kind: image
+      path: materials/screenshots/review-context.png
+    - kind: image
+      path: materials/screenshots/research-result.png
+    - kind: image
+      path: materials/screenshots/research-workstream.png
+    - kind: image
+      path: materials/screenshots/research-context.png
+    - kind: image
+      path: materials/screenshots/message-result.png
+    - kind: image
+      path: materials/screenshots/message-workstream.png
+    - kind: image
+      path: materials/screenshots/message-context.png
+    - kind: image
+      path: materials/screenshots/agents.png
+    - kind: image
+      path: materials/screenshots/activity.png
+  prototype:
+    scope: >-
+      Design A captured-material review of a synthetic work-supervision console:
+      document review, research scope, message authorization context, Agent
+      configuration and empty Activity views. Navigation is limited to supplied
+      states and text-supported transitions.
+    known_limitations:
+      - Personas review static captures, not a live site or recorded chronology.
+      - No acceptance, revision, authorization, message delivery or completed action outcome is supplied.
+      - Content below the captured viewport, free scrolling, arbitrary input and persistence are untested.
+      - All tasks, Agents, organizations, artifacts and identities are synthetic demo content.
+methods:
+  - id: design_a_interview
+    kind: interview
+    batch_size: 5
+    max_followups: 0
+    evidence_mode: complete
+    max_images: 19
+    questions:
+      - id: goal_value
+        feedback_role: journey
+        objective_ids: [fit]
+        text: What were you trying to understand from Design A, and how useful was the material you actually reviewed?
+      - id: understanding
+        feedback_role: design
+        objective_ids: [orientation]
+        text: How did you understand what this workspace is for and where to look next? Describe a concrete moment, or say what remained unclear.
+      - id: information
+        feedback_role: design
+        objective_ids: [evidence]
+        text: What information helped you form a view of the selected work? What, if anything, was still missing?
+      - id: presentation
+        feedback_role: design
+        objective_ids: [orientation]
+        text: How did the layout affect reading or finding information in the screens you saw? Give a specific example if one mattered.
+      - id: control
+        feedback_role: design
+        objective_ids: [control]
+        text: What did the visible decision controls lead you to expect? Distinguish those expectations from any outcome actually supplied.
+      - id: friction
+        feedback_role: friction
+        objective_ids: [orientation, evidence]
+        text: Was anything difficult or confusing in the material you reviewed? Explain a concrete point, or say if none came up.
+      - id: limits
+        feedback_role: overall
+        objective_ids: [control]
+        text: What relevant parts could you not assess from these materials? Do not treat an unshown outcome as a product failure.
+      - id: perceived_usefulness
+        kind: single
+        explain: true
+        feedback_role: verdict
+        objective_ids: [fit]
+        text: Based only on what you reviewed, how useful does this approach seem for your own needs? Explain the reason.
+        options: [Useful, Mixed, Not useful, Insufficient material]
+      - id: future_use
+        purpose: reflection
+        feedback_role: overall
+        objective_ids: [fit]
+        text: In what circumstances might you choose an approach like this, and what would you need to verify first? It is fine if it does not fit.
+      - id: priorities
+        purpose: reflection
+        feedback_role: suggestion
+        objective_ids: [orientation, evidence, control]
+        text: What would you keep or change first, if anything, and why? Separate a personal wish from an observed problem.
+model:
+  provider: openai_compatible
+  base_url: https://api.openai.com/v1
+  api_key_env: OPENAI_API_KEY
+  model: YOUR_MODEL_ID
+  temperature: 1
+  max_tokens: 12000
+  timeout_seconds: 180
+  attempts: 2
+  token_limit_field: max_completion_tokens
+permissions:
+  send_persona: false
+  send_materials: false
+  send_screenshots: false
+execution:
+  max_concurrent_personas: 5
+  max_concurrent_model_calls: 5
+budget:
+  max_calls: 1200
+  max_tokens: 30000000
+  max_seconds: 3600
+  protection:
+    research_fraction: 0.35
+    analysis_fraction: 0.25
+study:
+  min_personas: 20
+  review: true
+  block_on_errors: true
+  objectives:
+    - id: orientation
+      description: Understand how the visible layout supports orientation and reading.
+    - id: evidence
+      description: Understand what information supports or limits judgments about Agent work.
+    - id: control
+      description: Examine expectations about decision boundaries while distinguishing shown evidence from untested execution.
+    - id: fit
+      description: Explore perceived usefulness and conditions for future use without treating intentions as adoption.
+insight:
+  language: en
+  context_window: 128000
+  input_budget_ratio: 0.6
+  chunk_target_tokens: 60000
+  max_findings: 8
+  focus:
+    - Reading, orientation and evidence recovery in Design A
+    - Distinguish static-material limitations from product defects
+    - Personal fit, minority perspectives and unverified expectations
+output_dir: runs

@@ -1,0 +1,259 @@
+{
+  "basis": "Descriptive counts within one synthetic profile-grounded cohort, not population estimates.",
+  "personas": 20,
+  "question_slots": 240,
+  "answered": 220,
+  "conditionally_skipped": 20,
+  "not_observed": 0,
+  "matrix_notes": {
+    "approval_boundaries": "Nominal categories; do not calculate mean scores.",
+    "decision_priorities": "Ordered importance choices with a separate non-applicable/uncertain option."
+  },
+  "questions": [
+    {
+      "counts": {
+        "Drafting or revising text": 18,
+        "Finding and comparing information": 20,
+        "Organizing digital files": 10,
+        "Organizing schedules or reminders": 20,
+        "Summarizing documents or messages": 14
+      },
+      "kind": "multiple",
+      "matrix_counts": {},
+      "method_id": "delegation_survey",
+      "n_answered": 20,
+      "n_automation": 0,
+      "n_missing_or_invalid": 0,
+      "n_not_observed": 0,
+      "n_skipped": 0,
+      "n_valid_responses": 20,
+      "percent_of_answered": {
+        "Drafting or revising text": 90.0,
+        "Finding and comparing information": 100.0,
+        "Organizing digital files": 50.0,
+        "Organizing schedules or reminders": 100.0,
+        "Summarizing documents or messages": 70.0
+      },
+      "question_id": "relevant_tasks"
+    },
+    {
+      "counts": {
+        "Would consider delegating at least one task": 20
+      },
+      "kind": "single",
+      "matrix_counts": {},
+      "method_id": "delegation_survey",
+      "n_answered": 20,
+      "n_automation": 0,
+      "n_missing_or_invalid": 0,
+      "n_not_observed": 0,
+      "n_skipped": 0,
+      "n_valid_responses": 20,
+      "percent_of_answered": {
+        "Would consider delegating at least one task": 100.0
+      },
+      "question_id": "delegation_position"
+    },
+    {
+      "counts": {},
+      "kind": "text",
+      "matrix_counts": {},
+      "method_id": "delegation_survey",
+      "n_answered": 20,
+      "n_automation": 0,
+      "n_missing_or_invalid": 0,
+      "n_not_observed": 0,
+      "n_skipped": 0,
+      "n_valid_responses": 20,
+      "percent_of_answered": {},
+      "question_id": "first_task"
+    },
+    {
+      "counts": {},
+      "kind": "text",
+      "matrix_counts": {},
+      "method_id": "delegation_survey",
+      "n_answered": 0,
+      "n_automation": 0,
+      "n_missing_or_invalid": 0,
+      "n_not_observed": 0,
+      "n_skipped": 20,
+      "n_valid_responses": 20,
+      "percent_of_answered": {},
+      "question_id": "refusal_reason"
+    },
+    {
+      "counts": {},
+      "kind": "likert",
+      "matrix_counts": {
+        "Create a draft without sending or publishing it": {
+          "Allow within explicit limits without per-action confirmation": 20
+        },
+        "Delete a digital file": {
+          "Confirm every execution": 19,
+          "Would not delegate": 1
+        },
+        "Modify an existing document": {
+          "Confirm every execution": 20
+        },
+        "Send a message to another person": {
+          "Confirm every execution": 20
+        }
+      },
+      "method_id": "delegation_survey",
+      "n_answered": 20,
+      "n_automation": 0,
+      "n_missing_or_invalid": 0,
+      "n_not_observed": 0,
+      "n_skipped": 0,
+      "n_valid_responses": 20,
+      "percent_of_answered": {},
+      "question_id": "approval_boundaries"
+    },
+    {
+      "counts": {},
+      "kind": "likert",
+      "matrix_counts": {
+        "Ability to undo or recover": {
+          "Very important": 20
+        },
+        "Accuracy of the output": {
+          "Extremely important": 16,
+          "Very important": 4
+        },
+        "Control over what is executed": {
+          "Extremely important": 20
+        },
+        "Privacy of my information": {
+          "Extremely important": 12,
+          "Very important": 8
+        },
+        "Time required from me": {
+          "Moderately important": 14,
+          "Very important": 6
+        }
+      },
+      "method_id": "delegation_survey",
+      "n_answered": 20,
+      "n_automation": 0,
+      "n_missing_or_invalid": 0,
+      "n_not_observed": 0,
+      "n_skipped": 0,
+      "n_valid_responses": 20,
+      "percent_of_answered": {},
+      "question_id": "decision_priorities"
+    },
+    {
+      "counts": {
+        "Provide an uncertain draft for me to review": 17,
+        "Stop and ask me before continuing": 3
+      },
+      "kind": "single",
+      "matrix_counts": {},
+      "method_id": "delegation_survey",
+      "n_answered": 20,
+      "n_automation": 0,
+      "n_missing_or_invalid": 0,
+      "n_not_observed": 0,
+      "n_skipped": 0,
+      "n_valid_responses": 20,
+      "percent_of_answered": {
+        "Provide an uncertain draft for me to review": 85.0,
+        "Stop and ask me before continuing": 15.0
+      },
+      "question_id": "uncertain_output"
+    },
+    {
+      "counts": {
+        "Changes since the previous version": 18,
+        "Exact content or change": 20,
+        "Permission scope and limits": 20,
+        "Reasons and supporting sources": 13,
+        "Recipient or destination": 20,
+        "Undo or recovery options": 20
+      },
+      "kind": "multiple",
+      "matrix_counts": {},
+      "method_id": "delegation_survey",
+      "n_answered": 20,
+      "n_automation": 0,
+      "n_missing_or_invalid": 0,
+      "n_not_observed": 0,
+      "n_skipped": 0,
+      "n_valid_responses": 20,
+      "percent_of_answered": {
+        "Changes since the previous version": 90.0,
+        "Exact content or change": 100.0,
+        "Permission scope and limits": 100.0,
+        "Reasons and supporting sources": 65.0,
+        "Recipient or destination": 100.0,
+        "Undo or recovery options": 100.0
+      },
+      "question_id": "approval_information"
+    },
+    {
+      "counts": {},
+      "kind": "text",
+      "matrix_counts": {},
+      "method_id": "delegation_survey",
+      "n_answered": 20,
+      "n_automation": 0,
+      "n_missing_or_invalid": 0,
+      "n_not_observed": 0,
+      "n_skipped": 0,
+      "n_valid_responses": 20,
+      "percent_of_answered": {},
+      "question_id": "main_concern"
+    },
+    {
+      "counts": {},
+      "kind": "text",
+      "matrix_counts": {},
+      "method_id": "delegation_survey",
+      "n_answered": 20,
+      "n_automation": 0,
+      "n_missing_or_invalid": 0,
+      "n_not_observed": 0,
+      "n_skipped": 0,
+      "n_valid_responses": 20,
+      "percent_of_answered": {},
+      "question_id": "acceptable_tradeoff"
+    },
+    {
+      "counts": {
+        "Both personal and work tasks": 2,
+        "Personal tasks": 7,
+        "Work tasks": 11
+      },
+      "kind": "single",
+      "matrix_counts": {},
+      "method_id": "delegation_survey",
+      "n_answered": 20,
+      "n_automation": 0,
+      "n_missing_or_invalid": 0,
+      "n_not_observed": 0,
+      "n_skipped": 0,
+      "n_valid_responses": 20,
+      "percent_of_answered": {
+        "Both personal and work tasks": 10.0,
+        "Personal tasks": 35.0,
+        "Work tasks": 55.0
+      },
+      "question_id": "use_context"
+    },
+    {
+      "counts": {},
+      "kind": "text",
+      "matrix_counts": {},
+      "method_id": "delegation_survey",
+      "n_answered": 20,
+      "n_automation": 0,
+      "n_missing_or_invalid": 0,
+      "n_not_observed": 0,
+      "n_skipped": 0,
+      "n_valid_responses": 20,
+      "percent_of_answered": {},
+      "question_id": "next_validation"
+    }
+  ]
+}

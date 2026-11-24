@@ -1,0 +1,92 @@
+{
+  "product": "Dayline",
+  "public_design": "Design A",
+  "source_design": "B",
+  "source_route": "/?design=b&research=1",
+  "source": "Owner-authorized source snapshot matching the bundled comparison prototype UI",
+  "license": "MIT",
+  "synthetic": true,
+  "viewport": [
+    1440,
+    900
+  ],
+  "input_kind": "specification_and_still_images",
+  "not_a_recording": true,
+  "capture_scope": "Read-only navigation; no task mutation, real account or external action",
+  "navigation_basis": "Declared in the spec and checked against the local synthetic UI",
+  "screenshots": [
+    {
+      "id": "review-result",
+      "title": "Document result",
+      "file": "screenshots/review-result.png",
+      "sha256": "ebac63495946511d6266fa333a76e63df0a9316b3b6c28f8a38e9996ed784694"
+    },
+    {
+      "id": "review-workstream",
+      "title": "Document workstream",
+      "file": "screenshots/review-workstream.png",
+      "sha256": "d6e4bcfc146155fa9a0bc16d0dccbabe1376c86aa6ee645c8a3c55a6398716c9"
+    },
+    {
+      "id": "review-context",
+      "title": "Document context",
+      "file": "screenshots/review-context.png",
+      "sha256": "b7bfe1c203345962e305bdb6842a44e57b9d0a0934c0811126ea5b41f6fbd241"
+    },
+    {
+      "id": "research-result",
+      "title": "Research scope",
+      "file": "screenshots/research-result.png",
+      "sha256": "f81bb83cfe3663555903a751cf97c1925149e0e2ecdd8717a271db3107f49c38"
+    },
+    {
+      "id": "research-workstream",
+      "title": "Research workstream",
+      "file": "screenshots/research-workstream.png",
+      "sha256": "333683fa17c94e366250b3495369d47f4b778768668241caa416014a37a3df56"
+    },
+    {
+      "id": "research-context",
+      "title": "Research context",
+      "file": "screenshots/research-context.png",
+      "sha256": "8b5b3fe5842772e1bf197f38ef292d61191ff58a831f6e1f61ab7f15fb0105c0"
+    },
+    {
+      "id": "message-result",
+      "title": "Message authorization",
+      "file": "screenshots/message-result.png",
+      "sha256": "a01c79ece47b504975ad8bbec21bcea19e9086aa8854ed8e39ba3755b047b19e"
+    },
+    {
+      "id": "message-workstream",
+      "title": "Message workstream",
+      "file": "screenshots/message-workstream.png",
+      "sha256": "65515a847068b981352c9b75e62978dd111ca30805263fec7998c7309d7cb70a"
+    },
+    {
+      "id": "message-context",
+      "title": "Message context",
+      "file": "screenshots/message-context.png",
+      "sha256": "a86c8f6ecf8a1d2a24147008d50cefc627fd8f2506755a9b8a2a7ec195a48978"
+    },
+    {
+      "id": "agents",
+      "title": "Agents",
+      "file": "screenshots/agents.png",
+      "sha256": "7ff86e9bb0fa4143148f469a065365deb26e0e60fb80afb699afcb8c386ccc08"
+    },
+    {
+      "id": "activity",
+      "title": "Activity",
+      "file": "screenshots/activity.png",
+      "sha256": "a1e7b0eb7c303c6739e208542b6126fa0f2c6a8407724ff069c9e8cc846d2cd5"
+    }
+  ],
+  "verified_navigation_relations": 26,
+  "spec_sha256": "c3571028d09b592aacf6201cdf36caf88f456bf951a5e4440ebb1685dbe64797",
+  "limitations": [
+    "Only captured views and explicitly documented transitions may be reviewed.",
+    "No dynamic execution, free input, hidden content or completion outcome is established.",
+    "The empty Activity state reflects a fresh, unmodified capture session."
+  ]
+}

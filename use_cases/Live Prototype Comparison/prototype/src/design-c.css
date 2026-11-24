@@ -1,0 +1,146 @@
+.desktop-app[data-design="c"] {
+  --ink: #20352e;
+  --body: #485e55;
+  --muted: #61716a;
+  --border: #dbe4de;
+  --line-soft: #e5ebe7;
+  --canvas: #edf2ee;
+  --surface: #fff;
+  --selected: #e7f0df;
+  --accent: #234b3a;
+  --hover: #e0e9e2;
+}
+.desktop-app[data-design="c"] .window-bar { background: #142b24; color: #c6d4ce; border-color: #30463d; }
+.desktop-app[data-design="c"] .mini-brand { color: #c6ee95; }
+.desktop-app[data-design="c"] .window-channel { border-color: #62786c; }
+.desktop-app[data-design="c"] .app-frame { flex-direction: column; }
+.desktop-app[data-design="c"] .global-sidebar { flex-direction: row; align-items: center; gap: 24px; width: 100%; flex: 0 0 66px; padding: 0 28px; border: 0; background: #142b24; color: #e5eee8; }
+.desktop-app[data-design="c"] .wordmark { margin: 0 16px 0 0; }
+.desktop-app[data-design="c"] .brand-symbol { color: #c6ee95; }
+.desktop-app[data-design="c"] .wordmark-label { display: inline; font-family: inherit; font-size: 23px; font-weight: 600; letter-spacing: -1px; }
+.desktop-app[data-design="c"] .workspace-identity,
+.desktop-app[data-design="c"] .nav-caption,
+.desktop-app[data-design="c"] .local-note,
+.desktop-app[data-design="c"] .profile > div { display: none; }
+.desktop-app[data-design="c"] .global-sidebar nav { display: flex; gap: 6px; width: auto; }
+.desktop-app[data-design="c"] .nav-item { position: relative; width: auto; min-height: 37px; height: auto; justify-content: flex-start; padding: 8px 13px; gap: 9px; font-size: 12px; color: #c6d4ce; border-radius: 8px; }
+.desktop-app[data-design="c"] .nav-item:hover { background: #2b4338; color: #fff; }
+.desktop-app[data-design="c"] .nav-item.active { color: #e5ffc3; background: #304b38; border-color: #506b45; }
+.desktop-app[data-design="c"] .nav-count { position: static; margin-left: 6px; background: #c6ee95; color: #20352e; font-size: 10px; }
+.desktop-app[data-design="c"] .quiet-count { display: inline; color: #c6d4ce; }
+.desktop-app[data-design="c"] .sidebar-spacer { min-height: 0; }
+.desktop-app[data-design="c"] .language-hint { display: inline; color: #c6d4ce; border-color: #62786c; }
+.desktop-app[data-design="c"] .profile { border: 0; height: auto; margin: 0; }
+.desktop-app[data-design="c"] .profile-avatar { background: #365243; color: #e5eee8; }
+.desktop-app[data-design="c"] .main-surface { min-height: 0; }
+.desktop-app[data-design="c"] .main-toolbar { padding: 0 28px; }
+.desktop-app[data-design="c"] .design-switch { background: #fff; border-color: #c9d5cc; }
+.desktop-app[data-design="c"] .design-switch button[aria-pressed="true"] { background: #234b3a; }
+.desktop-app[data-design="c"] .work-heading { padding: 10px 28px 22px; align-items: center; }
+.control-room-label { display: flex; align-items: center; gap: 6px; color: #4d6757; font-size: 9px; font-weight: 600; letter-spacing: 1.2px; margin-bottom: 9px; }
+.desktop-app[data-design="c"] .work-heading h1 { font-family: inherit; color: var(--ink); font-size: 32px; font-weight: 600; letter-spacing: -1.2px; }
+.control-room-stats { display: flex; gap: 10px; flex-shrink: 0; }
+.overview-card { display: grid; grid-template-columns: auto 1fr auto; align-items: center; gap: 7px 12px; min-width: 132px; padding: 13px 15px; border: 1px solid #cedbd1; border-radius: 12px; background: #f9fcf8; color: #4b6355; text-align: left; }
+.overview-card > strong { grid-row: 1; grid-column: 2 / 4; color: #203b2c; font-size: 26px; font-weight: 600; line-height: 1; }
+.overview-card > span { grid-column: 1 / 3; font-size: 11px; }
+.overview-card > svg:last-child { grid-column: 3; }
+.overview-card:hover { background: #e0ecd8; border-color: #6d8958; }
+.overview-card[aria-pressed="true"] { background: #e1efce; border-color: #739153; box-shadow: inset 0 0 0 1px #739153; }
+.desktop-app[data-design="c"] .workbench { margin: 0 28px; gap: 22px; grid-template-columns: 304px minmax(0,1fr); border: 0; }
+.desktop-app[data-design="c"] .work-list { padding: 0; border: 0; }
+.desktop-app[data-design="c"] .list-top { padding: 4px 3px 14px; }
+.desktop-app[data-design="c"] .list-top h2 { font-size: 15px; font-weight: 600; }
+.desktop-app[data-design="c"] .filter-tabs { background: #dde6df; }
+.desktop-app[data-design="c"] .filter-tabs button { color: #4b6355; }
+.desktop-app[data-design="c"] .filter-tabs button.selected { color: #20352e; }
+.desktop-app[data-design="c"] .list-search { padding: 0 10px; margin: 10px 0; background: #f8fbf8; border: 1px solid #dbe4de; border-radius: 8px; }
+.desktop-app[data-design="c"] .list-section-label { margin: 10px 3px; }
+.desktop-app[data-design="c"] .task-row { padding: 16px; margin-bottom: 10px; border: 1px solid #d9e3db; border-radius: 13px; background: #fff; }
+.desktop-app[data-design="c"] .task-row:hover { border-color: #849d79; background: #f5f9f0; }
+.desktop-app[data-design="c"] .task-row.selected { background: #e7f0df; border-color: #6b8c55; box-shadow: inset 3px 0 #507b36; }
+.desktop-app[data-design="c"] .row-type { color: #3d6147; font-weight: 500; }
+.desktop-app[data-design="c"] .row-agent { padding-top: 10px; border-top: 1px solid #dce5d8; }
+.desktop-app[data-design="c"] .task-detail { background: #fff; border: 1px solid #d4e0d6; border-radius: 16px; overflow: hidden; box-shadow: 0 6px 22px #1e392409; }
+.desktop-app[data-design="c"] .task-detail-header { padding: 22px 28px 17px; }
+.desktop-app[data-design="c"] .task-detail-header h2 { font-size: 25px; font-weight: 600; letter-spacing: -.7px; }
+.desktop-app[data-design="c"] .status-badge.attention { color: #506522; background: #edf3d7; }
+.desktop-app[data-design="c"] .detail-tabs { height: 46px; padding: 0 24px 9px; gap: 5px; }
+.desktop-app[data-design="c"] .detail-tabs button { padding: 7px 12px; border-radius: 7px; }
+.desktop-app[data-design="c"] .detail-tabs button.active { background: #e6efdf; color: #284a34; font-weight: 500; }
+.desktop-app[data-design="c"] .detail-tabs button.active::after { display: none; }
+.desktop-app[data-design="c"] .detail-scroll { background: #f5f8f4; padding: 24px 28px; }
+.desktop-app[data-design="c"] .decision-intro { border-left: 3px solid #91ac68; padding-left: 14px; }
+.desktop-app[data-design="c"] .artifact-card { border-color: #d4dfd5; border-radius: 9px; box-shadow: 0 3px 12px #1e392407; }
+.desktop-app[data-design="c"] .artifact-heading { background: #fff; }
+.desktop-app[data-design="c"] .document-body { padding: 26px 34px; }
+.desktop-app[data-design="c"] .document-body p { font-size: 14px; }
+.desktop-app[data-design="c"] .decision-footer,
+.desktop-app[data-design="c"] .settled-footer { padding: 13px 26px; background: #f0f6e8; border-color: #dbe6d0; }
+.desktop-app[data-design="c"] .primary { background: #c6ee95; border-color: #a2c677; color: #203b2c; }
+.desktop-app[data-design="c"] .primary:hover:not(:disabled) { background: #b3df7b; border-color: #82a45b; }
+.desktop-app[data-design="c"] .secondary { color: #3d5745; border-color: #b9cbb7; background: #fff; }
+.desktop-app[data-design="c"] .secondary:hover:not(:disabled) { background: #e6efdf; border-color: #819a71; }
+.desktop-app[data-design="c"] .revision-form { padding: 15px 26px; background: #f0f6e8; border-color: #dbe6d0; }
+.desktop-app[data-design="c"] .app-status { padding-left: 28px; padding-right: 28px; }
+
+@media (min-width: 721px) {
+  .desktop-app[data-design="c"] .task-detail { display: grid; grid-template-rows: auto 46px auto minmax(0,1fr); }
+  .desktop-app[data-design="c"] .task-detail-header { grid-row: 1; }
+  .desktop-app[data-design="c"] .detail-tabs { grid-row: 2; }
+  .desktop-app[data-design="c"] .detail-scroll { grid-row: 4; }
+  .desktop-app[data-design="c"] .task-detail > .decision-footer-wrap,
+  .desktop-app[data-design="c"] .task-detail > .decision-footer,
+  .desktop-app[data-design="c"] .task-detail > .settled-footer { grid-row: 3; border-bottom: 1px solid #dbe6d0; }
+  .desktop-app[data-design="c"] .footer-hint { display: flex; max-width: 240px; color: #526647; }
+}
+@media (max-width: 1100px) and (min-width: 721px) {
+  .desktop-app[data-design="c"] .work-heading { gap: 18px; }
+  .desktop-app[data-design="c"] .work-heading h1 { font-size: 27px; }
+  .desktop-app[data-design="c"] .work-heading p { max-width: 340px; }
+  .overview-card { min-width: 108px; padding: 12px; }
+  .desktop-app[data-design="c"] .workbench { grid-template-columns: 250px minmax(0,1fr); gap: 16px; margin: 0 20px; }
+  .desktop-app[data-design="c"] .task-detail-header { padding: 18px 20px 14px; }
+  .desktop-app[data-design="c"] .task-detail-header h2 { font-size: 21px; }
+  .desktop-app[data-design="c"] .detail-tabs { padding-left: 15px; padding-right: 15px; }
+  .desktop-app[data-design="c"] .detail-scroll { padding: 22px 20px; }
+  .desktop-app[data-design="c"] .decision-footer { padding: 12px 18px; flex-wrap: wrap; gap: 9px; }
+  .desktop-app[data-design="c"] .footer-hint { max-width: none; }
+  .desktop-app[data-design="c"] .decision-buttons { margin-left: auto; }
+  .desktop-app[data-design="c"] .document-body { padding: 24px; }
+}
+@media (max-width: 980px) {
+  .desktop-app[data-design="c"] .global-sidebar { gap: 12px; padding: 0 20px; }
+  .desktop-app[data-design="c"] .wordmark { margin-right: 0; }
+  .desktop-app[data-design="c"] .wordmark-label { display: none; }
+  .desktop-app[data-design="c"] .profile { display: none; }
+}
+@media (max-width: 720px) {
+  .desktop-app[data-design="c"] .global-sidebar { flex-basis: 54px; gap: 7px; padding: 0 12px; }
+  .desktop-app[data-design="c"] .global-sidebar nav { gap: 4px; }
+  .desktop-app[data-design="c"] .nav-item { width: 42px; min-height: 36px; justify-content: center; padding: 6px; gap: 0; font-size: 0; }
+  .desktop-app[data-design="c"] .nav-count { position: absolute; right: 0; top: 0; margin: 0; font-size: 8px; }
+  .desktop-app[data-design="c"] .quiet-count,
+  .desktop-app[data-design="c"] .language-hint { display: none; }
+  .desktop-app[data-design="c"] .main-toolbar { padding: 0 12px; }
+  .desktop-app[data-design="c"] .work-heading { display: block; padding: 10px 14px 14px; }
+  .control-room-label { font-size: 8px; margin-bottom: 6px; }
+  .desktop-app[data-design="c"] .work-heading h1 { font-size: 25px; margin-bottom: 5px; }
+  .desktop-app[data-design="c"] .work-heading p { font-size: 10px; }
+  .control-room-stats { margin-top: 12px; gap: 7px; }
+  .overview-card { min-width: 0; flex: 1; padding: 9px; gap: 5px; border-radius: 9px; }
+  .overview-card > strong { font-size: 20px; }
+  .overview-card > span { font-size: 9px; }
+  .desktop-app[data-design="c"] .workbench { margin: 0 10px; gap: 0; }
+  .desktop-app[data-design="c"] .task-detail { border-radius: 12px; }
+  .desktop-app[data-design="c"] .task-detail-header { padding: 12px; }
+  .desktop-app[data-design="c"] .task-detail-header h2 { font-size: 19px; }
+  .desktop-app[data-design="c"] .detail-tabs { padding: 0 8px 7px; height: 40px; gap: 2px; }
+  .desktop-app[data-design="c"] .detail-tabs button { padding: 6px 8px; font-size: 10px; gap: 4px; }
+  .desktop-app[data-design="c"] .detail-scroll { padding: 18px 12px; }
+  .desktop-app[data-design="c"] .document-body { padding: 22px 18px; }
+  .desktop-app[data-design="c"] .document-body p { font-size: 13px; }
+  .desktop-app[data-design="c"] .decision-footer,
+  .desktop-app[data-design="c"] .settled-footer,
+  .desktop-app[data-design="c"] .revision-form { padding: 11px 12px; }
+  .desktop-app[data-design="c"] .app-status { padding-left: 12px; padding-right: 12px; }
+}

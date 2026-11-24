@@ -1,0 +1,141 @@
+/* B changes composition only; both designs render the same task and decision controls. */
+.desktop-app[data-design="b"] .main-surface { background: #f5f3ee; }
+.desktop-app[data-design="b"] .work-heading { padding-top: 10px; padding-bottom: 18px; }
+.desktop-app[data-design="b"] .work-heading h1 { font-size: 26px; letter-spacing: -.65px; margin-bottom: 4px; }
+.desktop-app[data-design="b"] .work-heading p { font-size: 11px; }
+.desktop-app[data-design="b"] .workbench { margin: 0 20px; border-top: 0; gap: 16px; }
+.desktop-app[data-design="b"] .work-list { border: 0; padding-right: 0; }
+.desktop-app[data-design="b"] .list-top { padding-top: 8px; padding-bottom: 12px; }
+.desktop-app[data-design="b"] .list-top h2 { font-size: 14px; }
+.desktop-app[data-design="b"] .list-search { margin: 10px 9px 4px; }
+.density-control { display: flex; align-items: center; justify-content: space-between; gap: 6px; padding: 0 8px 12px; font-size: 10px; color: #706858; }
+.density-button { display: flex; align-items: center; gap: 7px; background: transparent; border: 0; padding: 3px 0; font-size: 10px; color: #655b4b; }
+.density-toggle { width: 23px; height: 14px; border-radius: 9px; background: #ded8cc; padding: 2px; display: flex; align-items: center; }
+.density-toggle::after { content: ''; width: 10px; height: 10px; border-radius: 50%; background: #fff; box-shadow: 0 1px 2px #372b1820; }
+.density-button[aria-pressed="true"] .density-toggle { background: #625642; justify-content: flex-end; }
+.desktop-app[data-design="b"] .task-row { display: grid; padding: 13px 11px; border-radius: 7px; margin-bottom: 5px; }
+.desktop-app[data-design="b"] .task-row.selected { border-color: #c8b99e; background: #eee6d7; box-shadow: inset 2px 0 #a58b60; }
+.desktop-app[data-design="b"] .task-row > strong { grid-row: 1; font-size: 13px; margin-bottom: 8px; line-height: 1.5; }
+.desktop-app[data-design="b"] .row-meta { grid-row: 2; margin-bottom: 0; }
+.desktop-app[data-design="b"] .row-meta > span:last-child { font-size: 9px; }
+.desktop-app[data-design="b"] .task-row > p { grid-row: 3; margin: 8px 0 10px; }
+.desktop-app[data-design="b"] .row-agent { grid-row: 4; }
+.desktop-app[data-design="b"][data-summaries="compact"] .task-row > p,
+.desktop-app[data-design="b"][data-summaries="compact"] .row-agent { display: none; }
+.desktop-app[data-design="b"] .list-section-label { font-size: 8px; letter-spacing: .65px; margin-top: 16px; }
+.desktop-app[data-design="b"] .task-detail { background: #fffdf9; border: 1px solid #e1d8c9; border-radius: 13px; overflow: hidden; }
+.desktop-app[data-design="b"] .task-detail-header { padding: 22px 27px 17px; }
+.desktop-app[data-design="b"] .task-detail-header h2 { font-family: var(--serif); font-weight: 400; font-size: 27px; line-height: 1.3; color: #342a1d; margin-top: 10px; }
+.desktop-app[data-design="b"] .task-byline { margin-top: 8px; }
+.desktop-app[data-design="b"] .detail-tabs { gap: 6px; padding: 0 24px 10px; height: 44px; border-color: #ede4d6; }
+.desktop-app[data-design="b"] .detail-tabs button { padding: 6px 10px; border-radius: 5px; font-size: 11px; }
+.desktop-app[data-design="b"] .detail-tabs button.active { background: #eee7d9; color: #58452b; }
+.desktop-app[data-design="b"] .detail-tabs button.active::after { display: none; }
+.desktop-app[data-design="b"] .detail-scope { margin-right: 2px; }
+.desktop-app[data-design="b"] .detail-scroll { padding: 23px 27px; }
+.desktop-app[data-design="b"] .detail-scroll > * { max-width: 900px; }
+.desktop-app[data-design="b"] .decision-intro { margin-bottom: 17px; }
+.desktop-app[data-design="b"] .decision-intro .section-kicker { display: none; }
+.desktop-app[data-design="b"] .decision-intro h3 { font-size: 15px; margin-top: 0; }
+.desktop-app[data-design="b"] .decision-intro p { font-size: 11px; }
+.desktop-app[data-design="b"] .feedback-note { margin-bottom: 19px; }
+.desktop-app[data-design="b"] .artifact-card { border-color: #e4dac9; border-radius: 7px; }
+.desktop-app[data-design="b"] .artifact-heading { padding: 11px 15px; }
+.desktop-app[data-design="b"] .document-body { padding: 25px 31px; }
+.desktop-app[data-design="b"] .document-body h4 { font-size: 15px; }
+.desktop-app[data-design="b"] .document-body p { font-size: 14px; }
+.desktop-app[data-design="b"] .message-document p,
+.desktop-app[data-design="b"] .message-document li { font-size: 14px; }
+.desktop-app[data-design="b"] .decision-footer { background: #f7f3ea; border-color: #e5dccd; }
+.desktop-app[data-design="b"] .settled-footer { background: #f7f3ea; border-color: #e5dccd; }
+.desktop-app[data-design="b"] .decision-buttons .primary { background: #4b3f2b; border-color: #4b3f2b; }
+.desktop-app[data-design="b"] .decision-buttons .primary:hover { background: #352c1e; border-color: #352c1e; }
+
+@media (min-width: 721px) {
+  .desktop-app[data-design="b"] .global-sidebar { width: 70px; flex-basis: 70px; padding: 24px 10px 0; align-items: center; }
+  .desktop-app[data-design="b"] .wordmark { margin: 0 0 29px; }
+  .desktop-app[data-design="b"] .wordmark-label,
+  .desktop-app[data-design="b"] .workspace-identity,
+  .desktop-app[data-design="b"] .nav-caption,
+  .desktop-app[data-design="b"] .local-note,
+  .desktop-app[data-design="b"] .profile > div { display: none; }
+  .desktop-app[data-design="b"] .global-sidebar nav { width: 100%; }
+  .desktop-app[data-design="b"] .nav-item { font-size: 0; justify-content: center; padding: 0; gap: 0; width: 47px; height: 42px; position: relative; }
+  .desktop-app[data-design="b"] .nav-count { position: absolute; top: 1px; right: 0; margin: 0; font-size: 8px; padding: 1px 3px; }
+  .desktop-app[data-design="b"] .quiet-count,
+  .desktop-app[data-design="b"] .language-hint { display: none; }
+  .desktop-app[data-design="b"] .profile { margin-top: 13px; height: 63px; }
+  .desktop-app[data-design="b"] .workbench { grid-template-columns: 236px minmax(0,1fr); }
+}
+@media (min-width: 1280px) {
+  .desktop-app[data-design="b"] .task-detail { display: grid; grid-template-columns: minmax(0,1fr) 195px; grid-template-rows: auto 44px minmax(0,1fr); }
+  .desktop-app[data-design="b"] .task-detail-header { grid-column: 1 / -1; grid-row: 1; }
+  .desktop-app[data-design="b"] .detail-tabs { grid-column: 1; grid-row: 2; }
+  .desktop-app[data-design="b"] .detail-scope { display: none; }
+  .desktop-app[data-design="b"] .detail-scroll { grid-column: 1; grid-row: 3; }
+  .desktop-app[data-design="b"] .task-detail > .decision-footer-wrap,
+  .desktop-app[data-design="b"] .task-detail > .decision-footer,
+  .desktop-app[data-design="b"] .task-detail > .settled-footer {
+    grid-column: 2; grid-row: 2 / 4; min-height: 0; overflow-y: auto;
+    border-top: 0; border-left: 1px solid #e5dccd; background: #f8f4ec;
+  }
+  .desktop-app[data-design="b"] .decision-footer-wrap { display: flex; flex-direction: column; }
+  .desktop-app[data-design="b"] .decision-side-summary { display: block; padding: 21px 17px 4px; flex: 1; min-height: 0; overflow-y: auto; }
+  .desktop-app[data-design="b"] .decision-side-summary h3 { font-family: var(--serif); color: #58462c; font-size: 21px; font-weight: 400; line-height: 1.3; margin: 9px 0 17px; }
+  .desktop-app[data-design="b"] .decision-side-summary dl { margin: 0; }
+  .desktop-app[data-design="b"] .decision-side-summary dl > div { padding: 11px 0; border-top: 1px solid #e5dccd; }
+  .desktop-app[data-design="b"] .decision-side-summary dt { font-size: 10px; color: #78684e; margin-bottom: 5px; }
+  .desktop-app[data-design="b"] .decision-side-summary dd { margin: 0; font-size: 11px; line-height: 1.8; color: #5e4b30; overflow-wrap: anywhere; }
+  .desktop-app[data-design="b"] .decision-side-summary p { font-size: 11px; line-height: 1.7; color: #77664d; margin: 14px 0 6px; }
+  .desktop-app[data-design="b"] .decision-footer { display: flex; flex-direction: column; align-items: stretch; justify-content: flex-start; gap: 18px; padding: 18px 17px; border-top: 0; background: transparent; }
+  .desktop-app[data-design="b"] .decision-buttons { flex-direction: column; gap: 8px; }
+  .desktop-app[data-design="b"] .decision-buttons button { width: 100%; min-height: 39px; font-size: 11px; padding: 9px 7px; }
+  .desktop-app[data-design="b"] .footer-hint { display: flex; align-items: flex-start; font-size: 10px; color: #78684e; max-width: none; }
+  .desktop-app[data-design="b"] .footer-hint svg { width: 14px; margin-top: 2px; }
+  .desktop-app[data-design="b"] .revision-form { padding: 16px; background: transparent; border-top: 1px solid #e5dccd; flex-shrink: 0; }
+  .desktop-app[data-design="b"] .revision-form textarea { font-size: 12px; min-height: 135px; max-height: 220px; }
+  .desktop-app[data-design="b"] .revision-form > div { flex-direction: column; }
+  .desktop-app[data-design="b"] .revision-form button { padding: 8px 6px; font-size: 10px; }
+  .desktop-app[data-design="b"] .settled-footer { display: flex; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 14px; padding: 24px 18px; font-size: 12px; line-height: 1.8; }
+  .desktop-app[data-design="b"] .settled-footer .text-button { margin-left: 0; }
+}
+@media (min-width: 1650px) {
+  .desktop-app[data-design="b"] .workbench { grid-template-columns: 265px minmax(0,1fr); }
+  .desktop-app[data-design="b"] .task-detail { grid-template-columns: minmax(0,1fr) 222px; }
+  .desktop-app[data-design="b"] .detail-scroll { padding: 28px 40px; }
+  .desktop-app[data-design="b"] .decision-side-summary { padding: 24px 21px 4px; }
+  .desktop-app[data-design="b"] .decision-footer { padding: 20px 21px; }
+}
+@media (max-width: 1279px) and (min-width: 721px) {
+  .desktop-app[data-design="b"] .task-detail-header { padding: 19px 22px 14px; }
+  .desktop-app[data-design="b"] .task-detail-header h2 { font-size: 24px; }
+  .desktop-app[data-design="b"] .detail-tabs { padding-left: 19px; padding-right: 19px; }
+  .desktop-app[data-design="b"] .detail-scroll { padding: 21px 22px; }
+}
+@media (max-width: 980px) and (min-width: 721px) {
+  .desktop-app[data-design="b"] .workbench { grid-template-columns: 218px minmax(0,1fr); margin: 0 14px; gap: 12px; }
+  .desktop-app[data-design="b"] .task-detail-header h2 { font-size: 22px; }
+  .desktop-app[data-design="b"] .detail-tabs { gap: 2px; padding-left: 16px; padding-right: 16px; }
+  .desktop-app[data-design="b"] .detail-tabs button { padding: 6px; }
+  .desktop-app[data-design="b"] .detail-scroll { padding: 20px 17px; }
+  .desktop-app[data-design="b"] .document-body { padding: 23px; }
+}
+@media (max-width: 720px) {
+  .desktop-app[data-design="b"] .workbench { display: flex; gap: 0; margin: 0 10px; }
+  .desktop-app[data-design="b"] .work-heading { padding: 12px 16px 16px; }
+  .desktop-app[data-design="b"] .work-heading h1 { font-size: 23px; }
+  .desktop-app[data-design="b"] .task-detail { border-radius: 10px; }
+  .desktop-app[data-design="b"] .task-detail-header { padding: 14px 12px; }
+  .desktop-app[data-design="b"] .task-detail-header h2 { font-size: 22px; }
+  .desktop-app[data-design="b"] .detail-tabs { padding: 0 8px 8px; gap: 2px; height: 42px; }
+  .desktop-app[data-design="b"] .detail-tabs button { padding: 6px; font-size: 10px; gap: 4px; }
+  .desktop-app[data-design="b"] .detail-scroll { padding: 19px 12px; }
+  .desktop-app[data-design="b"] .document-body { padding: 21px 18px; }
+  .desktop-app[data-design="b"] .document-body p { font-size: 13px; }
+  .desktop-app[data-design="b"] .artifact-heading { padding: 10px 8px; }
+  .desktop-app[data-design="b"] .decision-footer { padding: 11px 10px; }
+  .desktop-app[data-design="b"] .decision-buttons { gap: 6px; }
+  .desktop-app[data-design="b"] .decision-buttons button { padding: 8px; font-size: 10px; }
+  .desktop-app[data-design="b"] .settled-footer { padding: 12px; }
+  .desktop-app[data-design="b"] .revision-form { padding: 12px; }
+}

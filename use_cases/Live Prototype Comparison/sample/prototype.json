@@ -1,0 +1,49 @@
+{
+  "product": "Dayline",
+  "source": "Frozen, hash-verified study snapshot; not current checkout",
+  "redistributed": false,
+  "license": "MIT",
+  "commit_recorded": false,
+  "versions": [
+    {
+      "label": "Design A",
+      "source_label": "Design B",
+      "route": "/?design=b&research=1"
+    },
+    {
+      "label": "Design B",
+      "source_label": "Design D",
+      "route": "/?design=d&research=1"
+    }
+  ],
+  "source_files_sha256": {
+    ".gitignore": "53572bfad5960c25e7cd66f9397db772daad22b66628b03ae611773a8e76dc21",
+    "LICENSE": "908c077a5aeda4e6afc4c5beeb77f71fa9916e123ab5df5d804e7e1e6f5e5d81",
+    "PROTOTYPE_CONTRACT.md": "4895b830004e1c769d0157170a99f8d1237d28aceed0609f4c9c6e0c28ad7614",
+    "README.md": "c980b4259f18627792195f0bfd7a5eb1bfe56b6806c480ecbd89ad0cc80f597a",
+    "doc/PRD.md": "5ef5d0d1d82c6ea0073b251075ef7e5708c22e5736d6e079a756aef17d726389",
+    "doc/PRD_CN.md": "e70f1110fcbd53cc0f0497c48814e758eb0e88cc2101725e6d86184006564d36",
+    "index.html": "c68abaa911e8b428d3563dcbbcdeb222c3a4bb56dbd094d0aafad5a33302c3e4",
+    "package-lock.json": "cbca922769ce11463955e2dc229d29dc4113209189ff94ac11bd96272449afa8",
+    "package.json": "b583389625785f5fbf2256cc9de327ed6e5d1d7d8d2264abe22db43c2028acd2",
+    "playwright.config.ts": "c153ba1ee46176b2cff18300dbfb0f4d703c06101cc262d00e928ccce9a7c411",
+    "src/App.tsx": "7ff161096852cee1480c194659e43edd10312d4f8dd5ac6f5b88d883dcb4da87",
+    "src/data.ts": "118732cad3352ae078a5fed4c4763049864e207c3fd38542ac272c0073ca8ecd",
+    "src/design-b.css": "95a112ae0882d19a0bc2d2f69771a66ea0faa3b097405fb3ef51f89c6ed3edc4",
+    "src/design-c.css": "8dc373531bff687a45eff911feccc53128e2937765c39b2b7e6758373064aa32",
+    "src/design-d.css": "e712b6c70b32451186dcb0aafcffb604f276a0359836e7cb485d25b42a493c0a",
+    "src/i18n/LocaleProvider.tsx": "8a20249372beb1e12e8fdb1da87055bc7b1042947b6f30f5bc9b629977f36718",
+    "src/i18n/state.ts": "a773d53ab1d3299da1ef9b759a3b72a2de2e359107bfc9df46745abe9aba5c8a",
+    "src/main.tsx": "b3f1d19ee2a7c1d1724e10882ae41d49b695f47d24f91ade2c95afa6153bf9e3",
+    "src/styles.css": "b3c5f89933d0b72f36b10a0ef83cdca7c31c9356b8bf028c43105d368cef7702",
+    "src/workspace.ts": "3b800cfd100fb9cc2f15c990f9263ae7720ede638a32cfb9babe84910cb465aa",
+    "tests/browser/board.spec.ts": "09bb8ca86977ce2dc8191316677200e2e214908350d0cf847772c4859f9ca634",
+    "tests/browser/journeys.spec.ts": "82ce3a94dabea4c2e340404aac615cebc528350ef83d9b040efbb62151b0c7df",
+    "tests/workspace.test.mjs": "cf903d4dffc83830aaef10e476372802229ad56389de86a4d3d74cd9f6a515e2",
+    "tsconfig.app.json": "e9a8dd90c9608be011e11921be7de765b5a58cb14c92a3f295912e17bd81e59d",
+    "tsconfig.json": "ad28d132ee48d6e23917cf5827cace785d0fc01a44ca68b0dda51cc8c3fd3f52",
+    "tsconfig.node.json": "beb9a038bba5ac51e724e17ef3e701b9b4aac8aab4d6660f28dfff5336c4905d",
+    "vite.config.ts": "537bcf934522a5030ec0d25e9957be60e5489bfb40d25b31033ef97618bd1bb1"
+  },
+  "limits": "Same snapshot, different routes. No real Agent, account, send or publish action."
+}

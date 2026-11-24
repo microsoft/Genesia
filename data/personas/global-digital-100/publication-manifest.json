@@ -1,0 +1,36 @@
+{
+  "cohort_approval_sha256": "c19d8da01c8f62bdcc87ff6eb9de8ff34ae06cb96b75d4bd7b59d251d1f57367",
+  "excluded_private_artifacts": [
+    "candidate-personas.json",
+    "evidence.json",
+    "artifacts/",
+    "events.jsonl"
+  ],
+  "license": "See the repository license.",
+  "persona_count": 100,
+  "personas_sha256": "439da3fb95672264c0707f3d516dbe170e7a1fc4753bc70982171dd96b5d65a4",
+  "plan_sha256": "c22479ee4bddbc9db91d1196a0b797cdb6ed287fc15148b40087f91deb356693",
+  "pool_id": "global-digital-100-v1",
+  "privacy_review": {
+    "account_handle_hits": 0,
+    "email_hits": 0,
+    "forbidden_sensitive_fields": 0,
+    "known_major_organization_name_hits": 0,
+    "names_code_owned": true,
+    "phone_hits": 0,
+    "prompt_like_hits": 0,
+    "street_address_hits": 0,
+    "url_hits": 0
+  },
+  "published_at": "2026-10-09T12:00:14.222724+00:00",
+  "published_files": [
+    "personas.json",
+    "quality-summary.json",
+    "publication-manifest.json",
+    "README.md"
+  ],
+  "quality_summary_sha256": "5c4b2a995816ed175d6747976e881a219baab96e8f4d1b681fa20ffb4a0b0e57",
+  "source_generation_id": "global-digital-100-recovered-from-v3",
+  "source_generation_manifest_sha256": "f75baf17e18880a30c125b07bdd036dd76982241e81eeaa27afd1ed5bc35ca0f",
+  "version": 1
+}

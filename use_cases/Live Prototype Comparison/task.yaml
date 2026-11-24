@@ -1,0 +1,196 @@
+schema_version: '0.2'
+goal: |
+  Dayline is an Agent work supervision console for individuals, intended to gradually extend to small teams.
+
+  When several Agents research, write documents, change code or prepare messages, their work can be scattered across chat windows, terminals and services. Dayline aims to bring that work together so you can understand progress, inspect outputs and revisions, and make decisions before important external actions. Its goal is to reduce the need to switch between conversations and reconstruct context; whether it helps you is for you to judge.
+
+  The intended workflow is: set a goal; Agents advance the work; inspect the output; request changes and review again; authorize external actions when needed; check the actual outcome. This describes the product concept, not a route you must complete.
+
+  This session uses a simulated prototype. The sample tasks represent work being advanced by different Agents, but the preview does not connect to real Agents, send messages, publish anything, or execute external actions. Do not treat the concept as proof that every capability is implemented. Explore naturally according to your own needs; usefulness, uncertainty and lack of fit are all valid.
+
+  YOUR TRYOUT
+  Use the synthetic Dayline workspace as yourself. Choose work that matters to you and naturally explore any available workspace features that interest you. Decide what to do and finish when you naturally have enough or want to stop. You need not handle every item or explore every feature; this is not a required feature tour. Use Design A first. When you finish with it, use advance to open Design B in a fresh browser session. Approach the second design naturally rather than recreating the same clicks. Stay inside the synthetic workspace. No real account, permission, file, message, Agent run, or external action occurs. New-task drafts and other changes are local simulations only. Use English for intent and action descriptions.
+cohort:
+  source: PATH_TO_AUTHORIZED_PERSONAS.json
+  size: 20
+  seed: 20261011
+environment:
+  mode: live
+  start_url: http://127.0.0.1:5173/?design=b&research=1
+  handoff_urls:
+    - http://127.0.0.1:5173/?design=d&research=1
+  candidate_labels: [Design A, Design B]
+  max_steps: 50
+  min_actions_before_stop: 0
+  width: 1440
+  height: 900
+  screenshot_width: 1200
+  screenshot_quality: 75
+  headless: true
+  prototype:
+    scope: >-
+      The synthetic Dayline workspace: browse, search and task status; task details with
+      Result, Workstream and Context; scope clarification, human acceptance, revision,
+      bounded authorization or decline and local confirmation; local-only new-task drafts;
+      Agents and Activity. The advance action is a backstage study transition, not a Dayline feature.
+    known_limitations:
+      - All tasks, Agents, artifacts, identities, decisions, destinations and receipts are synthetic demo content.
+      - No real Agent run, file, message, permission, publication, account, or external action occurs.
+      - Browser storage is local to each isolated context, not cross-device persistence.
+      - Fixed A then B order permits learning, anchoring, carryover and recency effects, not causal A/B conclusions.
+      - Personas choose their own relevant path; unvisited features are not treated as failures.
+methods:
+  - id: multidimensional_interview_v1
+    kind: interview
+    batch_size: 8
+    max_followups: 0
+    max_images: 51
+    evidence_mode: complete
+    questions:
+      - id: a_goal_value
+        candidate: Design A
+        feedback_role: journey
+        objective_ids: [prioritization, decision_behavior]
+        text: What were you trying to get out of using Design A, and how useful was what you actually reached for that purpose?
+      - id: a_understanding
+        candidate: Design A
+        feedback_role: design
+        text: How did you understand what Design A was for and what to do next? If anything was unclear, describe a particular moment.
+      - id: a_capability
+        candidate: Design A
+        feedback_role: design
+        objective_ids: [decision_behavior]
+        text: Did Design A let you do what you wanted during this session? Describe any unmet need or workaround you encountered, or say if none came up.
+      - id: a_information
+        candidate: Design A
+        feedback_role: design
+        objective_ids: [evidence_strategy]
+        text: When you made a decision or chose not to act in Design A, what information did you rely on? Was there anything you still needed to know?
+      - id: a_effort
+        candidate: Design A
+        feedback_role: design
+        text: What was using Design A like in practice? Mention any interaction that felt particularly easy or unnecessarily demanding to you, if any.
+      - id: a_presentation
+        candidate: Design A
+        feedback_role: design
+        objective_ids: [comparison]
+        text: How did the way Design A presented information affect your reading or finding things, if at all? Refer to something you actually looked at.
+      - id: a_control
+        candidate: Design A
+        feedback_role: design
+        objective_ids: [trust_and_safety]
+        text: What did you understand would happen after your actions in Design A? Was there any action you hesitated about or wanted to undo or correct?
+      - id: a_stopping
+        candidate: Design A
+        feedback_role: overall
+        objective_ids: [prioritization, decision_behavior]
+        text: What led you to stop with Design A at that point? Was anything you wanted to do still unresolved?
+      - id: b_goal_value
+        candidate: Design B
+        feedback_role: journey
+        objective_ids: [prioritization, decision_behavior]
+        text: What were you trying to get out of using Design B, and how useful was what you actually reached for that purpose?
+      - id: b_understanding
+        candidate: Design B
+        feedback_role: design
+        text: How did you understand what Design B was for and what to do next? If anything was unclear, describe a particular moment.
+      - id: b_capability
+        candidate: Design B
+        feedback_role: design
+        objective_ids: [decision_behavior]
+        text: Did Design B let you do what you wanted during this session? Describe any unmet need or workaround you encountered, or say if none came up.
+      - id: b_information
+        candidate: Design B
+        feedback_role: design
+        objective_ids: [evidence_strategy]
+        text: When you made a decision or chose not to act in Design B, what information did you rely on? Was there anything you still needed to know?
+      - id: b_effort
+        candidate: Design B
+        feedback_role: design
+        text: What was using Design B like in practice? Mention any interaction that felt particularly easy or unnecessarily demanding to you, if any.
+      - id: b_presentation
+        candidate: Design B
+        feedback_role: design
+        objective_ids: [comparison]
+        text: How did the way Design B presented information affect your reading or finding things, if at all? Refer to something you actually looked at.
+      - id: b_control
+        candidate: Design B
+        feedback_role: design
+        objective_ids: [trust_and_safety]
+        text: What did you understand would happen after your actions in Design B? Was there any action you hesitated about or wanted to undo or correct?
+      - id: b_stopping
+        candidate: Design B
+        feedback_role: overall
+        objective_ids: [prioritization, decision_behavior]
+        text: What led you to stop with Design B at that point? Was anything you wanted to do still unresolved?
+      - id: x_differences
+        feedback_role: comparison
+        objective_ids: [comparison]
+        text: What differences between the designs, if any, mattered for what you personally wanted to do? Use an example from your experience.
+      - id: x_future_use
+        purpose: reflection
+        feedback_role: overall
+        text: Based on what you tried, when would you choose to use this product and when would you use another way of doing the work? What would make the difference for you?
+      - id: x_preference
+        kind: single
+        explain: true
+        feedback_role: preference
+        objective_ids: [comparison]
+        options: [Design A, Design B, No meaningful preference, Insufficient experience]
+        text: Which design would you personally choose to use? Explain your main reason.
+      - id: x_priorities
+        purpose: reflection
+        feedback_role: suggestion
+        text: Looking back, is there anything you would want kept or changed? Of the changes you personally need, which would matter first and what would it let you do? It is fine to want no change.
+model:
+  provider: openai_compatible
+  base_url: https://api.openai.com/v1
+  api_key_env: OPENAI_API_KEY
+  model: YOUR_MODEL_ID
+  temperature: 1
+  max_tokens: 6000
+  timeout_seconds: 150
+  attempts: 1
+  token_limit_field: max_completion_tokens
+permissions:
+  send_persona: false
+  send_materials: false
+  send_screenshots: false
+execution:
+  max_concurrent_personas: 5
+  max_concurrent_model_calls: 5
+budget:
+  max_calls: 2000
+  max_tokens: 60000000
+  max_seconds: 3600
+  protection:
+    research_fraction: 0.35
+    analysis_fraction: 0.25
+study:
+  min_personas: 20
+  review: true
+  block_on_errors: true
+  objectives:
+    - id: prioritization
+      description: Understand which work people notice, prioritize or ignore and why.
+    - id: evidence_strategy
+      description: Understand which artifact, context, history, scope, risk and destination evidence people seek.
+    - id: decision_behavior
+      description: Observe acceptance, revision, clarification, authorization, rejection, deferral and natural stopping.
+    - id: trust_and_safety
+      description: Understand what creates or weakens confidence in Agent-produced work and bounded actions.
+    - id: comparison
+      description: Compare how each layout supports queue scanning, evidence recovery, decisions and confirmation.
+insight:
+  language: en
+  context_window: 200000
+  input_budget_ratio: 0.6
+  chunk_target_tokens: 30000
+  max_findings: 10
+  focus:
+    - Multi-item prioritization and natural exploration
+    - Evidence-seeking, trust and decision behavior
+    - Acceptance, revision, clarification, authorization, rejection and stopping
+    - Layout tradeoffs in queue scanning, reading, actions and confirmation
+    - Fixed order, untried paths and critical uncertainty
+output_dir: runs
